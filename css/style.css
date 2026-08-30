@@ -102,6 +102,7 @@ select:focus, input:focus { outline: none; border-color: var(--blue); }
   padding: 1px 6px; border-radius: 10px; vertical-align: 1px;
 }
 .bid-badge.backup { background: #21324a; color: var(--blue); }
+.bid-badge.auto { background: #3a2d4a; color: #c297f0; }
 .bid-badge.contested { background: none; padding: 0; }
 .my-pick-summary .nopick { color: var(--gold); }
 .lock { color: var(--muted); font-size: 13px; }

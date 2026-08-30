@@ -23,8 +23,12 @@ const $ = (sel) => document.querySelector(sel);
 const phaseOf = (weekKey) => (weekKey.startsWith("P") ? "playoffs" : "regular");
 const weekLabel = (key) => S.schedule.weeks[key]?.label || `Week ${key}`;
 
-// Test hook: set window.__pickem_now to simulate a different "now".
-const nowFn = () => (window.__pickem_now ? new Date(window.__pickem_now) : new Date());
+// Test hook: set window.__pickem_now (or sessionStorage "pickem-now", which
+// survives a reload) to simulate a different "now".
+const nowFn = () => {
+  const fake = window.__pickem_now || sessionStorage.getItem("pickem-now");
+  return fake ? new Date(fake) : new Date();
+};
 
 // --------------------------------------------------------------- storage ---
 
@@ -49,6 +53,7 @@ async function loadPicks() {
       .filter((p) => p.season === CONFIG.SEASON);
   }
   resolveWeek.cache = {};
+  persistAutopicks(synthesizeAutopicks()); // fire and forget
 }
 
 async function savePick(row) {
@@ -177,6 +182,71 @@ function startLivePolling() {
 
 const picksFor = (name) => S.picks.filter((p) => p.player_name === name);
 const pickAt = (name, weekKey) => S.picks.find((p) => p.player_name === name && p.week_key === weekKey);
+
+// ------------------------------------------------------------ autopick -----
+// A player with no pick when the week's first SUNDAY game kicks off gets a
+// random QB. The choice is a seeded hash of (season, week, player), so every
+// browser derives the same "random" QB; the first client to notice persists
+// it. Autopicks never create contests: anything claimed by anyone (primary
+// or backup) is excluded from the pool, and multiple no-shows are processed
+// in roster order so they can't collide with each other.
+
+function weekDeadline(weekKey) {
+  const games = (S.schedule.weeks[weekKey]?.games || []).filter((g) => !g.tbd);
+  if (!games.length) return null;
+  const sunday = games.filter((g) =>
+    kickoffDate(g).toLocaleDateString("en-US", { weekday: "short", timeZone: "America/New_York" }) === "Sun");
+  return new Date(Math.min(...(sunday.length ? sunday : games).map(kickoffDate)));
+}
+
+function hashStr(s) {
+  let h = 2166136261;
+  for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; }
+  return h;
+}
+
+function synthesizeAutopicks() {
+  if (!S.schedule || !S.meta) return [];
+  const created = [];
+  const now = nowFn();
+  for (const wk of WEEK_ORDER) {
+    if (WEEK_ORDER.indexOf(wk) > WEEK_ORDER.indexOf(S.meta.current_week)) break;
+    const dl = weekDeadline(wk);
+    if (!dl || now < dl) continue;
+    const claimed = new Set(S.picks.filter((p) => p.week_key === wk)
+      .flatMap((p) => [p.qb_id, p.backup_qb_id]).filter(Boolean));
+    for (const name of CONFIG.PLAYERS) {
+      if (pickAt(name, wk)) continue;
+      const blocked = blockedSet(name, wk);
+      const pool = S.qbs.filter((q) => {
+        if (q.depth > 1 && !projFor(q.id, wk)) return false; // real starters only
+        if (claimed.has(q.id) || blocked.has(q.id)) return false;
+        const g = gameFor(q.team, wk);
+        return g && !g.tbd && kickoffDate(g) >= dl;
+      }).sort((a, b) => a.id.localeCompare(b.id));
+      if (!pool.length) continue;
+      const qb = pool[hashStr(`${CONFIG.SEASON}|${wk}|${name}`) % pool.length];
+      const row = {
+        player_name: name, season: CONFIG.SEASON, phase: phaseOf(wk), week_key: wk,
+        qb_id: qb.id, qb_name: qb.name, qb_team: qb.team,
+        bid: 0, backup_qb_id: null, backup_qb_name: null, backup_qb_team: null,
+        claimed_at: dl.toISOString(), updated_at: dl.toISOString(), auto: true,
+      };
+      S.picks.push(row);
+      claimed.add(qb.id);
+      created.push(row);
+    }
+  }
+  return created;
+}
+
+async function persistAutopicks(rows) {
+  if (!S.db || !rows.length) return;
+  // ignoreDuplicates: if another client already persisted, keep theirs.
+  // Errors are ignored — the next picks load or realtime event re-syncs.
+  await S.db.from("picks")
+    .upsert(rows, { onConflict: "player_name,season,phase,week_key", ignoreDuplicates: true });
+}
 
 // ------------------------------------------------------ realtime alerts ----
 // Supabase broadcasts picks changes to every open tab: standings and cards
@@ -437,7 +507,11 @@ function renderMyPickSummary() {
   if (!S.me) { el.innerHTML = `<span class="muted">Select your name (top right) to make picks.</span>`; return; }
   const pick = pickAt(S.me, S.week);
   if (!pick) {
-    el.innerHTML = `<span class="nopick">No pick yet for ${weekLabel(S.week)}.</span>`;
+    const dl = weekDeadline(S.week);
+    const dlTxt = dl && dl > nowFn()
+      ? ` A random QB gets auto-assigned if you haven't picked by ${dl.toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" })}.`
+      : "";
+    el.innerHTML = `<span class="nopick">No pick yet for ${weekLabel(S.week)}.${dlTxt}</span>`;
     return;
   }
   const e = resolveWeek(S.week)[S.me];
@@ -474,6 +548,7 @@ function renderMyPickSummary() {
       <img class="mini-logo" src="${teamLogo(pick.qb_team)}" alt="">
       <strong>${pick.qb_name}</strong>
       <span class="muted">${pick.qb_team}</span>
+      ${pick.auto ? `<span class="bid-badge auto" title="Auto-assigned at the Sunday deadline — you can still change it before kickoff">🎲 AUTO</span>` : ""}
       ${proj ? `<span class="muted">proj ${proj.avg.toFixed(1)}</span>` : ""}
       ${rivals.length
         ? `<span class="contested-tag">⚔️ Contested with ${rivals.join(", ")}</span>`
@@ -510,6 +585,7 @@ function renderMyPickSummary() {
         backup_qb_name: bidQb?.name ?? null,
         backup_qb_team: bidQb?.team ?? null,
         updated_at: new Date().toISOString(),
+        auto: false, // touched by the player, so no longer an autopick
       });
       toast("Bid & backup saved ✓");
       render();
@@ -644,6 +720,7 @@ async function makePick(qbId) {
     backup_qb_team: sameQb ? existing.backup_qb_team : null,
     claimed_at: sameQb ? existing.claimed_at : new Date().toISOString(),
     updated_at: new Date().toISOString(),
+    auto: false, // a deliberate choice, even if it replaces an autopick
   };
   try {
     await savePick(row);
@@ -699,8 +776,9 @@ function renderLeague() {
     if (e && !e.pending) {
       const pts = effectivePoints(name, wk);
       const liveTag = pts !== null && ptsIsLive(e.qbId, wk) ? ` <span class="live-dot">LIVE</span>` : "";
+      const autoTag = p.auto ? ` <span class="bid-badge auto">🎲</span>` : "";
       if (e.source === "primary") {
-        return `<td><div class="matrix-qb">${p.qb_name}${e.contested ? ` <span class="bid-badge">won ${e.spent}</span>` : ""}</div>
+        return `<td><div class="matrix-qb">${p.qb_name}${autoTag}${e.contested ? ` <span class="bid-badge">won ${e.spent}</span>` : ""}</div>
           <div class="matrix-pts">${pts !== null ? pts.toFixed(2) + liveTag : "…"}</div></td>`;
       }
       if (e.source === "backup") {
@@ -711,7 +789,7 @@ function renderLeague() {
     }
     // pending: show the claim; bids stay hidden until kickoff
     const contested = (e?.rivals || []).length > 0;
-    return `<td><div class="matrix-qb">${p.qb_name}${contested ? ` <span class="bid-badge contested">⚔️</span>` : ""}</div>
+    return `<td><div class="matrix-qb">${p.qb_name}${p.auto ? ` <span class="bid-badge auto">🎲</span>` : ""}${contested ? ` <span class="bid-badge contested">⚔️</span>` : ""}</div>
       <div class="matrix-pts muted">${contested ? "contested" : "pending"}</div></td>`;
   };
   $("#pick-matrix").innerHTML = `
@@ -905,7 +983,7 @@ async function main() {
 }
 
 // Debug/test handles (also used by automated checks).
-window.__pickem = { S, resolveWeek, allocation, blockedSet, totalPointsBefore, gameFor, fetchLiveStats, anyGameLive };
+window.__pickem = { S, resolveWeek, allocation, blockedSet, totalPointsBefore, gameFor, fetchLiveStats, anyGameLive, weekDeadline, synthesizeAutopicks };
 
 main().catch((e) => {
   document.body.innerHTML = `<div class="fatal">Failed to load: ${e.message}</div>`;

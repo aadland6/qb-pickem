@@ -37,6 +37,13 @@ A survivor-style quarterback pick-em for your league:
 - **Losing an auction does not use up that QB** — he returns to your pool for
   future weeks. A backup that actually plays for you is used; an unused
   backup is not.
+- **Autopick**: miss the deadline (the week's first Sunday kickoff) with no
+  pick and you're assigned a random QB (🎲) from that week's unclaimed
+  starters whose games haven't started. Autopicks never contest anyone —
+  anything claimed as a primary or backup is excluded. The draw is a seeded
+  hash of season/week/player, so every browser computes the same "random"
+  result and the first one to load saves it. You can still swap an autopick
+  for any unstarted QB, and it carries a 0 bid.
 - Resolution is fully deterministic from the picks table, so every browser
   computes identical outcomes — there is no server-side resolver to run.
 - Honor-system note: bids are hidden in the UI until kickoff, but a curious
