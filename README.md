@@ -105,6 +105,22 @@ Get a free API key from
 repo secret named `FANTASYPROS_API_KEY` (**Settings → Secrets and variables →
 Actions**). The next data run will include it as a third projection source.
 
+## Extras
+
+- **Live scoring** — on game days the site pulls in-progress stat lines
+  straight from Sleeper every minute and shows LIVE points on cards,
+  standings, and the pick matrix (finals still come from the nightly data
+  run).
+- **Realtime contest alerts** — open tabs update instantly when anyone
+  makes or changes a pick (Supabase realtime), and you get a toast + browser
+  notification the moment someone contests a QB you're holding.
+- **Insights tab** — auction log with revealed bids, weekly high-scorer
+  crowns, each player's best/worst call, and the best QB nobody rostered.
+- **Planner tab** — every QB still in your pool against their remaining
+  schedule, byes marked, your claims highlighted.
+- **Install to home screen** — the site is a PWA; on a phone use
+  "Add to Home Screen" and it opens like an app.
+
 ## How picking works
 
 - Select your name in the top-right (remembered per browser).

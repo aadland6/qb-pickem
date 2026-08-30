@@ -13,6 +13,7 @@ const S = {
   me: null,           // selected league player name
   week: null,         // current view week key ("1".."18", "P1".."P4")
   db: null,           // supabase client or null (demo mode)
+  live: { week: null, stats: {}, at: null },  // in-game scoring feed
 };
 
 const SEASON_ALLOCATION = 100;
@@ -114,11 +115,110 @@ function projFor(qbId, weekKey) {
 
 function actualPts(qbId, weekKey) {
   const wk = S.scores?.weeks?.[weekKey];
-  return wk && wk[qbId] ? wk[qbId].pts : null;
+  if (wk && wk[qbId]) return wk[qbId].pts;
+  if (S.live.week === weekKey && S.live.stats[qbId] !== undefined) return S.live.stats[qbId];
+  return null;
+}
+
+// True when the number shown comes from the in-game feed, not final scores.
+function ptsIsLive(qbId, weekKey) {
+  const wk = S.scores?.weeks?.[weekKey];
+  return !(wk && wk[qbId]) && S.live.week === weekKey && S.live.stats[qbId] !== undefined;
+}
+
+// ------------------------------------------------------- live scoring ------
+// On game days, pull in-progress stat lines straight from Sleeper (CORS-open)
+// and score them with the same ESPN-standard formula the pipeline uses.
+
+const LIVE_SCORING = {
+  pass_yd: 0.04, pass_td: 4, pass_int: -2, pass_2pt: 2,
+  rush_yd: 0.1, rush_td: 6, rush_2pt: 2, fum_lost: -2,
+};
+const SLEEPER_WEEK = (key) => (key.startsWith("P")
+  ? ["post", { P1: 1, P2: 2, P3: 3, P4: 4 }[key]]
+  : ["regular", Number(key)]);
+
+function anyGameLive(weekKey) {
+  const now = nowFn();
+  return (S.schedule.weeks[weekKey]?.games || []).some((g) => {
+    if (g.tbd) return false;
+    const k = kickoffDate(g);
+    return k <= now && now - k < 5 * 3600 * 1000; // within ~5h of kickoff
+  });
+}
+
+async function fetchLiveStats(weekKey = S.meta.current_week) {
+  if (!anyGameLive(weekKey)) return false;
+  const [st, wk] = SLEEPER_WEEK(weekKey);
+  try {
+    const rows = await fetch(
+      `https://api.sleeper.com/stats/nfl/${CONFIG.SEASON}/${wk}?season_type=${st}&position%5B%5D=QB`
+    ).then((r) => r.json());
+    const stats = {};
+    for (const r of rows) {
+      const s = r.stats || {};
+      if (!s.gp && !s.gms_active) continue;
+      stats[r.player_id] = Math.round(
+        Object.entries(LIVE_SCORING).reduce((t, [k, w]) => t + (Number(s[k]) || 0) * w, 0) * 100
+      ) / 100;
+    }
+    S.live = { week: weekKey, stats, at: Date.now() };
+    return true;
+  } catch { return false; }
+}
+
+function startLivePolling() {
+  const tick = async () => {
+    if (!document.hidden && await fetchLiveStats()) render();
+  };
+  tick();
+  setInterval(tick, 60_000);
 }
 
 const picksFor = (name) => S.picks.filter((p) => p.player_name === name);
 const pickAt = (name, weekKey) => S.picks.find((p) => p.player_name === name && p.week_key === weekKey);
+
+// ------------------------------------------------------ realtime alerts ----
+// Supabase broadcasts picks changes to every open tab: standings and cards
+// refresh instantly, and you get a notification when someone contests a QB
+// you're holding.
+
+function myRivalsMap() {
+  const map = {};
+  if (!S.me) return map;
+  for (const p of picksFor(S.me)) {
+    const e = resolveWeek(p.week_key)[S.me];
+    if (e && !e.pending) continue; // settled weeks can't gain rivals
+    map[p.week_key] = claimsOn(p.qb_id, p.week_key).filter((n) => n !== S.me);
+  }
+  return map;
+}
+
+function notify(title, body) {
+  toast(`${title} ${body}`);
+  if ("Notification" in window && Notification.permission === "granted") {
+    try { new Notification(title, { body, icon: "icons/icon-192.png" }); } catch { /* ignore */ }
+  }
+}
+
+function initRealtime() {
+  if (!S.db) return;
+  S.db.channel("picks-live")
+    .on("postgres_changes", { event: "*", schema: "public", table: "picks" }, async () => {
+      const before = myRivalsMap();
+      await loadPicks();
+      const after = myRivalsMap();
+      for (const [wk, rivals] of Object.entries(after)) {
+        const fresh = rivals.filter((n) => !(before[wk] || []).includes(n));
+        if (fresh.length) {
+          const pick = pickAt(S.me, wk);
+          notify("⚔️ Contest!", `${fresh.join(", ")} is contesting ${pick.qb_name} (${weekLabel(wk)}) — check your bid.`);
+        }
+      }
+      render();
+    })
+    .subscribe();
+}
 
 // ------------------------------------------------------- auction engine ----
 //
@@ -356,8 +456,9 @@ function renderMyPickSummary() {
         + `<span class="nopick">Pick any QB with a later kickoff!</span>`;
     }
     const pts = effectivePoints(S.me, S.week);
+    const live = pts !== null && e.qbId && ptsIsLive(e.qbId, S.week) ? ` <span class="live-dot">LIVE</span>` : "";
     el.innerHTML = `<img class="mini-logo" src="${teamLogo((S.qbById[e.qbId] || pick).qb_team || S.qbById[e.qbId]?.team || pick.qb_team)}" alt="">
-      ${line} ${pts !== null ? `<span class="pts">${pts.toFixed(2)} pts</span>` : ""}`;
+      ${line} ${pts !== null ? `<span class="pts">${pts.toFixed(2)} pts${live}</span>` : ""}`;
     return;
   }
 
@@ -477,7 +578,7 @@ function qbCard(qb) {
     </div>
     <div class="card-bottom">
       <div class="projs">
-        ${actual !== null ? `<span class="pts">${actual.toFixed(2)} pts</span>` : srcChips}
+        ${actual !== null ? `<span class="pts">${actual.toFixed(2)} pts${ptsIsLive(qb.id, S.week) ? ` <span class="live-dot">LIVE</span>` : ""}</span>` : srcChips}
         ${actual === null && proj ? `<span class="avg" title="ensemble average">avg ${proj.avg.toFixed(1)}</span>` : ""}
       </div>
       <button class="pickbtn ${btnLabel === "Contest" ? "contestbtn" : ""}" data-qb="${qb.id}" ${pickable ? "" : "disabled"}>
@@ -597,13 +698,14 @@ function renderLeague() {
     const e = resolveWeek(wk)[name];
     if (e && !e.pending) {
       const pts = effectivePoints(name, wk);
+      const liveTag = pts !== null && ptsIsLive(e.qbId, wk) ? ` <span class="live-dot">LIVE</span>` : "";
       if (e.source === "primary") {
         return `<td><div class="matrix-qb">${p.qb_name}${e.contested ? ` <span class="bid-badge">won ${e.spent}</span>` : ""}</div>
-          <div class="matrix-pts">${pts !== null ? pts.toFixed(2) : "…"}</div></td>`;
+          <div class="matrix-pts">${pts !== null ? pts.toFixed(2) + liveTag : "…"}</div></td>`;
       }
       if (e.source === "backup") {
         return `<td><div class="matrix-qb">↩ ${p.backup_qb_name} <span class="bid-badge backup">backup</span></div>
-          <div class="matrix-pts">${pts !== null ? pts.toFixed(2) : "…"}</div></td>`;
+          <div class="matrix-pts">${pts !== null ? pts.toFixed(2) + liveTag : "…"}</div></td>`;
       }
       return `<td><div class="matrix-qb lostline">lost ${p.qb_name}</div><div class="matrix-pts">0</div></td>`;
     }
@@ -621,6 +723,122 @@ function renderLeague() {
     </table>`;
 }
 
+// ---------------------------------------------------------- insights tab ---
+
+function finalWeeks() {
+  return WEEK_ORDER.filter((k) => S.scores?.weeks?.[k]);
+}
+
+function renderInsights() {
+  const el = $("#insights");
+  const weeks = finalWeeks();
+
+  // Auction log works even before any games finish.
+  const auctionRows = [];
+  for (const wk of WEEK_ORDER) {
+    const res = resolveWeek(wk);
+    const seen = new Set();
+    for (const [name, e] of Object.entries(res)) {
+      if (e.pending || !e.contested || e.source !== "primary" || seen.has(e.primaryQbId)) continue;
+      seen.add(e.primaryQbId);
+      const losers = Object.entries(res)
+        .filter(([, x]) => !x.pending && x.lost && x.primaryQbId === e.primaryQbId)
+        .map(([n, x]) => `${n} (${pickAt(n, wk)?.bid ?? 0}${x.source === "backup" ? ` → ${pickAt(n, wk)?.backup_qb_name}` : ", no backup"})`);
+      auctionRows.push(`<tr><td>${weekLabel(wk)}</td><td>${S.qbById[e.primaryQbId]?.name || "?"}</td>
+        <td><strong>${name}</strong> · bid ${e.spent}</td><td>${losers.join("; ") || "—"}</td></tr>`);
+    }
+  }
+
+  let weekly = "", bestworst = "", board = "";
+  if (weeks.length) {
+    weekly = weeks.map((wk) => {
+      const scores = CONFIG.PLAYERS.map((n) => ({ n, pts: effectivePoints(n, wk) ?? 0 }))
+        .sort((a, b) => b.pts - a.pts);
+      const top = scores[0];
+      return `<tr><td>${weekLabel(wk)}</td><td>👑 ${top.n}</td><td>${top.pts.toFixed(2)}</td>
+        <td class="muted">${scores.slice(1).map((s) => `${s.n} ${s.pts.toFixed(2)}`).join(" · ")}</td></tr>`;
+    }).join("");
+
+    bestworst = CONFIG.PLAYERS.map((n) => {
+      const rows = weeks
+        .map((wk) => ({ wk, pts: effectivePoints(n, wk), e: resolveWeek(wk)[n] }))
+        .filter((r) => r.pts !== null);
+      if (!rows.length) return "";
+      const best = rows.reduce((a, b) => (b.pts > a.pts ? b : a));
+      const worst = rows.reduce((a, b) => (b.pts < a.pts ? b : a));
+      const qb = (r) => S.qbById[r.e.qbId]?.name || "—";
+      return `<tr><td>${n}</td><td class="matrix-pts">${qb(best)} · ${best.pts.toFixed(2)} (${weekLabel(best.wk)})</td>
+        <td class="lostline">${qb(worst)} · ${worst.pts.toFixed(2)} (${weekLabel(worst.wk)})</td></tr>`;
+    }).join("");
+
+    board = weeks.map((wk) => {
+      const takenIds = new Set(Object.values(resolveWeek(wk)).filter((e) => !e.pending && e.qbId).map((e) => e.qbId));
+      const all = Object.entries(S.scores.weeks[wk] || {})
+        .filter(([id]) => !takenIds.has(id) && S.qbById[id])
+        .sort((a, b) => b[1].pts - a[1].pts);
+      if (!all.length) return "";
+      const [id, row] = all[0];
+      return `<tr><td>${weekLabel(wk)}</td><td>${S.qbById[id].name} (${S.qbById[id].team})</td><td>${row.pts.toFixed(2)}</td></tr>`;
+    }).join("");
+  }
+
+  el.innerHTML = `
+    <h2>Auction log</h2>
+    ${auctionRows.length
+      ? `<div class="table-wrap"><table><thead><tr><th>Week</th><th>QB</th><th>Winner</th><th>Lost out</th></tr></thead><tbody>${auctionRows.join("")}</tbody></table></div>`
+      : `<p class="muted">No auctions have resolved yet. Contested picks appear here with bids revealed after kickoff.</p>`}
+    <h2>Weekly crowns</h2>
+    ${weekly
+      ? `<div class="table-wrap"><table><thead><tr><th>Week</th><th>High scorer</th><th>Points</th><th>The field</th></tr></thead><tbody>${weekly}</tbody></table></div>`
+      : `<p class="muted">Crowns are handed out once games finish.</p>`}
+    ${bestworst ? `<h2>Best & worst calls</h2>
+      <div class="table-wrap"><table><thead><tr><th>Player</th><th>Best pick</th><th>Worst pick</th></tr></thead><tbody>${bestworst}</tbody></table></div>` : ""}
+    ${board ? `<h2>Points left on the board</h2>
+      <p class="muted">The best QB nobody rostered each week.</p>
+      <div class="table-wrap"><table><thead><tr><th>Week</th><th>Best available</th><th>Points</th></tr></thead><tbody>${board}</tbody></table></div>` : ""}`;
+}
+
+// ----------------------------------------------------------- planner tab ---
+
+function renderPlanner() {
+  const el = $("#planner");
+  if (!S.me) {
+    el.innerHTML = `<p class="muted">Select your name (top right) to plan your remaining QBs.</p>`;
+    return;
+  }
+  const cur = S.meta.current_week;
+  const phase = phaseOf(cur);
+  const weeks = WEEK_ORDER.filter((k) => phaseOf(k) === phase
+    && WEEK_ORDER.indexOf(k) >= WEEK_ORDER.indexOf(cur)
+    && S.schedule.weeks[k]?.games.length);
+  // '0' is a synthetic same-phase key so no week's reservations are excluded.
+  const blocked = blockedSet(S.me, phase === "regular" ? "0" : "P0");
+  const myWeeks = Object.fromEntries(picksFor(S.me)
+    .filter((p) => p.phase === phase).map((p) => [p.week_key, p.qb_id]));
+
+  const rows = S.qbs
+    .filter((q) => (q.depth === 1 || projFor(q.id, cur)) && !blocked.has(q.id))
+    .sort((a, b) => (projFor(b.id, cur)?.avg ?? -1) - (projFor(a.id, cur)?.avg ?? -1));
+
+  el.innerHTML = `
+    <h2>Remaining QBs — ${phase === "regular" ? "regular season" : "playoffs"}</h2>
+    <p class="muted">QBs still in your pool, and who they play each week. Your claims are highlighted; plan around byes (—).</p>
+    <div class="table-wrap planner-wrap"><table>
+      <thead><tr><th>QB</th>${weeks.map((w) => `<th>${phase === "regular" ? "W" + w : weekLabel(w)}</th>`).join("")}</tr></thead>
+      <tbody>${rows.map((q) => `
+        <tr><td class="planner-qb"><img class="mini-logo" src="${teamLogo(q.team)}" alt=""> ${q.name}</td>
+          ${weeks.map((w) => {
+            const g = gameFor(q.team, w);
+            const mine = myWeeks[w] === q.id;
+            if (!g) return `<td class="planner-bye">—</td>`;
+            return `<td class="${mine ? "planner-mine" : ""}">${g.home ? "" : "@"}${g.opponent}${g.tbd ? "*" : ""}</td>`;
+          }).join("")}
+        </tr>`).join("")}
+      </tbody>
+    </table></div>
+    <p class="muted">* kickoff time not yet set by the NFL</p>`;
+}
+
 // ------------------------------------------------------------- top level ---
 
 function render() {
@@ -630,6 +848,8 @@ function render() {
   renderMyPickSummary();
   renderGrid();
   renderLeague();
+  renderInsights();
+  renderPlanner();
   const upd = S.projections?.updated || S.meta?.updated;
   $("#data-updated").textContent = upd ? `Data updated ${new Date(upd).toLocaleString()}` : "";
 }
@@ -638,6 +858,10 @@ function wire() {
   $("#me-select").addEventListener("change", (e) => {
     S.me = e.target.value || null;
     localStorage.setItem("pickem-me", S.me || "");
+    // user gesture — the right moment to ask for contest notifications
+    if (S.me && "Notification" in window && Notification.permission === "default") {
+      Notification.requestPermission();
+    }
     render();
   });
   $("#week-select").addEventListener("change", (e) => { S.week = e.target.value; render(); });
@@ -648,8 +872,8 @@ function wire() {
   });
   document.querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => {
     document.querySelectorAll(".tab").forEach((x) => x.classList.toggle("active", x === t));
-    $("#tab-picks").classList.toggle("hidden", t.dataset.tab !== "picks");
-    $("#tab-league").classList.toggle("hidden", t.dataset.tab !== "league");
+    document.querySelectorAll(".tab-panel").forEach((p) =>
+      p.classList.toggle("hidden", p.id !== `tab-${t.dataset.tab}`));
   }));
   document.addEventListener("visibilitychange", async () => {
     if (!document.hidden) { await loadPicks(); render(); }
@@ -676,10 +900,12 @@ async function main() {
 
   wire();
   render();
+  initRealtime();
+  startLivePolling();
 }
 
 // Debug/test handles (also used by automated checks).
-window.__pickem = { S, resolveWeek, allocation, blockedSet, totalPointsBefore, gameFor };
+window.__pickem = { S, resolveWeek, allocation, blockedSet, totalPointsBefore, gameFor, fetchLiveStats, anyGameLive };
 
 main().catch((e) => {
   document.body.innerHTML = `<div class="fatal">Failed to load: ${e.message}</div>`;

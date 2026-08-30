@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QB Pick-Em</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏈</text></svg>">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,6 +31,8 @@
   <nav class="tabs">
     <button class="tab active" data-tab="picks">Make a Pick</button>
     <button class="tab" data-tab="league">Standings</button>
+    <button class="tab" data-tab="insights">Insights</button>
+    <button class="tab" data-tab="planner">Planner</button>
   </nav>
 
   <main>
@@ -63,6 +70,16 @@
       <div id="standings" class="table-wrap"></div>
       <h2>Weekly picks</h2>
       <div id="pick-matrix" class="table-wrap"></div>
+    </section>
+
+    <!-- ============================ INSIGHTS TAB ========================= -->
+    <section id="tab-insights" class="tab-panel hidden">
+      <div id="insights"></div>
+    </section>
+
+    <!-- ============================ PLANNER TAB ========================== -->
+    <section id="tab-planner" class="tab-panel hidden">
+      <div id="planner"></div>
     </section>
   </main>
 
