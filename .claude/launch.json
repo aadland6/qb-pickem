@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "pickem",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-c", "import os,http.server,socketserver;os.chdir('/Users/aadlandma/Desktop/nfl-game');socketserver.TCPServer.allow_reuse_address=True;http.server.test(HandlerClass=http.server.SimpleHTTPRequestHandler,port=8123)"],
+      "port": 8123
+    }
+  ]
+}

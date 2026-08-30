@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QB Pick-Em</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏈</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-ball">🏈</span>
+      <h1 id="league-name">QB Pick-Em</h1>
+    </div>
+    <div class="topbar-controls">
+      <label class="me-label">I am
+        <select id="me-select"></select>
+      </label>
+    </div>
+  </header>
+
+  <div id="banner" class="banner hidden"></div>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="picks">Make a Pick</button>
+    <button class="tab" data-tab="league">Standings</button>
+  </nav>
+
+  <main>
+    <!-- ============================== PICKS TAB ========================== -->
+    <section id="tab-picks" class="tab-panel">
+      <div class="week-nav">
+        <button id="week-prev" class="week-arrow" title="Previous week">&#8249;</button>
+        <select id="week-select"></select>
+        <button id="week-next" class="week-arrow" title="Next week">&#8250;</button>
+        <span id="week-dates" class="week-dates"></span>
+      </div>
+
+      <div id="my-pick-summary" class="my-pick-summary"></div>
+
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search QB…">
+        <select id="team-filter">
+          <option value="">All teams</option>
+        </select>
+        <select id="sort-by">
+          <option value="proj">Sort: Projection</option>
+          <option value="name">Sort: Name</option>
+          <option value="team">Sort: Team</option>
+        </select>
+        <label class="chk"><input id="only-available" type="checkbox" checked> Available only</label>
+        <label class="chk"><input id="only-starters" type="checkbox" checked> Starters only</label>
+      </div>
+
+      <div id="qb-grid" class="qb-grid"></div>
+    </section>
+
+    <!-- ============================= LEAGUE TAB ========================== -->
+    <section id="tab-league" class="tab-panel hidden">
+      <h2>Standings</h2>
+      <div id="standings" class="table-wrap"></div>
+      <h2>Weekly picks</h2>
+      <div id="pick-matrix" class="table-wrap"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span id="data-updated"></span>
+    <span>Scoring: ESPN standard &middot; Projections: Rotowire / ESPN ensemble</span>
+  </footer>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

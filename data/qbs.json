@@ -1,0 +1,1292 @@
+[
+ {
+  "id": "3257",
+  "espn_id": 2578570,
+  "name": "Jacoby Brissett",
+  "team": "ARI",
+  "number": 7,
+  "depth": 1,
+  "injury": null,
+  "exp": 10
+ },
+ {
+  "id": "13272",
+  "espn_id": null,
+  "name": "Carson Beck",
+  "team": "ARI",
+  "number": 19,
+  "depth": 2,
+  "injury": "Questionable",
+  "exp": 0
+ },
+ {
+  "id": "6011",
+  "espn_id": 4038524,
+  "name": "Gardner Minshew",
+  "team": "ARI",
+  "number": 15,
+  "depth": 3,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "11648",
+  "espn_id": null,
+  "name": "Kedon Slovis",
+  "team": "ARI",
+  "number": 12,
+  "depth": 3,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "6768",
+  "espn_id": 4241479,
+  "name": "Tua Tagovailoa",
+  "team": "ATL",
+  "number": 1,
+  "depth": 1,
+  "injury": null,
+  "exp": 6
+ },
+ {
+  "id": "11559",
+  "espn_id": null,
+  "name": "Michael Penix",
+  "team": "ATL",
+  "number": 9,
+  "depth": 2,
+  "injury": "Questionable",
+  "exp": 2
+ },
+ {
+  "id": "4574",
+  "espn_id": 2972515,
+  "name": "Cooper Rush",
+  "team": "ATL",
+  "number": 13,
+  "depth": 3,
+  "injury": null,
+  "exp": 9
+ },
+ {
+  "id": "13602",
+  "espn_id": null,
+  "name": "Jack Strand",
+  "team": "ATL",
+  "number": 18,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "4881",
+  "espn_id": 3916387,
+  "name": "Lamar Jackson",
+  "team": "BAL",
+  "number": 8,
+  "depth": 1,
+  "injury": null,
+  "exp": 8
+ },
+ {
+  "id": "7083",
+  "espn_id": 4035671,
+  "name": "Tyler Huntley",
+  "team": "BAL",
+  "number": 5,
+  "depth": 2,
+  "injury": null,
+  "exp": 6
+ },
+ {
+  "id": "8206",
+  "espn_id": null,
+  "name": "Skylar Thompson",
+  "team": "BAL",
+  "number": 11,
+  "depth": 3,
+  "injury": "IR",
+  "exp": 4
+ },
+ {
+  "id": "4683",
+  "espn_id": 3042451,
+  "name": "Aaron Bailey",
+  "team": "BAL",
+  "number": 8,
+  "depth": 4,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "11931",
+  "espn_id": null,
+  "name": "Austin Reed",
+  "team": "BAL",
+  "number": 15,
+  "depth": 99,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "13350",
+  "espn_id": null,
+  "name": "Joe Fagnano",
+  "team": "BAL",
+  "number": 12,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "4924",
+  "espn_id": null,
+  "name": "Zach Terrell",
+  "team": "BAL",
+  "number": 0,
+  "depth": 99,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "4984",
+  "espn_id": 3918298,
+  "name": "Josh Allen",
+  "team": "BUF",
+  "number": 17,
+  "depth": 1,
+  "injury": null,
+  "exp": 8
+ },
+ {
+  "id": "8002",
+  "espn_id": null,
+  "name": "Shane Buechele",
+  "team": "BUF",
+  "number": 6,
+  "depth": 2,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "5127",
+  "espn_id": 3115293,
+  "name": "Kyle Allen",
+  "team": "BUF",
+  "number": 11,
+  "depth": 3,
+  "injury": null,
+  "exp": 8
+ },
+ {
+  "id": "9228",
+  "espn_id": null,
+  "name": "Bryce Young",
+  "team": "CAR",
+  "number": 9,
+  "depth": 1,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "8160",
+  "espn_id": null,
+  "name": "Kenny Pickett",
+  "team": "CAR",
+  "number": 12,
+  "depth": 2,
+  "injury": null,
+  "exp": 4
+ },
+ {
+  "id": "7605",
+  "espn_id": null,
+  "name": "Kyle Trask",
+  "team": "CAR",
+  "number": 14,
+  "depth": 3,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "13415",
+  "espn_id": null,
+  "name": "Haynes King",
+  "team": "CAR",
+  "number": 16,
+  "depth": 99,
+  "injury": "Questionable",
+  "exp": 0
+ },
+ {
+  "id": "11560",
+  "espn_id": null,
+  "name": "Caleb Williams",
+  "team": "CHI",
+  "number": 18,
+  "depth": 1,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "11256",
+  "espn_id": null,
+  "name": "Tyson Bagent",
+  "team": "CHI",
+  "number": 17,
+  "depth": 2,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "1737",
+  "espn_id": 15168,
+  "name": "Case Keenum",
+  "team": "CHI",
+  "number": 11,
+  "depth": 3,
+  "injury": null,
+  "exp": 14
+ },
+ {
+  "id": "13310",
+  "espn_id": null,
+  "name": "Miller Moss",
+  "team": "CHI",
+  "number": 16,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "6770",
+  "espn_id": 3915511,
+  "name": "Joe Burrow",
+  "team": "CIN",
+  "number": 9,
+  "depth": 1,
+  "injury": null,
+  "exp": 6
+ },
+ {
+  "id": "19",
+  "espn_id": 11252,
+  "name": "Joe Flacco",
+  "team": "CIN",
+  "number": 16,
+  "depth": 2,
+  "injury": null,
+  "exp": 18
+ },
+ {
+  "id": "260",
+  "espn_id": 11394,
+  "name": "Josh Johnson",
+  "team": "CIN",
+  "number": 11,
+  "depth": 3,
+  "injury": null,
+  "exp": 18
+ },
+ {
+  "id": "10983",
+  "espn_id": null,
+  "name": "Sean Clifford",
+  "team": "CIN",
+  "number": 4,
+  "depth": 4,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "4017",
+  "espn_id": 3122840,
+  "name": "Deshaun Watson",
+  "team": "CLE",
+  "number": 4,
+  "depth": 1,
+  "injury": null,
+  "exp": 9
+ },
+ {
+  "id": "12524",
+  "espn_id": null,
+  "name": "Shedeur Sanders",
+  "team": "CLE",
+  "number": 2,
+  "depth": 2,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "13306",
+  "espn_id": null,
+  "name": "Taylen Green",
+  "team": "CLE",
+  "number": 15,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "12486",
+  "espn_id": null,
+  "name": "Dillon Gabriel",
+  "team": "CLE",
+  "number": 6,
+  "depth": 4,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "3294",
+  "espn_id": 2577417,
+  "name": "Dak Prescott",
+  "team": "DAL",
+  "number": 4,
+  "depth": 1,
+  "injury": null,
+  "exp": 10
+ },
+ {
+  "id": "11557",
+  "espn_id": null,
+  "name": "Joe Milton",
+  "team": "DAL",
+  "number": 10,
+  "depth": 2,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "8162",
+  "espn_id": null,
+  "name": "Sam Howell",
+  "team": "DAL",
+  "number": 16,
+  "depth": 3,
+  "injury": null,
+  "exp": 4
+ },
+ {
+  "id": "11563",
+  "espn_id": null,
+  "name": "Bo Nix",
+  "team": "DEN",
+  "number": 10,
+  "depth": 1,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "6136",
+  "espn_id": 3892775,
+  "name": "Jarrett Stidham",
+  "team": "DEN",
+  "number": 8,
+  "depth": 2,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "7583",
+  "espn_id": null,
+  "name": "Sam Ehlinger",
+  "team": "DEN",
+  "number": 4,
+  "depth": 3,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "3163",
+  "espn_id": 3046779,
+  "name": "Jared Goff",
+  "team": "DET",
+  "number": 16,
+  "depth": 1,
+  "injury": null,
+  "exp": 10
+ },
+ {
+  "id": "4179",
+  "espn_id": 3044720,
+  "name": "Joshua Dobbs",
+  "team": "DET",
+  "number": 6,
+  "depth": 2,
+  "injury": null,
+  "exp": 9
+ },
+ {
+  "id": "13314",
+  "espn_id": null,
+  "name": "Luke Altmyer",
+  "team": "DET",
+  "number": 2,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "6804",
+  "espn_id": 4036378,
+  "name": "Jordan Love",
+  "team": "GB",
+  "number": 10,
+  "depth": 1,
+  "injury": null,
+  "exp": 6
+ },
+ {
+  "id": "827",
+  "espn_id": 14163,
+  "name": "Tyrod Taylor",
+  "team": "GB",
+  "number": 6,
+  "depth": 2,
+  "injury": null,
+  "exp": 15
+ },
+ {
+  "id": "12494",
+  "espn_id": null,
+  "name": "Kyle McCord",
+  "team": "GB",
+  "number": 18,
+  "depth": 3,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "9758",
+  "espn_id": null,
+  "name": "C.J. Stroud",
+  "team": "HOU",
+  "number": 7,
+  "depth": 1,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "7585",
+  "espn_id": null,
+  "name": "Davis Mills",
+  "team": "HOU",
+  "number": 10,
+  "depth": 2,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "12705",
+  "espn_id": null,
+  "name": "Graham Mertz",
+  "team": "HOU",
+  "number": 18,
+  "depth": 3,
+  "injury": "IR",
+  "exp": 1
+ },
+ {
+  "id": "6037",
+  "espn_id": 3722362,
+  "name": "Brett Rypien",
+  "team": "HOU",
+  "number": 16,
+  "depth": 99,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "5870",
+  "espn_id": 3917792,
+  "name": "Daniel Jones",
+  "team": "IND",
+  "number": 17,
+  "depth": 1,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "9229",
+  "espn_id": null,
+  "name": "Anthony Richardson",
+  "team": "IND",
+  "number": 5,
+  "depth": 2,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "12470",
+  "espn_id": null,
+  "name": "Riley Leonard",
+  "team": "IND",
+  "number": 15,
+  "depth": 3,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "6185",
+  "espn_id": 3120590,
+  "name": "Easton Stick",
+  "team": "IND",
+  "number": 4,
+  "depth": 4,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "7262",
+  "espn_id": null,
+  "name": "Jalen Morton",
+  "team": "IND",
+  "number": 6,
+  "depth": 99,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "7523",
+  "espn_id": null,
+  "name": "Trevor Lawrence",
+  "team": "JAX",
+  "number": 16,
+  "depth": 1,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "12500",
+  "espn_id": null,
+  "name": "Quinn Ewers",
+  "team": "JAX",
+  "number": 14,
+  "depth": 2,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "11851",
+  "espn_id": null,
+  "name": "Carter Bradley",
+  "team": "JAX",
+  "number": 10,
+  "depth": 3,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "4464",
+  "espn_id": 3059989,
+  "name": "Nick Mullens",
+  "team": "JAX",
+  "number": 14,
+  "depth": 3,
+  "injury": null,
+  "exp": 9
+ },
+ {
+  "id": "13428",
+  "espn_id": null,
+  "name": "Joey Aguilar",
+  "team": "JAX",
+  "number": 17,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "4046",
+  "espn_id": 3139477,
+  "name": "Patrick Mahomes",
+  "team": "KC",
+  "number": 15,
+  "depth": 1,
+  "injury": "Questionable",
+  "exp": 9
+ },
+ {
+  "id": "7591",
+  "espn_id": null,
+  "name": "Justin Fields",
+  "team": "KC",
+  "number": 6,
+  "depth": 2,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "8413",
+  "espn_id": null,
+  "name": "Chris Oladokun",
+  "team": "KC",
+  "number": 19,
+  "depth": 3,
+  "injury": null,
+  "exp": 4
+ },
+ {
+  "id": "13404",
+  "espn_id": null,
+  "name": "Garrett Nussmeier",
+  "team": "KC",
+  "number": 14,
+  "depth": 4,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "6797",
+  "espn_id": 4038941,
+  "name": "Justin Herbert",
+  "team": "LAC",
+  "number": 10,
+  "depth": 1,
+  "injury": null,
+  "exp": 6
+ },
+ {
+  "id": "7610",
+  "espn_id": null,
+  "name": "Trey Lance",
+  "team": "LAC",
+  "number": 5,
+  "depth": 2,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "12773",
+  "espn_id": null,
+  "name": "DJ Uiagalelei",
+  "team": "LAC",
+  "number": 7,
+  "depth": 3,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "421",
+  "espn_id": 12483,
+  "name": "Matthew Stafford",
+  "team": "LAR",
+  "number": 9,
+  "depth": 1,
+  "injury": null,
+  "exp": 17
+ },
+ {
+  "id": "13275",
+  "espn_id": null,
+  "name": "Ty Simpson",
+  "team": "LAR",
+  "number": 15,
+  "depth": 2,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "10857",
+  "espn_id": null,
+  "name": "Stetson Bennett",
+  "team": "LAR",
+  "number": 13,
+  "depth": 3,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "13597",
+  "espn_id": null,
+  "name": "Matthew Caldwell",
+  "team": "LAR",
+  "number": 2,
+  "depth": 99,
+  "injury": "IR",
+  "exp": 0
+ },
+ {
+  "id": "13269",
+  "espn_id": null,
+  "name": "Fernando Mendoza",
+  "team": "LV",
+  "number": 15,
+  "depth": 1,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "1166",
+  "espn_id": 14880,
+  "name": "Kirk Cousins",
+  "team": "LV",
+  "number": 8,
+  "depth": 2,
+  "injury": null,
+  "exp": 14
+ },
+ {
+  "id": "10866",
+  "espn_id": null,
+  "name": "Aidan O'Connell",
+  "team": "LV",
+  "number": 12,
+  "depth": 3,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "13802",
+  "espn_id": null,
+  "name": "Jacob Clark",
+  "team": "LV",
+  "number": null,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "8161",
+  "espn_id": null,
+  "name": "Malik Willis",
+  "team": "MIA",
+  "number": 2,
+  "depth": 1,
+  "injury": null,
+  "exp": 4
+ },
+ {
+  "id": "12688",
+  "espn_id": null,
+  "name": "Cam Miller",
+  "team": "MIA",
+  "number": 15,
+  "depth": 99,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "13816",
+  "espn_id": null,
+  "name": "Mark Gronowski",
+  "team": "MIA",
+  "number": 16,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "5849",
+  "espn_id": 3917315,
+  "name": "Kyler Murray",
+  "team": "MIN",
+  "number": 1,
+  "depth": 1,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "11565",
+  "espn_id": null,
+  "name": "J.J. McCarthy",
+  "team": "MIN",
+  "number": 9,
+  "depth": 2,
+  "injury": "Questionable",
+  "exp": 2
+ },
+ {
+  "id": "3161",
+  "espn_id": 2573079,
+  "name": "Carson Wentz",
+  "team": "MIN",
+  "number": 11,
+  "depth": 3,
+  "injury": null,
+  "exp": 10
+ },
+ {
+  "id": "12775",
+  "espn_id": null,
+  "name": "Max Brosmer",
+  "team": "MIN",
+  "number": 12,
+  "depth": 4,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "11564",
+  "espn_id": null,
+  "name": "Drake Maye",
+  "team": "NE",
+  "number": 10,
+  "depth": 1,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "11292",
+  "espn_id": null,
+  "name": "Tommy DeVito",
+  "team": "NE",
+  "number": 16,
+  "depth": 2,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "13295",
+  "espn_id": null,
+  "name": "Behren Morton",
+  "team": "NE",
+  "number": 15,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "12545",
+  "espn_id": null,
+  "name": "Tyler Shough",
+  "team": "NO",
+  "number": 6,
+  "depth": 1,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "11562",
+  "espn_id": null,
+  "name": "Spencer Rattler",
+  "team": "NO",
+  "number": 2,
+  "depth": 2,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "7538",
+  "espn_id": null,
+  "name": "Zach Wilson",
+  "team": "NO",
+  "number": 4,
+  "depth": 3,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "1979",
+  "espn_id": 16724,
+  "name": "Blake Bortles",
+  "team": "NO",
+  "number": 6,
+  "depth": 99,
+  "injury": null,
+  "exp": 8
+ },
+ {
+  "id": "13217",
+  "espn_id": null,
+  "name": "Hunter Dekkers",
+  "team": "NO",
+  "number": 13,
+  "depth": 99,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "12508",
+  "espn_id": null,
+  "name": "Jaxson Dart",
+  "team": "NYG",
+  "number": 6,
+  "depth": 1,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "2306",
+  "espn_id": 2969939,
+  "name": "Jameis Winston",
+  "team": "NYG",
+  "number": 19,
+  "depth": 2,
+  "injury": null,
+  "exp": 11
+ },
+ {
+  "id": "3357",
+  "espn_id": 2574511,
+  "name": "Brandon Allen",
+  "team": "NYG",
+  "number": 12,
+  "depth": 3,
+  "injury": null,
+  "exp": 10
+ },
+ {
+  "id": "10215",
+  "espn_id": null,
+  "name": "Jake Haener",
+  "team": "NYG",
+  "number": 14,
+  "depth": 4,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "6147",
+  "espn_id": 3116144,
+  "name": "Clayton Thorson",
+  "team": "NYG",
+  "number": 0,
+  "depth": 99,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "1373",
+  "espn_id": 15864,
+  "name": "Geno Smith",
+  "team": "NYJ",
+  "number": 7,
+  "depth": 1,
+  "injury": null,
+  "exp": 13
+ },
+ {
+  "id": "13303",
+  "espn_id": null,
+  "name": "Cade Klubnik",
+  "team": "NYJ",
+  "number": 10,
+  "depth": 2,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "12538",
+  "espn_id": null,
+  "name": "Brady Cook",
+  "team": "NYJ",
+  "number": 4,
+  "depth": 3,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "8157",
+  "espn_id": null,
+  "name": "Bailey Zappe",
+  "team": "NYJ",
+  "number": 11,
+  "depth": 99,
+  "injury": null,
+  "exp": 4
+ },
+ {
+  "id": "6904",
+  "espn_id": 4040715,
+  "name": "Jalen Hurts",
+  "team": "PHI",
+  "number": 1,
+  "depth": 1,
+  "injury": null,
+  "exp": 6
+ },
+ {
+  "id": "829",
+  "espn_id": 14012,
+  "name": "Andy Dalton",
+  "team": "PHI",
+  "number": 14,
+  "depth": 2,
+  "injury": null,
+  "exp": 15
+ },
+ {
+  "id": "9230",
+  "espn_id": null,
+  "name": "Tanner McKee",
+  "team": "PHI",
+  "number": 16,
+  "depth": 3,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "13335",
+  "espn_id": null,
+  "name": "Cole Payton",
+  "team": "PHI",
+  "number": 10,
+  "depth": 4,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "96",
+  "espn_id": 8439,
+  "name": "Aaron Rodgers",
+  "team": "PIT",
+  "number": 8,
+  "depth": 1,
+  "injury": null,
+  "exp": 21
+ },
+ {
+  "id": "4972",
+  "espn_id": 3116407,
+  "name": "Mason Rudolph",
+  "team": "PIT",
+  "number": 2,
+  "depth": 2,
+  "injury": null,
+  "exp": 8
+ },
+ {
+  "id": "13289",
+  "espn_id": null,
+  "name": "Drew Allar",
+  "team": "PIT",
+  "number": 16,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "12511",
+  "espn_id": null,
+  "name": "Will Howard",
+  "team": "PIT",
+  "number": 18,
+  "depth": 4,
+  "injury": "Questionable",
+  "exp": 1
+ },
+ {
+  "id": "138",
+  "espn_id": 5536,
+  "name": "Ben Roethlisberger",
+  "team": "PIT",
+  "number": 7,
+  "depth": 99,
+  "injury": null,
+  "exp": 18
+ },
+ {
+  "id": "4926",
+  "espn_id": null,
+  "name": "Nick Schuessler",
+  "team": "PIT",
+  "number": 0,
+  "depth": 99,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "4943",
+  "espn_id": 3912547,
+  "name": "Sam Darnold",
+  "team": "SEA",
+  "number": 14,
+  "depth": 1,
+  "injury": null,
+  "exp": 8
+ },
+ {
+  "id": "5854",
+  "espn_id": 3924327,
+  "name": "Drew Lock",
+  "team": "SEA",
+  "number": 2,
+  "depth": 2,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "12510",
+  "espn_id": null,
+  "name": "Jalen Milroe",
+  "team": "SEA",
+  "number": 6,
+  "depth": 3,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "4936",
+  "espn_id": null,
+  "name": "Skyler Howard",
+  "team": "SEA",
+  "number": 0,
+  "depth": 99,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "8183",
+  "espn_id": null,
+  "name": "Brock Purdy",
+  "team": "SF",
+  "number": 13,
+  "depth": 1,
+  "injury": null,
+  "exp": 4
+ },
+ {
+  "id": "7527",
+  "espn_id": null,
+  "name": "Mac Jones",
+  "team": "SF",
+  "number": 10,
+  "depth": 2,
+  "injury": null,
+  "exp": 5
+ },
+ {
+  "id": "12477",
+  "espn_id": null,
+  "name": "Kurtis Rourke",
+  "team": "SF",
+  "number": 14,
+  "depth": 3,
+  "injury": "Questionable",
+  "exp": 1
+ },
+ {
+  "id": "11065",
+  "espn_id": null,
+  "name": "Adrian Martinez",
+  "team": "SF",
+  "number": 4,
+  "depth": 99,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "4892",
+  "espn_id": 3052587,
+  "name": "Baker Mayfield",
+  "team": "TB",
+  "number": 6,
+  "depth": 1,
+  "injury": null,
+  "exp": 8
+ },
+ {
+  "id": "13425",
+  "espn_id": null,
+  "name": "Jalon Daniels",
+  "team": "TB",
+  "number": 10,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "12792",
+  "espn_id": null,
+  "name": "Garrett Greene",
+  "team": "TB",
+  "number": 85,
+  "depth": 99,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "6111",
+  "espn_id": 3886812,
+  "name": "Jake Browning",
+  "team": "TB",
+  "number": 5,
+  "depth": 99,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "12522",
+  "espn_id": null,
+  "name": "Cam Ward",
+  "team": "TEN",
+  "number": 1,
+  "depth": 1,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "9999",
+  "espn_id": null,
+  "name": "Will Levis",
+  "team": "TEN",
+  "number": 8,
+  "depth": 2,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "3976",
+  "espn_id": 3039707,
+  "name": "Mitchell Trubisky",
+  "team": "TEN",
+  "number": 10,
+  "depth": 3,
+  "injury": "Questionable",
+  "exp": 9
+ },
+ {
+  "id": "9998",
+  "espn_id": null,
+  "name": "Hendon Hooker",
+  "team": "TEN",
+  "number": 16,
+  "depth": 4,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "11566",
+  "espn_id": null,
+  "name": "Jayden Daniels",
+  "team": "WAS",
+  "number": 5,
+  "depth": 1,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "2307",
+  "espn_id": 2576980,
+  "name": "Marcus Mariota",
+  "team": "WAS",
+  "number": 8,
+  "depth": 2,
+  "injury": "Questionable",
+  "exp": 11
+ },
+ {
+  "id": "11558",
+  "espn_id": null,
+  "name": "Sam Hartman",
+  "team": "WAS",
+  "number": 15,
+  "depth": 3,
+  "injury": null,
+  "exp": 2
+ },
+ {
+  "id": "13557",
+  "espn_id": null,
+  "name": "Athan Kaliakmanis",
+  "team": "WAS",
+  "number": 16,
+  "depth": 4,
+  "injury": null,
+  "exp": 0
+ }
+]
