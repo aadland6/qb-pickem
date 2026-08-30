@@ -5,7 +5,8 @@ Reads the database password from .env (PGPASSWORD=...) so it never appears on
 the command line. Tries the direct IPv6 host first, then scans Supabase's
 regional connection poolers (IPv4).
 
-Usage: python3 scripts/apply_schema.py <project-ref>
+Usage: python3 scripts/apply_schema.py <project-ref> [sql-file]
+       (sql-file defaults to supabase/schema.sql)
 """
 
 import itertools
@@ -50,12 +51,13 @@ def connect(ref, password):
 
 
 def main():
-    if len(sys.argv) != 2:
+    if len(sys.argv) not in (2, 3):
         sys.exit(__doc__)
     ref = sys.argv[1]
+    sql_file = Path(sys.argv[2]) if len(sys.argv) == 3 else ROOT / "supabase" / "schema.sql"
     conn = connect(ref, read_password())
     conn.autocommit = True
-    sql = (ROOT / "supabase" / "schema.sql").read_text()
+    sql = sql_file.read_text()
     with conn.cursor() as cur:
         cur.execute(sql)
         cur.execute("select count(*) from picks")

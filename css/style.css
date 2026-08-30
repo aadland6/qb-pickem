@@ -71,10 +71,38 @@ select:focus, input:focus { outline: none; border-color: var(--blue); }
 .chk input { accent-color: var(--accent); }
 
 .my-pick-summary {
-  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  display: flex; flex-direction: column; gap: 10px;
   background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
   padding: 12px 16px; margin-bottom: 16px; font-size: 15px;
 }
+.pick-line { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.bid-panel {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  border-top: 1px dashed var(--border); padding-top: 10px;
+}
+.bid-panel label { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+.bid-panel input[type="number"] {
+  width: 70px; background: var(--panel-2); color: var(--text);
+  border: 1px solid var(--border); border-radius: 8px; padding: 7px 8px; font-size: 14px;
+}
+.bid-panel .hint { flex-basis: 100%; font-size: 12px; }
+.alloc-chip { color: var(--gold); font-weight: 700; font-size: 14px; margin-right: 14px; }
+.contested-tag { color: #e3a341; font-weight: 700; font-size: 13px; }
+.safe-tag { color: var(--muted); font-size: 12px; }
+.won { color: var(--accent); font-weight: 700; font-size: 13px; }
+.lostline { color: var(--red); font-size: 14px; }
+.status.contested { background: #4a3a12; color: #e3b341; }
+.status.claimed { background: #21324a; color: var(--blue); }
+.card.contested { border-color: #8a6d1d; opacity: 1; }
+.card.claimed { opacity: .85; }
+.contestbtn { background: #9e6a03; }
+.contestbtn:hover:not([disabled]) { background: #bb8009; }
+.bid-badge {
+  background: #4a3a12; color: #e3b341; font-size: 10px; font-weight: 800;
+  padding: 1px 6px; border-radius: 10px; vertical-align: 1px;
+}
+.bid-badge.backup { background: #21324a; color: var(--blue); }
+.bid-badge.contested { background: none; padding: 0; }
 .my-pick-summary .nopick { color: var(--gold); }
 .lock { color: var(--muted); font-size: 13px; }
 .linkbtn { background: none; border: none; color: var(--red); cursor: pointer; font-size: 13px; text-decoration: underline; }

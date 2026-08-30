@@ -7,9 +7,35 @@ A survivor-style quarterback pick-em for your league:
   6/rush TD, 2/two-pt, −2 fumble lost).
 - Once you've used a QB, **you can't pick him again for the regular season**.
 - The used-QB pool **resets for the playoffs** (Wild Card → Super Bowl).
+- **A QB belongs to only one player per week.** Contested picks are settled by
+  a blind auction (see below).
 - The site shows every QB's opponent, kickoff time, and an **ensemble of
   projections** (Rotowire via Sleeper + ESPN, optionally FantasyPros), with
   filters by team / availability / starters.
+
+## Auction rules
+
+- Picking a QB someone else already holds makes him **contested** — both
+  players see the contest (⚔️), but not each other's bids.
+- Every pick carries a **bid** (default 0) from a single **100-point
+  allocation that must last the entire season, playoffs included**.
+- At the QB's kickoff the contest resolves: **highest bid wins; ties go to
+  whoever claimed the QB first.** Only the winner spends their bid —
+  losers' bids return to their allocation, and uncontested picks never cost
+  anything.
+- Every pick can name a **backup QB**. If you lose the auction, your backup
+  steps in automatically — provided nobody claimed him as a primary pick,
+  no earlier auction loser grabbed him first, and his game didn't kick off
+  before your primary's (no free hindsight). No valid backup? You can still
+  pick any QB whose game hasn't started.
+- **Losing an auction does not use up that QB** — he returns to your pool for
+  future weeks. A backup that actually plays for you is used; an unused
+  backup is not.
+- Resolution is fully deterministic from the picks table, so every browser
+  computes identical outcomes — there is no server-side resolver to run.
+- Honor-system note: bids are hidden in the UI until kickoff, but a curious
+  player with dev tools could read them from the API. Same trust model as
+  everything else in the league.
 
 The frontend is plain HTML/JS served by **GitHub Pages**. Picks are stored in
 a free **Supabase** table so everyone can update picks all week. A **GitHub
