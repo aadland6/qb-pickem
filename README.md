@@ -19,10 +19,16 @@ A survivor-style quarterback pick-em for your league:
   players see the contest (⚔️), but not each other's bids.
 - Every pick carries a **bid** (default 0) from a single **100-point
   allocation that must last the entire season, playoffs included**.
-- At the QB's kickoff the contest resolves: **highest bid wins; ties go to
-  whoever claimed the QB first.** Only the winner spends their bid —
-  losers' bids return to their allocation, and uncontested picks never cost
-  anything.
+- At the QB's kickoff the contest resolves: **highest bid wins; equal bids go
+  to the player with the lowest season total entering that week** (the
+  trailing player gets the break); if that's also tied, whoever claimed the
+  QB first wins. Only the winner spends their bid — losers' bids return to
+  their allocation, and uncontested picks never cost anything.
+- Kickoff times come from ESPN per game, so Thursday/Wednesday openers,
+  international morning games, Black Friday, Christmas, and Saturday slates
+  all lock and resolve at their real kickoff. Late-season flex games whose
+  time the NFL hasn't set yet show as **time TBD** and never lock or resolve
+  until the daily data refresh brings the real kickoff.
 - Every pick can name a **backup QB**. If you lose the auction, your backup
   steps in automatically — provided nobody claimed him as a primary pick,
   no earlier auction loser grabbed him first, and his game didn't kick off

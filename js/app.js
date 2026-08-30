@@ -102,7 +102,10 @@ function gameFor(team, weekKey) {
 }
 
 const kickoffDate = (g) => new Date(g.kickoff.replace("Z", "+00:00"));
-const gameStarted = (g) => g && kickoffDate(g) <= nowFn();
+// A TBD placeholder time (NFL hasn't scheduled the slot yet) never counts as
+// started — picks stay open and contests stay pending until the real time
+// arrives via the daily data refresh.
+const gameStarted = (g) => g && !g.tbd && kickoffDate(g) <= nowFn();
 
 function projFor(qbId, weekKey) {
   if (S.projections?.week !== weekKey) return null;
@@ -121,9 +124,11 @@ const pickAt = (name, weekKey) => S.picks.find((p) => p.player_name === name && 
 //
 // Rules:
 //  * Several players may claim (pick) the same QB in a week: he is CONTESTED.
-//  * At the QB's kickoff the contest resolves: highest bid wins; ties go to
-//    the earliest claim. Only a contested winner spends their bid, from a
-//    single 100-point allocation covering the whole season incl. playoffs.
+//  * At the QB's kickoff the contest resolves: highest bid wins; equal bids
+//    go to the player with the LOWEST season total entering that week, and
+//    if that also ties, to the earliest claim. Only a contested winner spends
+//    their bid, from a single 100-point allocation covering the whole season
+//    incl. playoffs.
 //  * Losers fall back to their backup QB automatically, in claim order,
 //    if: nobody claimed the backup as a primary this week, no earlier loser
 //    grabbed him first, and his game hadn't kicked off before the primary's.
@@ -156,7 +161,9 @@ function resolveWeek(weekKey) {
       continue;
     }
     const sorted = [...claims].sort((a, b) =>
-      (b.bid - a.bid) || (new Date(a.claimed_at) - new Date(b.claimed_at)));
+      (b.bid - a.bid)
+      || (totalPointsBefore(a.player_name, weekKey) - totalPointsBefore(b.player_name, weekKey))
+      || (new Date(a.claimed_at) - new Date(b.claimed_at)));
     const w = sorted[0];
     byPlayer[w.player_name] = {
       qbId: w.qb_id, source: "primary", spent: contested ? w.bid : 0,
@@ -191,6 +198,18 @@ function resolveWeek(weekKey) {
   return (resolveWeek.cache[weekKey] = byPlayer);
 }
 resolveWeek.cache = {};
+
+// Season total (regular + playoffs) from weeks strictly before `weekKey` —
+// the auction tie-break: the trailing player wins an equal-bid contest.
+function totalPointsBefore(name, weekKey) {
+  const cutoff = WEEK_ORDER.indexOf(weekKey);
+  let total = 0;
+  for (const p of picksFor(name)) {
+    if (WEEK_ORDER.indexOf(p.week_key) >= cutoff) continue;
+    total += effectivePoints(name, p.week_key) ?? 0;
+  }
+  return total;
+}
 
 // A player's week is settled (unchangeable) once they hold an effective QB.
 function weekSettled(name, weekKey) {
@@ -256,6 +275,7 @@ const headshot = (qb) => (qb.espn_id
   : "");
 
 function fmtKick(g) {
+  if (g.tbd) return `${kickoffDate(g).toLocaleDateString([], { weekday: "short", month: "numeric", day: "numeric" })} · time TBD`;
   return kickoffDate(g).toLocaleString([], { weekday: "short", month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" });
 }
 
@@ -371,7 +391,7 @@ function renderMyPickSummary() {
           }).join("")}
         </select></label>
       <button id="save-bid" class="pickbtn">Save</button>
-      <span class="muted hint">Highest bid wins at kickoff (tie → first claim). Only the winner spends points. Losers get their backup.</span>
+      <span class="muted hint">Highest bid wins at kickoff. Ties go to the player with fewer season points (then first claim). Only the winner spends points. Losers get their backup.</span>
     </div>`;
 
   $("#unpick").addEventListener("click", async () => {
@@ -657,6 +677,9 @@ async function main() {
   wire();
   render();
 }
+
+// Debug/test handles (also used by automated checks).
+window.__pickem = { S, resolveWeek, allocation, blockedSet, totalPointsBefore, gameFor };
 
 main().catch((e) => {
   document.body.innerHTML = `<div class="fatal">Failed to load: ${e.message}</div>`;

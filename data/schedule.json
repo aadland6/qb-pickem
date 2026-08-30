@@ -1696,28 +1696,32 @@
      "away": "TB",
      "kickoff": "2026-12-27T05:00Z",
      "espn_game_id": "401873146",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "IND",
      "away": "CIN",
      "kickoff": "2026-12-27T05:00Z",
      "espn_game_id": "401873145",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "MIN",
      "away": "WAS",
      "kickoff": "2026-12-27T05:00Z",
      "espn_game_id": "401873147",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "PIT",
      "away": "CAR",
      "kickoff": "2026-12-27T05:00Z",
      "espn_game_id": "401873144",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "MIA",
@@ -1793,28 +1797,32 @@
      "away": "DEN",
      "kickoff": "2027-01-03T05:00Z",
      "espn_game_id": "401873157",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "LAC",
      "away": "KC",
      "kickoff": "2027-01-03T05:00Z",
      "espn_game_id": "401873158",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TB",
      "away": "LAR",
      "kickoff": "2027-01-03T05:00Z",
      "espn_game_id": "401873159",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "JAX",
      "away": "WAS",
      "kickoff": "2027-01-03T05:00Z",
      "espn_game_id": "401873160",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "ATL",
@@ -1904,112 +1912,128 @@
      "away": "NYJ",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873181",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "CIN",
      "away": "CLE",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873174",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "DEN",
      "away": "LAC",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873179",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "GB",
      "away": "DET",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873176",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "IND",
      "away": "JAX",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873177",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "KC",
      "away": "LV",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873178",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "LAR",
      "away": "SEA",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873185",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "MIN",
      "away": "CHI",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873173",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "NE",
      "away": "MIA",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873180",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "NO",
      "away": "TB",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873186",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "NYG",
      "away": "PHI",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873182",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "ARI",
      "away": "SF",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873184",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "WAS",
      "away": "DAL",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873175",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "CAR",
      "away": "ATL",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873172",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "BAL",
      "away": "PIT",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873183",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "HOU",
      "away": "TEN",
      "kickoff": "2027-01-10T05:00Z",
      "espn_game_id": "401873187",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     }
    ]
   },
@@ -2022,42 +2046,48 @@
      "away": "TBD",
      "kickoff": "2027-01-16T05:00Z",
      "espn_game_id": "401872910",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-16T05:00Z",
      "espn_game_id": "401872911",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-17T05:00Z",
      "espn_game_id": "401872912",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-17T05:00Z",
      "espn_game_id": "401872913",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-17T05:00Z",
      "espn_game_id": "401872914",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-18T05:00Z",
      "espn_game_id": "401872915",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     }
    ]
   },
@@ -2070,28 +2100,32 @@
      "away": "TBD",
      "kickoff": "2027-01-23T05:00Z",
      "espn_game_id": "401872916",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-23T05:00Z",
      "espn_game_id": "401872917",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-24T05:00Z",
      "espn_game_id": "401872918",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-24T05:00Z",
      "espn_game_id": "401872919",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     }
    ]
   },
@@ -2104,14 +2138,16 @@
      "away": "TBD",
      "kickoff": "2027-01-31T05:00Z",
      "espn_game_id": "401872920",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     },
     {
      "home": "TBD",
      "away": "TBD",
      "kickoff": "2027-01-31T05:00Z",
      "espn_game_id": "401872921",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_SCHEDULED",
+     "tbd": true
     }
    ]
   },

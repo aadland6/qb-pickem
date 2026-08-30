@@ -105,13 +105,19 @@ def fetch_week_games(seasontype, week):
             else:
                 away = abbr
         if home and away:
-            games.append({
+            game = {
                 "home": home,
                 "away": away,
                 "kickoff": ev.get("date"),
                 "espn_game_id": ev.get("id"),
                 "status": ev.get("status", {}).get("type", {}).get("name"),
-            })
+            }
+            # Late-season/flex games carry placeholder times until the NFL
+            # sets them; ESPN marks these timeValid=false. The app must not
+            # lock or resolve picks against a placeholder kickoff.
+            if comp.get("timeValid") is False:
+                game["tbd"] = True
+            games.append(game)
     return games
 
 
