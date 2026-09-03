@@ -11,7 +11,7 @@ export const CONFIG = {
 
   // Everyone in the league. Players pick their own name from a dropdown
   // (honor system — no passwords).
-  PLAYERS: ["Luke", "Lucas", "Matt"],
+  PLAYERS: ["Luke", "Lucas", "Matt", "Cody"],
 
   SEASON: 2026,
   LEAGUE_NAME: "QB Pick-Em",
