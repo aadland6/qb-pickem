@@ -706,7 +706,7 @@
   "team": "MIN",
   "number": 9,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 2
  },
  {
@@ -930,24 +930,24 @@
   "exp": 0
  },
  {
-  "id": "12511",
-  "espn_id": null,
-  "name": "Will Howard",
-  "team": "PIT",
-  "number": 18,
-  "depth": 3,
-  "injury": "Questionable",
-  "exp": 1
- },
- {
   "id": "4972",
   "espn_id": 3116407,
   "name": "Mason Rudolph",
   "team": "PIT",
   "number": 2,
-  "depth": 4,
+  "depth": 3,
   "injury": null,
   "exp": 8
+ },
+ {
+  "id": "12511",
+  "espn_id": null,
+  "name": "Will Howard",
+  "team": "PIT",
+  "number": 18,
+  "depth": 4,
+  "injury": "Questionable",
+  "exp": 1
  },
  {
   "id": "138",
