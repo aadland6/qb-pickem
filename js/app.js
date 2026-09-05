@@ -565,7 +565,7 @@ function renderMyPickSummary() {
   if (!pick) {
     const dl = weekDeadline(S.week);
     const dlTxt = dl && dl > nowFn()
-      ? ` A random QB gets auto-assigned if you haven't picked by ${dl.toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" })}.`
+      ? ` A random QB gets auto-assigned if you haven't picked by ${dl.toLocaleString([], { weekday: "short", month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit" })}.`
       : "";
     el.innerHTML = `<span class="nopick">No pick yet for ${weekLabel(S.week)}.${dlTxt}</span>`;
     return;
