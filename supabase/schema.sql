@@ -31,3 +31,16 @@ create policy "anyone can read picks"   on picks for select using (true);
 create policy "anyone can add picks"    on picks for insert with check (true);
 create policy "anyone can change picks" on picks for update using (true);
 create policy "anyone can remove picks" on picks for delete using (true);
+
+-- League roster: joining the league is just inserting your name (self
+-- sign-up from the site). No update/delete policies — nobody can rename or
+-- remove another player via the anon key.
+create table if not exists players (
+  name text primary key check (length(trim(name)) between 1 and 24),
+  joined_at timestamptz not null default now()
+);
+
+alter table players enable row level security;
+
+create policy "anyone can read players" on players for select using (true);
+create policy "anyone can join"         on players for insert with check (true);

@@ -10,6 +10,8 @@ const S = {
   scores: null,
   meta: null,
   picks: [],          // all rows from the picks store
+  players: [],        // league roster (seed roster + self-signed-up members)
+  playerJoined: {},   // joined_at per self-signed-up member (seeds omitted)
   me: null,           // selected league player name
   week: null,         // current view week key ("1".."18", "P1".."P4")
   db: null,           // supabase client or null (demo mode)
@@ -40,6 +42,50 @@ async function initStore() {
   if (!isConfigured()) return; // demo mode -> localStorage
   const { createClient } = await import("https://esm.sh/@supabase/supabase-js@2");
   S.db = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY);
+}
+
+// Roster = CONFIG.PLAYERS (seed, in config order) + everyone who signed up,
+// in join order. The order is deterministic across browsers because it only
+// depends on the config and the players table — autopick relies on that.
+async function loadPlayers() {
+  let extras = [];
+  if (S.db) {
+    const { data, error } = await S.db.from("players").select("*");
+    if (error) toast(`Couldn't load players: ${error.message}`, true);
+    else extras = data
+      .sort((a, b) => (a.joined_at || "").localeCompare(b.joined_at || "") || a.name.localeCompare(b.name));
+  } else {
+    extras = JSON.parse(localStorage.getItem("pickem-players") || "[]");
+  }
+  S.players = [...CONFIG.PLAYERS];
+  S.playerJoined = {};
+  for (const p of extras) {
+    if (S.players.includes(p.name)) continue; // seed members predate join dates
+    S.players.push(p.name);
+    S.playerJoined[p.name] = p.joined_at;
+  }
+}
+
+// Self sign-up: add a name to the roster. Returns the canonical name to
+// select (an existing member's spelling if the name is already taken).
+async function joinLeague(rawName) {
+  const name = (rawName || "").trim().replace(/\s+/g, " ");
+  if (!/^[\p{L}\p{N} .'-]{1,24}$/u.test(name)) {
+    throw new Error("Names are 1–24 letters, numbers, spaces, or . ' -");
+  }
+  const existing = S.players.find((p) => p.toLowerCase() === name.toLowerCase());
+  if (existing) return existing; // already in the league — just select them
+  if (S.db) {
+    const { error } = await S.db.from("players").insert({ name });
+    // 23505 = someone inserted the same name concurrently; treat as joined.
+    if (error && error.code !== "23505") throw new Error(error.message);
+  } else {
+    const all = JSON.parse(localStorage.getItem("pickem-players") || "[]");
+    if (!all.some((p) => p.name === name)) all.push({ name, joined_at: new Date().toISOString() });
+    localStorage.setItem("pickem-players", JSON.stringify(all));
+  }
+  await loadPlayers();
+  return name;
 }
 
 async function loadPicks() {
@@ -215,8 +261,12 @@ function synthesizeAutopicks() {
     if (!dl || now < dl) continue;
     const claimed = new Set(S.picks.filter((p) => p.week_key === wk)
       .flatMap((p) => [p.qb_id, p.backup_qb_id]).filter(Boolean));
-    for (const name of CONFIG.PLAYERS) {
+    for (const name of S.players) {
       if (pickAt(name, wk)) continue;
+      // No retroactive autopicks: a member who joined after this week's
+      // deadline just has no pick for it.
+      const joined = S.playerJoined[name];
+      if (joined && new Date(joined) > dl) continue;
       const blocked = blockedSet(name, wk);
       const pool = S.qbs.filter((q) => {
         if (q.depth > 1 && !projFor(q.id, wk)) return false; // real starters only
@@ -285,6 +335,11 @@ function initRealtime() {
           notify("⚔️ Contest!", `${fresh.join(", ")} is contesting ${pick.qb_name} (${weekLabel(wk)}) — check your bid.`);
         }
       }
+      render();
+    })
+    .on("postgres_changes", { event: "*", schema: "public", table: "players" }, async () => {
+      await loadPlayers();
+      await loadPicks(); // a new member may need an autopick for past deadlines
       render();
     })
     .subscribe();
@@ -463,7 +518,8 @@ function renderHeader() {
   document.title = CONFIG.LEAGUE_NAME;
   const sel = $("#me-select");
   sel.innerHTML = `<option value="">— pick your name —</option>`
-    + CONFIG.PLAYERS.map((p) => `<option ${p === S.me ? "selected" : ""}>${p}</option>`).join("");
+    + S.players.map((p) => `<option ${p === S.me ? "selected" : ""}>${p}</option>`).join("")
+    + `<option value="__join__">＋ Join the league…</option>`;
   $("#alloc-chip").textContent = S.me ? `⚡ ${allocation(S.me).remaining} pts left` : "";
 
   if (!S.db) {
@@ -749,7 +805,7 @@ function totals(name) {
 }
 
 function renderLeague() {
-  const rows = CONFIG.PLAYERS.map((n) => ({ name: n, ...totals(n), alloc: allocation(n) }))
+  const rows = S.players.map((n) => ({ name: n, ...totals(n), alloc: allocation(n) }))
     .sort((a, b) => b.total - a.total);
 
   $("#standings").innerHTML = `
@@ -795,7 +851,7 @@ function renderLeague() {
   $("#pick-matrix").innerHTML = `
     <table>
       <thead><tr><th>Player</th>${weeks.map((w) => `<th>${weekLabel(w)}</th>`).join("")}</tr></thead>
-      <tbody>${CONFIG.PLAYERS.map((n) => `
+      <tbody>${S.players.map((n) => `
         <tr class="${n === S.me ? "me-row" : ""}"><td>${n}</td>${weeks.map((w) => cell(n, w)).join("")}</tr>`).join("")}
       </tbody>
     </table>`;
@@ -830,14 +886,14 @@ function renderInsights() {
   let weekly = "", bestworst = "", board = "";
   if (weeks.length) {
     weekly = weeks.map((wk) => {
-      const scores = CONFIG.PLAYERS.map((n) => ({ n, pts: effectivePoints(n, wk) ?? 0 }))
+      const scores = S.players.map((n) => ({ n, pts: effectivePoints(n, wk) ?? 0 }))
         .sort((a, b) => b.pts - a.pts);
       const top = scores[0];
       return `<tr><td>${weekLabel(wk)}</td><td>👑 ${top.n}</td><td>${top.pts.toFixed(2)}</td>
         <td class="muted">${scores.slice(1).map((s) => `${s.n} ${s.pts.toFixed(2)}`).join(" · ")}</td></tr>`;
     }).join("");
 
-    bestworst = CONFIG.PLAYERS.map((n) => {
+    bestworst = S.players.map((n) => {
       const rows = weeks
         .map((wk) => ({ wk, pts: effectivePoints(n, wk), e: resolveWeek(wk)[n] }))
         .filter((r) => r.pts !== null);
@@ -933,8 +989,17 @@ function render() {
 }
 
 function wire() {
-  $("#me-select").addEventListener("change", (e) => {
-    S.me = e.target.value || null;
+  $("#me-select").addEventListener("change", async (e) => {
+    if (e.target.value === "__join__") {
+      const raw = window.prompt("Your name, as it should appear in the standings:");
+      if (raw === null || !raw.trim()) { render(); return; }
+      try {
+        S.me = await joinLeague(raw);
+        toast(`Welcome to the league, ${S.me}! 🎉`);
+      } catch (err) { toast(err.message, true); render(); return; }
+    } else {
+      S.me = e.target.value || null;
+    }
     localStorage.setItem("pickem-me", S.me || "");
     // user gesture — the right moment to ask for contest notifications
     if (S.me && "Notification" in window && Notification.permission === "default") {
@@ -954,7 +1019,7 @@ function wire() {
       p.classList.toggle("hidden", p.id !== `tab-${t.dataset.tab}`));
   }));
   document.addEventListener("visibilitychange", async () => {
-    if (!document.hidden) { await loadPicks(); render(); }
+    if (!document.hidden) { await loadPlayers(); await loadPicks(); render(); }
   });
 }
 
@@ -966,10 +1031,11 @@ function stepWeek(dir) {
 
 async function main() {
   await Promise.all([loadData(), initStore()]);
+  await loadPlayers(); // before picks — autopick walks the roster
   await loadPicks();
 
   S.me = localStorage.getItem("pickem-me") || null;
-  if (S.me && !CONFIG.PLAYERS.includes(S.me)) S.me = null;
+  if (S.me && !S.players.includes(S.me)) S.me = null;
   S.week = S.meta.current_week;
 
   const teams = [...new Set(S.qbs.map((q) => q.team))].sort();

@@ -59,8 +59,13 @@ scores automatically.
 
 ### 1. Edit your league
 
-Open [js/config.js](js/config.js) and set `PLAYERS` to your league members'
-names and `LEAGUE_NAME` to whatever you call the league.
+Open [js/config.js](js/config.js) and set `PLAYERS` to your founding members'
+names and `LEAGUE_NAME` to whatever you call the league. `PLAYERS` is just the
+seed roster — once Supabase is set up, anyone with the URL can join themselves
+via **＋ Join the league…** in the name dropdown (new members are stored in
+the `players` table and appear for everyone instantly). A member who joins
+mid-season simply has no picks for weeks whose deadline already passed — no
+retroactive autopicks.
 
 ### 2. Create the Supabase backend (free)
 
@@ -130,7 +135,8 @@ Actions**). The next data run will include it as a third projection source.
 
 ## How picking works
 
-- Select your name in the top-right (remembered per browser).
+- Select your name in the top-right (remembered per browser). Not on the list?
+  Choose **＋ Join the league…** and enter your name — you're in.
 - Pick any QB whose game hasn't kicked off. You can change or remove your pick
   freely **until your chosen QB's game starts** — then it's locked.
 - QBs you've already used are greyed out (`USED · WEEK N`); toggle
