@@ -250,6 +250,16 @@
   "exp": 18
  },
  {
+  "id": "10983",
+  "espn_id": null,
+  "name": "Sean Clifford",
+  "team": "CIN",
+  "number": 4,
+  "depth": 99,
+  "injury": null,
+  "exp": 3
+ },
+ {
   "id": "4017",
   "espn_id": 3122840,
   "name": "Deshaun Watson",
@@ -374,7 +384,7 @@
   "espn_id": null,
   "name": "Luke Altmyer",
   "team": "DET",
-  "number": 2,
+  "number": 15,
   "depth": 99,
   "injury": null,
   "exp": 0
@@ -490,24 +500,24 @@
   "exp": 5
  },
  {
-  "id": "11851",
-  "espn_id": null,
-  "name": "Carter Bradley",
-  "team": "JAX",
-  "number": 10,
-  "depth": 3,
-  "injury": "IR",
-  "exp": 2
- },
- {
   "id": "12500",
   "espn_id": null,
   "name": "Quinn Ewers",
   "team": "JAX",
   "number": 10,
-  "depth": 4,
+  "depth": 3,
   "injury": null,
   "exp": 1
+ },
+ {
+  "id": "11851",
+  "espn_id": null,
+  "name": "Carter Bradley",
+  "team": "JAX",
+  "number": 10,
+  "depth": 99,
+  "injury": "IR",
+  "exp": 2
  },
  {
   "id": "13428",
@@ -674,7 +684,7 @@
   "espn_id": null,
   "name": "Brady Cook",
   "team": "MIA",
-  "number": 4,
+  "number": 15,
   "depth": 2,
   "injury": null,
   "exp": 1
@@ -684,7 +694,7 @@
   "espn_id": null,
   "name": "Kyle McCord",
   "team": "MIA",
-  "number": 18,
+  "number": 14,
   "depth": 3,
   "injury": null,
   "exp": 1
@@ -834,7 +844,7 @@
   "espn_id": null,
   "name": "Jake Haener",
   "team": "NYG",
-  "number": 14,
+  "number": 12,
   "depth": 99,
   "injury": null,
   "exp": 3
@@ -1038,16 +1048,6 @@
   "depth": 3,
   "injury": "Questionable",
   "exp": 1
- },
- {
-  "id": "10983",
-  "espn_id": null,
-  "name": "Sean Clifford",
-  "team": "SF",
-  "number": 4,
-  "depth": 99,
-  "injury": null,
-  "exp": 3
  },
  {
   "id": "4892",
