@@ -374,7 +374,7 @@
   "espn_id": 3044720,
   "name": "Joshua Dobbs",
   "team": "DET",
-  "number": 6,
+  "number": 11,
   "depth": 2,
   "injury": null,
   "exp": 9
@@ -450,6 +450,16 @@
   "exp": 1
  },
  {
+  "id": "13816",
+  "espn_id": null,
+  "name": "Mark Gronowski",
+  "team": "HOU",
+  "number": 16,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
+ },
+ {
   "id": "5870",
   "espn_id": 3917792,
   "name": "Daniel Jones",
@@ -508,16 +518,6 @@
   "depth": 3,
   "injury": null,
   "exp": 1
- },
- {
-  "id": "11851",
-  "espn_id": null,
-  "name": "Carter Bradley",
-  "team": "JAX",
-  "number": 10,
-  "depth": 99,
-  "injury": "IR",
-  "exp": 2
  },
  {
   "id": "13428",
@@ -874,7 +874,7 @@
   "espn_id": null,
   "name": "Bailey Zappe",
   "team": "NYJ",
-  "number": 11,
+  "number": 4,
   "depth": 99,
   "injury": null,
   "exp": 4
@@ -1046,7 +1046,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 1
  },
  {
@@ -1074,7 +1074,7 @@
   "espn_id": 3120590,
   "name": "Easton Stick",
   "team": "TB",
-  "number": 4,
+  "number": 16,
   "depth": 99,
   "injury": null,
   "exp": 7
