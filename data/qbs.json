@@ -186,7 +186,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 0
  },
  {
@@ -216,7 +216,7 @@
   "team": "CHI",
   "number": 17,
   "depth": 3,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 3
  },
  {
@@ -750,24 +750,24 @@
   "exp": 2
  },
  {
-  "id": "11292",
-  "espn_id": null,
-  "name": "Tommy DeVito",
-  "team": "NE",
-  "number": 16,
-  "depth": 2,
-  "injury": null,
-  "exp": 3
- },
- {
   "id": "13295",
   "espn_id": null,
   "name": "Behren Morton",
   "team": "NE",
   "number": 15,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 0
+ },
+ {
+  "id": "11292",
+  "espn_id": null,
+  "name": "Tommy DeVito",
+  "team": "NE",
+  "number": 16,
   "depth": 3,
   "injury": null,
-  "exp": 0
+  "exp": 3
  },
  {
   "id": "12545",
@@ -844,7 +844,7 @@
   "espn_id": null,
   "name": "Jake Haener",
   "team": "NYG",
-  "number": 12,
+  "number": 18,
   "depth": 99,
   "injury": null,
   "exp": 3
@@ -986,7 +986,7 @@
   "team": "SEA",
   "number": 14,
   "depth": 1,
-  "injury": null,
+  "injury": "Out",
   "exp": 8
  },
  {
@@ -1006,7 +1006,7 @@
   "team": "SEA",
   "number": 6,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1106,7 +1106,7 @@
   "team": "TEN",
   "number": 10,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 9
  },
  {
@@ -1136,7 +1136,7 @@
   "team": "WAS",
   "number": 8,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 11
  },
  {
