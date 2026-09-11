@@ -36,7 +36,7 @@
   "team": "ATL",
   "number": 1,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 6
  },
  {
@@ -546,7 +546,7 @@
   "team": "KC",
   "number": 15,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 9
  },
  {
@@ -564,7 +564,7 @@
   "espn_id": null,
   "name": "Garrett Nussmeier",
   "team": "KC",
-  "number": 14,
+  "number": 19,
   "depth": 3,
   "injury": null,
   "exp": 0
@@ -610,24 +610,24 @@
   "exp": 17
  },
  {
-  "id": "10857",
-  "espn_id": null,
-  "name": "Stetson Bennett",
-  "team": "LAR",
-  "number": 13,
-  "depth": 2,
-  "injury": null,
-  "exp": 3
- },
- {
   "id": "13275",
   "espn_id": null,
   "name": "Ty Simpson",
   "team": "LAR",
   "number": 15,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 0
+ },
+ {
+  "id": "10857",
+  "espn_id": null,
+  "name": "Stetson Bennett",
+  "team": "LAR",
+  "number": 13,
   "depth": 3,
   "injury": null,
-  "exp": 0
+  "exp": 3
  },
  {
   "id": "13597",
@@ -874,7 +874,7 @@
   "espn_id": null,
   "name": "Bailey Zappe",
   "team": "NYJ",
-  "number": 4,
+  "number": 11,
   "depth": 99,
   "injury": null,
   "exp": 4
@@ -1046,7 +1046,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
