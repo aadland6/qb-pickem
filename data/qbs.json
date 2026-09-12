@@ -30,24 +30,24 @@
   "exp": 0
  },
  {
-  "id": "6768",
-  "espn_id": 4241479,
-  "name": "Tua Tagovailoa",
-  "team": "ATL",
-  "number": 1,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 6
- },
- {
   "id": "4574",
   "espn_id": 2972515,
   "name": "Cooper Rush",
   "team": "ATL",
   "number": 13,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 9
+ },
+ {
+  "id": "6768",
+  "espn_id": 4241479,
+  "name": "Tua Tagovailoa",
+  "team": "ATL",
+  "number": 1,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 6
  },
  {
   "id": "11559",
