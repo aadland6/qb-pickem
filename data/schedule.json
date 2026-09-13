@@ -6,20 +6,6 @@
    "phase": "regular",
    "games": [
     {
-     "home": "SEA",
-     "away": "NE",
-     "kickoff": "2026-09-10T00:20Z",
-     "espn_game_id": "401872656",
-     "status": "STATUS_FINAL"
-    },
-    {
-     "home": "LAR",
-     "away": "SF",
-     "kickoff": "2026-09-11T00:35Z",
-     "espn_game_id": "401872657",
-     "status": "STATUS_FINAL"
-    },
-    {
      "home": "CIN",
      "away": "TB",
      "kickoff": "2026-09-13T17:00Z",
@@ -109,6 +95,20 @@
      "kickoff": "2026-09-14T00:20Z",
      "espn_game_id": "401872930",
      "status": "STATUS_SCHEDULED"
+    },
+    {
+     "home": "SEA",
+     "away": "NE",
+     "kickoff": "2026-09-10T00:20Z",
+     "espn_game_id": "401872656",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "LAR",
+     "away": "SF",
+     "kickoff": "2026-09-11T00:35Z",
+     "espn_game_id": "401872657",
+     "status": "STATUS_FINAL"
     },
     {
      "home": "KC",
