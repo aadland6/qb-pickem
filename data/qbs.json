@@ -30,22 +30,12 @@
   "exp": 0
  },
  {
-  "id": "6768",
-  "espn_id": 4241479,
-  "name": "Tua Tagovailoa",
-  "team": "ATL",
-  "number": 1,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 6
- },
- {
   "id": "11559",
   "espn_id": null,
   "name": "Michael Penix",
   "team": "ATL",
   "number": 9,
-  "depth": 2,
+  "depth": 1,
   "injury": "Questionable",
   "exp": 2
  },
@@ -55,9 +45,19 @@
   "name": "Cooper Rush",
   "team": "ATL",
   "number": 13,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 9
+ },
+ {
+  "id": "6768",
+  "espn_id": 4241479,
+  "name": "Tua Tagovailoa",
+  "team": "ATL",
+  "number": 1,
+  "depth": 3,
+  "injury": "Questionable",
+  "exp": 6
  },
  {
   "id": "13602",
@@ -145,7 +145,7 @@
   "name": "Kyle Allen",
   "team": "BUF",
   "number": 11,
-  "depth": 2,
+  "depth": 3,
   "injury": null,
   "exp": 8
  },
@@ -486,7 +486,7 @@
   "team": "IND",
   "number": 5,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 3
  },
  {
