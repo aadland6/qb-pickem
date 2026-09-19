@@ -30,22 +30,12 @@
   "exp": 0
  },
  {
-  "id": "11559",
-  "espn_id": null,
-  "name": "Michael Penix",
-  "team": "ATL",
-  "number": 9,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 2
- },
- {
   "id": "4574",
   "espn_id": 2972515,
   "name": "Cooper Rush",
   "team": "ATL",
   "number": 13,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 9
  },
@@ -55,9 +45,19 @@
   "name": "Tua Tagovailoa",
   "team": "ATL",
   "number": 1,
-  "depth": 3,
-  "injury": "Questionable",
+  "depth": 2,
+  "injury": "Doubtful",
   "exp": 6
+ },
+ {
+  "id": "11559",
+  "espn_id": null,
+  "name": "Michael Penix",
+  "team": "ATL",
+  "number": 9,
+  "depth": 3,
+  "injury": "Out",
+  "exp": 2
  },
  {
   "id": "13602",
@@ -460,16 +460,6 @@
   "exp": 1
  },
  {
-  "id": "13816",
-  "espn_id": null,
-  "name": "Mark Gronowski",
-  "team": "HOU",
-  "number": 16,
-  "depth": 99,
-  "injury": null,
-  "exp": 0
- },
- {
   "id": "5870",
   "espn_id": 3917792,
   "name": "Daniel Jones",
@@ -666,7 +656,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 3
  },
  {
@@ -726,7 +716,7 @@
   "team": "MIN",
   "number": 1,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 7
  },
  {
