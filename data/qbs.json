@@ -255,7 +255,7 @@
   "name": "Josh Johnson",
   "team": "CIN",
   "number": 11,
-  "depth": 99,
+  "depth": 3,
   "injury": null,
   "exp": 18
  },
@@ -510,6 +510,16 @@
   "exp": 5
  },
  {
+  "id": "4464",
+  "espn_id": 3059989,
+  "name": "Nick Mullens",
+  "team": "JAX",
+  "number": 14,
+  "depth": 2,
+  "injury": null,
+  "exp": 9
+ },
+ {
   "id": "12500",
   "espn_id": null,
   "name": "Quinn Ewers",
@@ -528,16 +538,6 @@
   "depth": 99,
   "injury": null,
   "exp": 0
- },
- {
-  "id": "4464",
-  "espn_id": 3059989,
-  "name": "Nick Mullens",
-  "team": "JAX",
-  "number": 14,
-  "depth": 99,
-  "injury": null,
-  "exp": 9
  },
  {
   "id": "4046",
@@ -656,7 +656,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 3
  },
  {
@@ -710,24 +710,24 @@
   "exp": 10
  },
  {
-  "id": "5849",
-  "espn_id": 3917315,
-  "name": "Kyler Murray",
-  "team": "MIN",
-  "number": 1,
-  "depth": 2,
-  "injury": "Out",
-  "exp": 7
- },
- {
   "id": "11565",
   "espn_id": null,
   "name": "J.J. McCarthy",
   "team": "MIN",
   "number": 9,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 2
+ },
+ {
+  "id": "5849",
+  "espn_id": 3917315,
+  "name": "Kyler Murray",
+  "team": "MIN",
+  "number": 1,
+  "depth": 3,
+  "injury": "Out",
+  "exp": 7
  },
  {
   "id": "12775",
