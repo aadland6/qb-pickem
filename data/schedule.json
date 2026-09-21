@@ -124,101 +124,10 @@
    "phase": "regular",
    "games": [
     {
-     "home": "ATL",
-     "away": "CAR",
-     "kickoff": "2026-09-20T17:00Z",
-     "espn_game_id": "401872933",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "CHI",
-     "away": "MIN",
-     "kickoff": "2026-09-20T17:00Z",
-     "espn_game_id": "401872937",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "TEN",
-     "away": "PHI",
-     "kickoff": "2026-09-20T17:00Z",
-     "espn_game_id": "401872939",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "NE",
-     "away": "PIT",
-     "kickoff": "2026-09-20T17:00Z",
-     "espn_game_id": "401872946",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "NYJ",
-     "away": "GB",
-     "kickoff": "2026-09-20T17:00Z",
-     "espn_game_id": "401872936",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "TB",
-     "away": "CLE",
-     "kickoff": "2026-09-20T17:00Z",
-     "espn_game_id": "401872935",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "BAL",
-     "away": "NO",
-     "kickoff": "2026-09-20T17:00Z",
-     "espn_game_id": "401872938",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "HOU",
-     "away": "CIN",
-     "kickoff": "2026-09-20T17:00Z",
-     "espn_game_id": "401872934",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "DEN",
-     "away": "JAX",
-     "kickoff": "2026-09-20T20:05Z",
-     "espn_game_id": "401872940",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "LAC",
-     "away": "LV",
-     "kickoff": "2026-09-20T20:05Z",
-     "espn_game_id": "401872941",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "DAL",
-     "away": "WAS",
-     "kickoff": "2026-09-20T20:25Z",
-     "espn_game_id": "401872944",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "ARI",
-     "away": "SEA",
-     "kickoff": "2026-09-20T20:25Z",
-     "espn_game_id": "401872943",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "SF",
-     "away": "MIA",
-     "kickoff": "2026-09-20T20:25Z",
-     "espn_game_id": "401872942",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "KC",
-     "away": "IND",
-     "kickoff": "2026-09-21T00:20Z",
-     "espn_game_id": "401872945",
+     "home": "LAR",
+     "away": "NYG",
+     "kickoff": "2026-09-22T00:15Z",
+     "espn_game_id": "401872947",
      "status": "STATUS_SCHEDULED"
     },
     {
@@ -229,11 +138,102 @@
      "status": "STATUS_FINAL"
     },
     {
-     "home": "LAR",
-     "away": "NYG",
-     "kickoff": "2026-09-22T00:15Z",
-     "espn_game_id": "401872947",
-     "status": "STATUS_SCHEDULED"
+     "home": "ATL",
+     "away": "CAR",
+     "kickoff": "2026-09-20T17:00Z",
+     "espn_game_id": "401872933",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "CHI",
+     "away": "MIN",
+     "kickoff": "2026-09-20T17:00Z",
+     "espn_game_id": "401872937",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "TEN",
+     "away": "PHI",
+     "kickoff": "2026-09-20T17:00Z",
+     "espn_game_id": "401872939",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "NE",
+     "away": "PIT",
+     "kickoff": "2026-09-20T17:00Z",
+     "espn_game_id": "401872946",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "NYJ",
+     "away": "GB",
+     "kickoff": "2026-09-20T17:00Z",
+     "espn_game_id": "401872936",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "TB",
+     "away": "CLE",
+     "kickoff": "2026-09-20T17:00Z",
+     "espn_game_id": "401872935",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "BAL",
+     "away": "NO",
+     "kickoff": "2026-09-20T17:00Z",
+     "espn_game_id": "401872938",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "HOU",
+     "away": "CIN",
+     "kickoff": "2026-09-20T17:00Z",
+     "espn_game_id": "401872934",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "DEN",
+     "away": "JAX",
+     "kickoff": "2026-09-20T20:05Z",
+     "espn_game_id": "401872940",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "LAC",
+     "away": "LV",
+     "kickoff": "2026-09-20T20:05Z",
+     "espn_game_id": "401872941",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "DAL",
+     "away": "WAS",
+     "kickoff": "2026-09-20T20:25Z",
+     "espn_game_id": "401872944",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "ARI",
+     "away": "SEA",
+     "kickoff": "2026-09-20T20:25Z",
+     "espn_game_id": "401872943",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "SF",
+     "away": "MIA",
+     "kickoff": "2026-09-20T20:25Z",
+     "espn_game_id": "401872942",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "KC",
+     "away": "IND",
+     "kickoff": "2026-09-21T00:20Z",
+     "espn_game_id": "401872945",
+     "status": "STATUS_FINAL"
     }
    ]
   },
