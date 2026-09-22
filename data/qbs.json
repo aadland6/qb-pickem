@@ -255,7 +255,7 @@
   "name": "Josh Johnson",
   "team": "CIN",
   "number": 11,
-  "depth": 3,
+  "depth": 99,
   "injury": "Out",
   "exp": 18
  },
@@ -510,16 +510,6 @@
   "exp": 5
  },
  {
-  "id": "4464",
-  "espn_id": 3059989,
-  "name": "Nick Mullens",
-  "team": "JAX",
-  "number": 14,
-  "depth": 2,
-  "injury": null,
-  "exp": 9
- },
- {
   "id": "12500",
   "espn_id": null,
   "name": "Quinn Ewers",
@@ -538,6 +528,16 @@
   "depth": 99,
   "injury": null,
   "exp": 0
+ },
+ {
+  "id": "4464",
+  "espn_id": 3059989,
+  "name": "Nick Mullens",
+  "team": "JAX",
+  "number": 14,
+  "depth": 99,
+  "injury": null,
+  "exp": 9
  },
  {
   "id": "4046",
@@ -626,7 +626,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -816,7 +816,7 @@
   "team": "NYG",
   "number": 6,
   "depth": 1,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {

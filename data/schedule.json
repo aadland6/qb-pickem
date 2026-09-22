@@ -124,13 +124,6 @@
    "phase": "regular",
    "games": [
     {
-     "home": "LAR",
-     "away": "NYG",
-     "kickoff": "2026-09-22T00:15Z",
-     "espn_game_id": "401872947",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
      "home": "BUF",
      "away": "DET",
      "kickoff": "2026-09-18T00:15Z",
@@ -233,6 +226,13 @@
      "away": "IND",
      "kickoff": "2026-09-21T00:20Z",
      "espn_game_id": "401872945",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "LAR",
+     "away": "NYG",
+     "kickoff": "2026-09-22T00:15Z",
+     "espn_game_id": "401872947",
      "status": "STATUS_FINAL"
     }
    ]
