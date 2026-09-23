@@ -10,34 +10,24 @@
   "exp": 10
  },
  {
-  "id": "13272",
-  "espn_id": null,
-  "name": "Carson Beck",
-  "team": "ARI",
-  "number": 19,
-  "depth": 2,
-  "injury": "Out",
-  "exp": 0
- },
- {
   "id": "6011",
   "espn_id": 4038524,
   "name": "Gardner Minshew",
   "team": "ARI",
   "number": 15,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 7
  },
  {
-  "id": "6768",
-  "espn_id": 4241479,
-  "name": "Tua Tagovailoa",
-  "team": "ATL",
-  "number": 1,
-  "depth": 1,
-  "injury": "Out",
-  "exp": 6
+  "id": "13272",
+  "espn_id": null,
+  "name": "Carson Beck",
+  "team": "ARI",
+  "number": 19,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "11559",
@@ -45,8 +35,8 @@
   "name": "Michael Penix",
   "team": "ATL",
   "number": 9,
-  "depth": 2,
-  "injury": "Out",
+  "depth": 1,
+  "injury": null,
   "exp": 2
  },
  {
@@ -55,9 +45,19 @@
   "name": "Cooper Rush",
   "team": "ATL",
   "number": 13,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 9
+ },
+ {
+  "id": "6768",
+  "espn_id": 4241479,
+  "name": "Tua Tagovailoa",
+  "team": "ATL",
+  "number": 1,
+  "depth": 3,
+  "injury": null,
+  "exp": 6
  },
  {
   "id": "13602",
@@ -116,7 +116,7 @@
   "team": "BAL",
   "number": 12,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -145,7 +145,7 @@
   "name": "Kyle Allen",
   "team": "BUF",
   "number": 11,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 8
  },
@@ -186,18 +186,8 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
- },
- {
-  "id": "11560",
-  "espn_id": null,
-  "name": "Caleb Williams",
-  "team": "CHI",
-  "number": 18,
-  "depth": 1,
-  "injury": "Out",
-  "exp": 2
  },
  {
   "id": "11256",
@@ -205,8 +195,8 @@
   "name": "Tyson Bagent",
   "team": "CHI",
   "number": 17,
-  "depth": 2,
-  "injury": null,
+  "depth": 1,
+  "injury": "Questionable",
   "exp": 3
  },
  {
@@ -215,9 +205,19 @@
   "name": "Case Keenum",
   "team": "CHI",
   "number": 11,
-  "depth": 3,
-  "injury": "Out",
+  "depth": 2,
+  "injury": null,
   "exp": 14
+ },
+ {
+  "id": "11560",
+  "espn_id": null,
+  "name": "Caleb Williams",
+  "team": "CHI",
+  "number": 18,
+  "depth": 3,
+  "injury": "Doubtful",
+  "exp": 2
  },
  {
   "id": "13310",
@@ -256,7 +256,7 @@
   "team": "CIN",
   "number": 11,
   "depth": 99,
-  "injury": "Out",
+  "injury": null,
   "exp": 18
  },
  {
@@ -280,12 +280,22 @@
   "exp": 9
  },
  {
+  "id": "12486",
+  "espn_id": null,
+  "name": "Dillon Gabriel",
+  "team": "CLE",
+  "number": 6,
+  "depth": 2,
+  "injury": "IR",
+  "exp": 1
+ },
+ {
   "id": "12524",
   "espn_id": null,
   "name": "Shedeur Sanders",
   "team": "CLE",
   "number": 2,
-  "depth": 2,
+  "depth": 3,
   "injury": null,
   "exp": 1
  },
@@ -295,19 +305,9 @@
   "name": "Taylen Green",
   "team": "CLE",
   "number": 15,
-  "depth": 3,
-  "injury": "Out",
-  "exp": 0
- },
- {
-  "id": "12486",
-  "espn_id": null,
-  "name": "Dillon Gabriel",
-  "team": "CLE",
-  "number": 6,
   "depth": 4,
-  "injury": "IR",
-  "exp": 1
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "3294",
@@ -325,7 +325,7 @@
   "name": "Sam Howell",
   "team": "DAL",
   "number": 16,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 4
  },
@@ -366,7 +366,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -486,7 +486,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -516,7 +516,7 @@
   "team": "JAX",
   "number": 10,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -566,7 +566,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -626,7 +626,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -640,22 +640,12 @@
   "exp": 0
  },
  {
-  "id": "13269",
-  "espn_id": null,
-  "name": "Fernando Mendoza",
-  "team": "LV",
-  "number": 15,
-  "depth": 1,
-  "injury": null,
-  "exp": 0
- },
- {
   "id": "1166",
   "espn_id": 14880,
   "name": "Kirk Cousins",
   "team": "LV",
   "number": 8,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 14
  },
@@ -665,9 +655,19 @@
   "name": "Aidan O'Connell",
   "team": "LV",
   "number": 12,
-  "depth": 3,
-  "injury": "Out",
+  "depth": 2,
+  "injury": "Questionable",
   "exp": 3
+ },
+ {
+  "id": "13269",
+  "espn_id": null,
+  "name": "Fernando Mendoza",
+  "team": "LV",
+  "number": 15,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "8161",
@@ -686,7 +686,7 @@
   "team": "MIA",
   "number": 15,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -706,18 +706,8 @@
   "team": "MIN",
   "number": 1,
   "depth": 1,
-  "injury": "Out",
-  "exp": 7
- },
- {
-  "id": "11565",
-  "espn_id": null,
-  "name": "J.J. McCarthy",
-  "team": "MIN",
-  "number": 9,
-  "depth": 2,
   "injury": null,
-  "exp": 2
+  "exp": 7
  },
  {
   "id": "3161",
@@ -725,9 +715,19 @@
   "name": "Carson Wentz",
   "team": "MIN",
   "number": 11,
-  "depth": 4,
+  "depth": 2,
   "injury": null,
   "exp": 10
+ },
+ {
+  "id": "11565",
+  "espn_id": null,
+  "name": "J.J. McCarthy",
+  "team": "MIN",
+  "number": 9,
+  "depth": 3,
+  "injury": null,
+  "exp": 2
  },
  {
   "id": "12775",
@@ -750,24 +750,24 @@
   "exp": 2
  },
  {
-  "id": "13295",
-  "espn_id": null,
-  "name": "Behren Morton",
-  "team": "NE",
-  "number": 15,
-  "depth": 2,
-  "injury": "Out",
-  "exp": 0
- },
- {
   "id": "11292",
   "espn_id": null,
   "name": "Tommy DeVito",
   "team": "NE",
   "number": 16,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 3
+ },
+ {
+  "id": "13295",
+  "espn_id": null,
+  "name": "Behren Morton",
+  "team": "NE",
+  "number": 15,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "12545",
@@ -796,7 +796,7 @@
   "team": "NO",
   "number": 11,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -810,24 +810,24 @@
   "exp": 8
  },
  {
-  "id": "12508",
-  "espn_id": null,
-  "name": "Jaxson Dart",
-  "team": "NYG",
-  "number": 6,
-  "depth": 1,
-  "injury": "Out",
-  "exp": 1
- },
- {
   "id": "2306",
   "espn_id": 2969939,
   "name": "Jameis Winston",
   "team": "NYG",
   "number": 19,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 11
+ },
+ {
+  "id": "12508",
+  "espn_id": null,
+  "name": "Jaxson Dart",
+  "team": "NYG",
+  "number": 6,
+  "depth": 3,
+  "injury": "Doubtful",
+  "exp": 1
  },
  {
   "id": "6147",
@@ -865,7 +865,7 @@
   "name": "Cade Klubnik",
   "team": "NYJ",
   "number": 10,
-  "depth": 2,
+  "depth": 3,
   "injury": null,
   "exp": 0
  },
@@ -878,6 +878,16 @@
   "depth": 99,
   "injury": null,
   "exp": 4
+ },
+ {
+  "id": "9999",
+  "espn_id": null,
+  "name": "Will Levis",
+  "team": "NYJ",
+  "number": 8,
+  "depth": 99,
+  "injury": null,
+  "exp": 3
  },
  {
   "id": "6904",
@@ -900,24 +910,24 @@
   "exp": 15
  },
  {
-  "id": "13335",
-  "espn_id": null,
-  "name": "Cole Payton",
-  "team": "PHI",
-  "number": 18,
-  "depth": 3,
-  "injury": "Out",
-  "exp": 0
- },
- {
   "id": "9230",
   "espn_id": null,
   "name": "Tanner McKee",
   "team": "PHI",
   "number": 16,
-  "depth": 4,
-  "injury": "Out",
+  "depth": 3,
+  "injury": null,
   "exp": 3
+ },
+ {
+  "id": "13335",
+  "espn_id": null,
+  "name": "Cole Payton",
+  "team": "PHI",
+  "number": 18,
+  "depth": 4,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "96",
@@ -946,7 +956,7 @@
   "team": "PIT",
   "number": 18,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -956,7 +966,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -986,7 +996,7 @@
   "team": "SEA",
   "number": 14,
   "depth": 1,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 8
  },
  {
@@ -1046,7 +1056,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -1120,24 +1130,24 @@
   "exp": 3
  },
  {
-  "id": "11566",
-  "espn_id": null,
-  "name": "Jayden Daniels",
-  "team": "WAS",
-  "number": 5,
-  "depth": 1,
-  "injury": "Out",
-  "exp": 2
- },
- {
   "id": "2307",
   "espn_id": 2576980,
   "name": "Marcus Mariota",
   "team": "WAS",
   "number": 8,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 11
+ },
+ {
+  "id": "11566",
+  "espn_id": null,
+  "name": "Jayden Daniels",
+  "team": "WAS",
+  "number": 5,
+  "depth": 2,
+  "injury": "Doubtful",
+  "exp": 2
  },
  {
   "id": "13557",
@@ -1146,7 +1156,7 @@
   "team": "WAS",
   "number": 16,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
