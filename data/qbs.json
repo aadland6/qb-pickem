@@ -826,7 +826,7 @@
   "team": "NYG",
   "number": 6,
   "depth": 3,
-  "injury": "Doubtful",
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -868,16 +868,6 @@
   "depth": 3,
   "injury": null,
   "exp": 0
- },
- {
-  "id": "8157",
-  "espn_id": null,
-  "name": "Bailey Zappe",
-  "team": "NYJ",
-  "number": 11,
-  "depth": 99,
-  "injury": null,
-  "exp": 4
  },
  {
   "id": "9999",
@@ -1146,7 +1136,7 @@
   "team": "WAS",
   "number": 5,
   "depth": 2,
-  "injury": "Doubtful",
+  "injury": "Out",
   "exp": 2
  },
  {
