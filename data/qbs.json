@@ -46,7 +46,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 9
  },
  {
@@ -66,7 +66,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -190,24 +190,24 @@
   "exp": 0
  },
  {
-  "id": "11256",
-  "espn_id": null,
-  "name": "Tyson Bagent",
-  "team": "CHI",
-  "number": 17,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 3
- },
- {
   "id": "1737",
   "espn_id": 15168,
   "name": "Case Keenum",
   "team": "CHI",
   "number": 11,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 14
+ },
+ {
+  "id": "11256",
+  "espn_id": null,
+  "name": "Tyson Bagent",
+  "team": "CHI",
+  "number": 17,
+  "depth": 2,
+  "injury": "Questionable",
+  "exp": 3
  },
  {
   "id": "11560",
@@ -826,7 +826,7 @@
   "team": "NYG",
   "number": 6,
   "depth": 3,
-  "injury": "Out",
+  "injury": "IR",
   "exp": 1
  },
  {
@@ -874,7 +874,7 @@
   "espn_id": null,
   "name": "Will Levis",
   "team": "NYJ",
-  "number": 8,
+  "number": 4,
   "depth": 99,
   "injury": null,
   "exp": 3
@@ -986,7 +986,7 @@
   "team": "SEA",
   "number": 14,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 8
  },
  {
