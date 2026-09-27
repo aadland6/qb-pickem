@@ -190,24 +190,24 @@
   "exp": 0
  },
  {
-  "id": "1737",
-  "espn_id": 15168,
-  "name": "Case Keenum",
-  "team": "CHI",
-  "number": 11,
-  "depth": 1,
-  "injury": null,
-  "exp": 14
- },
- {
   "id": "11256",
   "espn_id": null,
   "name": "Tyson Bagent",
   "team": "CHI",
   "number": 17,
-  "depth": 2,
+  "depth": 1,
   "injury": "Questionable",
   "exp": 3
+ },
+ {
+  "id": "1737",
+  "espn_id": 15168,
+  "name": "Case Keenum",
+  "team": "CHI",
+  "number": 11,
+  "depth": 2,
+  "injury": null,
+  "exp": 14
  },
  {
   "id": "11560",
@@ -216,7 +216,7 @@
   "team": "CHI",
   "number": 18,
   "depth": 3,
-  "injury": "Doubtful",
+  "injury": "Out",
   "exp": 2
  },
  {
@@ -595,7 +595,7 @@
   "name": "DJ Uiagalelei",
   "team": "LAC",
   "number": 7,
-  "depth": 99,
+  "depth": 3,
   "injury": null,
   "exp": 1
  },
@@ -656,7 +656,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 3
  },
  {
@@ -820,6 +820,16 @@
   "exp": 11
  },
  {
+  "id": "10215",
+  "espn_id": null,
+  "name": "Jake Haener",
+  "team": "NYG",
+  "number": 18,
+  "depth": 2,
+  "injury": null,
+  "exp": 3
+ },
+ {
   "id": "12508",
   "espn_id": null,
   "name": "Jaxson Dart",
@@ -835,16 +845,6 @@
   "name": "Clayton Thorson",
   "team": "NYG",
   "number": 0,
-  "depth": 99,
-  "injury": null,
-  "exp": 3
- },
- {
-  "id": "10215",
-  "espn_id": null,
-  "name": "Jake Haener",
-  "team": "NYG",
-  "number": 18,
   "depth": 99,
   "injury": null,
   "exp": 3
