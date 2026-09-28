@@ -26,7 +26,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -116,7 +116,7 @@
   "team": "BAL",
   "number": 12,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -186,18 +186,8 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
- },
- {
-  "id": "11256",
-  "espn_id": null,
-  "name": "Tyson Bagent",
-  "team": "CHI",
-  "number": 17,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 3
  },
  {
   "id": "1737",
@@ -205,9 +195,19 @@
   "name": "Case Keenum",
   "team": "CHI",
   "number": 11,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 14
+ },
+ {
+  "id": "11256",
+  "espn_id": null,
+  "name": "Tyson Bagent",
+  "team": "CHI",
+  "number": 17,
+  "depth": 2,
+  "injury": null,
+  "exp": 3
  },
  {
   "id": "11560",
@@ -306,7 +306,7 @@
   "team": "CLE",
   "number": 15,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -366,7 +366,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -486,7 +486,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -566,7 +566,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -586,7 +586,7 @@
   "team": "LAC",
   "number": 5,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 5
  },
  {
@@ -596,7 +596,7 @@
   "team": "LAC",
   "number": 7,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -626,7 +626,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -686,7 +686,7 @@
   "team": "MIA",
   "number": 15,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -726,7 +726,7 @@
   "team": "MIN",
   "number": 9,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 2
  },
  {
@@ -766,7 +766,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -796,7 +796,7 @@
   "team": "NO",
   "number": 11,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -946,7 +946,7 @@
   "team": "PIT",
   "number": 18,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -956,7 +956,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -1006,7 +1006,7 @@
   "team": "SEA",
   "number": 6,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1046,7 +1046,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1056,7 +1056,7 @@
   "team": "TB",
   "number": 6,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 8
  },
  {
