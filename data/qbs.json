@@ -720,16 +720,6 @@
   "exp": 10
  },
  {
-  "id": "11565",
-  "espn_id": null,
-  "name": "J.J. McCarthy",
-  "team": "MIN",
-  "number": 9,
-  "depth": 3,
-  "injury": "Out",
-  "exp": 2
- },
- {
   "id": "12775",
   "espn_id": null,
   "name": "Max Brosmer",
@@ -828,6 +818,16 @@
   "depth": 2,
   "injury": null,
   "exp": 3
+ },
+ {
+  "id": "11565",
+  "espn_id": null,
+  "name": "J.J. McCarthy",
+  "team": "NYG",
+  "number": 9,
+  "depth": 3,
+  "injury": "Out",
+  "exp": 2
  },
  {
   "id": "12508",
@@ -1056,7 +1056,7 @@
   "team": "TB",
   "number": 6,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 8
  },
  {
