@@ -190,24 +190,24 @@
   "exp": 0
  },
  {
-  "id": "1737",
-  "espn_id": 15168,
-  "name": "Case Keenum",
-  "team": "CHI",
-  "number": 11,
-  "depth": 1,
-  "injury": null,
-  "exp": 14
- },
- {
   "id": "11256",
   "espn_id": null,
   "name": "Tyson Bagent",
   "team": "CHI",
   "number": 17,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 3
+ },
+ {
+  "id": "1737",
+  "espn_id": 15168,
+  "name": "Case Keenum",
+  "team": "CHI",
+  "number": 11,
+  "depth": 2,
+  "injury": null,
+  "exp": 14
  },
  {
   "id": "11560",
@@ -770,24 +770,24 @@
   "exp": 1
  },
  {
-  "id": "11562",
-  "espn_id": null,
-  "name": "Spencer Rattler",
-  "team": "NO",
-  "number": 2,
-  "depth": 2,
-  "injury": null,
-  "exp": 2
- },
- {
   "id": "7538",
   "espn_id": null,
   "name": "Zach Wilson",
   "team": "NO",
   "number": 11,
-  "depth": 3,
+  "depth": 2,
   "injury": "Out",
   "exp": 5
+ },
+ {
+  "id": "11562",
+  "espn_id": null,
+  "name": "Spencer Rattler",
+  "team": "NO",
+  "number": 2,
+  "depth": 3,
+  "injury": null,
+  "exp": 2
  },
  {
   "id": "1979",
@@ -825,7 +825,7 @@
   "name": "Jaxson Dart",
   "team": "NYG",
   "number": 6,
-  "depth": 2,
+  "depth": 3,
   "injury": "IR",
   "exp": 1
  },
@@ -835,16 +835,6 @@
   "name": "Clayton Thorson",
   "team": "NYG",
   "number": 0,
-  "depth": 99,
-  "injury": null,
-  "exp": 3
- },
- {
-  "id": "10215",
-  "espn_id": null,
-  "name": "Jake Haener",
-  "team": "NYG",
-  "number": 18,
   "depth": 99,
   "injury": null,
   "exp": 3
@@ -1050,24 +1040,24 @@
   "exp": 1
  },
  {
-  "id": "4892",
-  "espn_id": 3052587,
-  "name": "Baker Mayfield",
-  "team": "TB",
-  "number": 6,
-  "depth": 1,
-  "injury": "Out",
-  "exp": 8
- },
- {
   "id": "13425",
   "espn_id": null,
   "name": "Jalon Daniels",
   "team": "TB",
   "number": 10,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 0
+ },
+ {
+  "id": "4892",
+  "espn_id": 3052587,
+  "name": "Baker Mayfield",
+  "team": "TB",
+  "number": 6,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 8
  },
  {
   "id": "6185",
