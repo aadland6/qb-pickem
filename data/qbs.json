@@ -136,7 +136,7 @@
   "team": "BUF",
   "number": 17,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 8
  },
  {
@@ -810,22 +810,12 @@
   "exp": 11
  },
  {
-  "id": "10215",
-  "espn_id": null,
-  "name": "Jake Haener",
-  "team": "NYG",
-  "number": 18,
-  "depth": 2,
-  "injury": null,
-  "exp": 3
- },
- {
   "id": "11565",
   "espn_id": null,
   "name": "J.J. McCarthy",
   "team": "NYG",
   "number": 9,
-  "depth": 3,
+  "depth": 2,
   "injury": "Out",
   "exp": 2
  },
@@ -835,7 +825,7 @@
   "name": "Jaxson Dart",
   "team": "NYG",
   "number": 6,
-  "depth": 3,
+  "depth": 2,
   "injury": "IR",
   "exp": 1
  },
@@ -845,6 +835,16 @@
   "name": "Clayton Thorson",
   "team": "NYG",
   "number": 0,
+  "depth": 99,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "10215",
+  "espn_id": null,
+  "name": "Jake Haener",
+  "team": "NYG",
+  "number": 18,
   "depth": 99,
   "injury": null,
   "exp": 3
@@ -906,7 +906,7 @@
   "team": "PHI",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 3
  },
  {
@@ -916,7 +916,7 @@
   "team": "PHI",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -1065,7 +1065,7 @@
   "name": "Jalon Daniels",
   "team": "TB",
   "number": 10,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 0
  },
