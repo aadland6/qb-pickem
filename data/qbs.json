@@ -26,7 +26,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -46,7 +46,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 9
  },
  {
@@ -66,7 +66,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -116,7 +116,7 @@
   "team": "BAL",
   "number": 12,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -186,7 +186,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -216,7 +216,7 @@
   "team": "CHI",
   "number": 18,
   "depth": 3,
-  "injury": "Out",
+  "injury": "Doubtful",
   "exp": 2
  },
  {
@@ -306,7 +306,7 @@
   "team": "CLE",
   "number": 15,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -366,7 +366,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -486,7 +486,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -566,7 +566,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -596,7 +596,7 @@
   "team": "LAC",
   "number": 7,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -626,7 +626,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -656,7 +656,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 3
  },
  {
@@ -686,7 +686,7 @@
   "team": "MIA",
   "number": 15,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -725,7 +725,7 @@
   "name": "Max Brosmer",
   "team": "MIN",
   "number": 12,
-  "depth": 99,
+  "depth": 3,
   "injury": null,
   "exp": 1
  },
@@ -756,7 +756,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -776,7 +776,7 @@
   "team": "NO",
   "number": 11,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -814,9 +814,9 @@
   "espn_id": null,
   "name": "J.J. McCarthy",
   "team": "NYG",
-  "number": 9,
+  "number": 18,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 2
  },
  {
@@ -936,7 +936,7 @@
   "team": "PIT",
   "number": 18,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -946,7 +946,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -996,7 +996,7 @@
   "team": "SEA",
   "number": 6,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -1036,7 +1036,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -1058,6 +1058,16 @@
   "depth": 2,
   "injury": "Out",
   "exp": 8
+ },
+ {
+  "id": "6037",
+  "espn_id": 3722362,
+  "name": "Brett Rypien",
+  "team": "TB",
+  "number": 16,
+  "depth": 99,
+  "injury": null,
+  "exp": 7
  },
  {
   "id": "6185",
@@ -1126,7 +1136,7 @@
   "team": "WAS",
   "number": 5,
   "depth": 2,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 2
  },
  {

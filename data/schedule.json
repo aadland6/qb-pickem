@@ -492,6 +492,13 @@
      "status": "STATUS_SCHEDULED"
     },
     {
+     "home": "GB",
+     "away": "CHI",
+     "kickoff": "2026-10-11T17:00Z",
+     "espn_game_id": "401872990",
+     "status": "STATUS_SCHEDULED"
+    },
+    {
      "home": "TEN",
      "away": "HOU",
      "kickoff": "2026-10-11T17:00Z",
@@ -545,13 +552,6 @@
      "away": "DEN",
      "kickoff": "2026-10-11T20:05Z",
      "espn_game_id": "401872989",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
-     "home": "GB",
-     "away": "CHI",
-     "kickoff": "2026-10-11T20:25Z",
-     "espn_game_id": "401872990",
      "status": "STATUS_SCHEDULED"
     },
     {
