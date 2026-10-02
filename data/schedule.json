@@ -364,7 +364,7 @@
      "away": "PIT",
      "kickoff": "2026-10-02T00:15Z",
      "espn_game_id": "401872964",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_FINAL"
     },
     {
      "home": "WAS",
@@ -2154,15 +2154,7 @@
   "P4": {
    "label": "Super Bowl",
    "phase": "playoffs",
-   "games": [
-    {
-     "home": "TBD",
-     "away": "TBD",
-     "kickoff": "2027-02-14T23:30Z",
-     "espn_game_id": "401873270",
-     "status": "STATUS_SCHEDULED"
-    }
-   ]
+   "games": []
   }
  }
 }
