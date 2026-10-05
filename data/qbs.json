@@ -26,7 +26,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -76,7 +76,7 @@
   "team": "BAL",
   "number": 8,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 8
  },
  {
@@ -116,7 +116,7 @@
   "team": "BAL",
   "number": 12,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -186,7 +186,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -366,7 +366,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -566,7 +566,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -586,7 +586,7 @@
   "team": "LAC",
   "number": 5,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 5
  },
  {
@@ -596,7 +596,7 @@
   "team": "LAC",
   "number": 7,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -626,7 +626,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -656,7 +656,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 3
  },
  {
@@ -686,7 +686,7 @@
   "team": "MIA",
   "number": 15,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -726,7 +726,7 @@
   "team": "MIN",
   "number": 12,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -756,7 +756,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -916,7 +916,7 @@
   "team": "PHI",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -1006,7 +1006,7 @@
   "team": "SEA",
   "number": 6,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1046,7 +1046,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1136,7 +1136,7 @@
   "team": "WAS",
   "number": 8,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 11
  },
  {
