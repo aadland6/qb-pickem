@@ -360,13 +360,6 @@
    "phase": "regular",
    "games": [
     {
-     "home": "NO",
-     "away": "ATL",
-     "kickoff": "2026-10-06T00:15Z",
-     "espn_game_id": "401872979",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
      "home": "CLE",
      "away": "PIT",
      "kickoff": "2026-10-02T00:15Z",
@@ -469,6 +462,13 @@
      "away": "DET",
      "kickoff": "2026-10-05T00:20Z",
      "espn_game_id": "401872978",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "NO",
+     "away": "ATL",
+     "kickoff": "2026-10-06T00:15Z",
+     "espn_game_id": "401872979",
      "status": "STATUS_FINAL"
     }
    ]
