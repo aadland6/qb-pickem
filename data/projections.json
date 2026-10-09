@@ -1,13 +1,31 @@
 {
  "season": 2026,
  "week": "5",
- "updated": "2026-10-08T17:10:46+00:00",
+ "updated": "2026-10-09T16:47:40+00:00",
  "players": {
-  "6770": {
+  "2306": {
    "sources": {
-    "rotowire": 18.67
+    "rotowire": 13.62
    },
-   "avg": 18.67
+   "avg": 13.62
+  },
+  "9758": {
+   "sources": {
+    "rotowire": 15.02
+   },
+   "avg": 15.02
+  },
+  "11566": {
+   "sources": {
+    "rotowire": 16.27
+   },
+   "avg": 16.27
+  },
+  "4984": {
+   "sources": {
+    "rotowire": 21.15
+   },
+   "avg": 21.15
   },
   "8161": {
    "sources": {
@@ -17,63 +35,39 @@
   },
   "6804": {
    "sources": {
-    "rotowire": 15.9
+    "rotowire": 15.82
    },
-   "avg": 15.9
+   "avg": 15.82
+  },
+  "1373": {
+   "sources": {
+    "rotowire": 13.38
+   },
+   "avg": 13.38
   },
   "4017": {
    "sources": {
-    "rotowire": 14.51
+    "rotowire": 14.12
    },
-   "avg": 14.51
+   "avg": 14.12
   },
-  "96": {
+  "12522": {
    "sources": {
-    "rotowire": 16.68
+    "rotowire": 12.24
    },
-   "avg": 16.68
-  },
-  "11566": {
-   "sources": {
-    "rotowire": 16.26
-   },
-   "avg": 16.26
-  },
-  "4984": {
-   "sources": {
-    "rotowire": 21.15
-   },
-   "avg": 21.15
-  },
-  "7523": {
-   "sources": {
-    "rotowire": 17.39
-   },
-   "avg": 17.39
-  },
-  "9758": {
-   "sources": {
-    "rotowire": 15.0
-   },
-   "avg": 15.0
-  },
-  "3257": {
-   "sources": {
-    "rotowire": 17.74
-   },
-   "avg": 17.74
+   "avg": 12.24
   },
   "3294": {
    "sources": {
-    "rotowire": 19.8
+    "rotowire": 20.34
    },
-   "avg": 19.8
+   "avg": 20.34
   },
-  "3163": {
+  "11563": {
    "sources": {
-    "rotowire": 21.05
+    "rotowire": 16.33
    },
-   "avg": 21.05
+   "avg": 16.33
   },
   "8183": {
    "sources": {
@@ -81,23 +75,29 @@
    },
    "avg": 16.18
   },
+  "4943": {
+   "sources": {
+    "rotowire": 15.83
+   },
+   "avg": 15.83
+  },
+  "1166": {
+   "sources": {
+    "rotowire": 14.45
+   },
+   "avg": 14.45
+  },
   "11564": {
    "sources": {
-    "rotowire": 18.64
+    "rotowire": 18.62
    },
-   "avg": 18.64
+   "avg": 18.62
   },
-  "13425": {
+  "6770": {
    "sources": {
-    "rotowire": 14.14
+    "rotowire": 18.65
    },
-   "avg": 14.14
-  },
-  "421": {
-   "sources": {
-    "rotowire": 17.84
-   },
-   "avg": 17.84
+   "avg": 18.65
   },
   "12545": {
    "sources": {
@@ -105,35 +105,35 @@
    },
    "avg": 14.62
   },
-  "4943": {
+  "7523": {
    "sources": {
-    "rotowire": 15.83
+    "rotowire": 17.39
    },
-   "avg": 15.83
+   "avg": 17.39
   },
-  "6797": {
+  "6904": {
    "sources": {
-    "rotowire": 13.93
+    "rotowire": 14.92
    },
-   "avg": 13.93
+   "avg": 14.92
   },
-  "2306": {
+  "13425": {
    "sources": {
-    "rotowire": 13.79
+    "rotowire": 14.11
    },
-   "avg": 13.79
+   "avg": 14.11
   },
-  "12522": {
+  "3163": {
    "sources": {
-    "rotowire": 12.23
+    "rotowire": 21.05
    },
-   "avg": 12.23
+   "avg": 21.05
   },
-  "7083": {
+  "11256": {
    "sources": {
-    "rotowire": 10.97
+    "rotowire": 13.15
    },
-   "avg": 10.97
+   "avg": 13.15
   },
   "11559": {
    "sources": {
@@ -141,29 +141,23 @@
    },
    "avg": 14.21
   },
-  "5870": {
+  "3257": {
    "sources": {
-    "rotowire": 12.48
+    "rotowire": 17.74
    },
-   "avg": 12.48
+   "avg": 17.74
   },
-  "1373": {
+  "421": {
    "sources": {
-    "rotowire": 13.45
+    "rotowire": 17.88
    },
-   "avg": 13.45
+   "avg": 17.88
   },
-  "1166": {
+  "7083": {
    "sources": {
-    "rotowire": 14.35
+    "rotowire": 10.97
    },
-   "avg": 14.35
-  },
-  "6904": {
-   "sources": {
-    "rotowire": 14.96
-   },
-   "avg": 14.96
+   "avg": 10.97
   },
   "5849": {
    "sources": {
@@ -171,17 +165,23 @@
    },
    "avg": 16.36
   },
-  "11256": {
+  "96": {
    "sources": {
-    "rotowire": 13.25
+    "rotowire": 16.16
    },
-   "avg": 13.25
+   "avg": 16.16
   },
-  "11563": {
+  "5870": {
    "sources": {
-    "rotowire": 16.33
+    "rotowire": 12.37
    },
-   "avg": 16.33
+   "avg": 12.37
+  },
+  "6797": {
+   "sources": {
+    "rotowire": 13.93
+   },
+   "avg": 13.93
   }
  }
 }
