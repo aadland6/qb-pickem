@@ -86,7 +86,7 @@
   "team": "BAL",
   "number": 8,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 8
  },
  {
@@ -206,7 +206,7 @@
   "team": "CHI",
   "number": 18,
   "depth": 2,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 2
  },
  {
@@ -596,7 +596,7 @@
   "team": "LAC",
   "number": 5,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": "Doubtful",
   "exp": 5
  },
  {
@@ -900,22 +900,12 @@
   "exp": 6
  },
  {
-  "id": "829",
-  "espn_id": 14012,
-  "name": "Andy Dalton",
-  "team": "PHI",
-  "number": 14,
-  "depth": 2,
-  "injury": null,
-  "exp": 15
- },
- {
   "id": "9230",
   "espn_id": null,
   "name": "Tanner McKee",
   "team": "PHI",
   "number": 16,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 3
  },
@@ -925,9 +915,19 @@
   "name": "Cole Payton",
   "team": "PHI",
   "number": 18,
-  "depth": 4,
+  "depth": 3,
   "injury": null,
   "exp": 0
+ },
+ {
+  "id": "829",
+  "espn_id": 14012,
+  "name": "Andy Dalton",
+  "team": "PHI",
+  "number": 14,
+  "depth": 99,
+  "injury": null,
+  "exp": 15
  },
  {
   "id": "96",
@@ -1080,21 +1080,21 @@
   "exp": 8
  },
  {
-  "id": "6185",
-  "espn_id": 3120590,
-  "name": "Easton Stick",
-  "team": "TB",
-  "number": 16,
-  "depth": 4,
-  "injury": null,
-  "exp": 7
- },
- {
   "id": "6037",
   "espn_id": 3722362,
   "name": "Brett Rypien",
   "team": "TB",
   "number": 8,
+  "depth": 99,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "6185",
+  "espn_id": 3120590,
+  "name": "Easton Stick",
+  "team": "TB",
+  "number": 16,
   "depth": 99,
   "injury": null,
   "exp": 7
@@ -1156,7 +1156,7 @@
   "team": "WAS",
   "number": 8,
   "depth": 2,
-  "injury": "Doubtful",
+  "injury": "Out",
   "exp": 11
  },
  {
