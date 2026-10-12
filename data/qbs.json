@@ -26,7 +26,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -36,7 +36,7 @@
   "team": "ATL",
   "number": 9,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 2
  },
  {
@@ -46,7 +46,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 9
  },
  {
@@ -66,7 +66,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -200,24 +200,24 @@
   "exp": 3
  },
  {
-  "id": "11560",
-  "espn_id": null,
-  "name": "Caleb Williams",
-  "team": "CHI",
-  "number": 18,
-  "depth": 2,
-  "injury": "Out",
-  "exp": 2
- },
- {
   "id": "1737",
   "espn_id": 15168,
   "name": "Case Keenum",
   "team": "CHI",
   "number": 11,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 14
+ },
+ {
+  "id": "11560",
+  "espn_id": null,
+  "name": "Caleb Williams",
+  "team": "CHI",
+  "number": 18,
+  "depth": 3,
+  "injury": "Out",
+  "exp": 2
  },
  {
   "id": "13310",
@@ -366,7 +366,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -458,6 +458,16 @@
   "depth": 3,
   "injury": "IR",
   "exp": 1
+ },
+ {
+  "id": "13816",
+  "espn_id": null,
+  "name": "Mark Gronowski",
+  "team": "HOU",
+  "number": 16,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "5870",
@@ -986,7 +996,7 @@
   "team": "SEA",
   "number": 6,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1026,7 +1036,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
