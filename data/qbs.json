@@ -40,24 +40,24 @@
   "exp": 2
  },
  {
-  "id": "4574",
-  "espn_id": 2972515,
-  "name": "Cooper Rush",
-  "team": "ATL",
-  "number": 13,
-  "depth": 2,
-  "injury": "Out",
-  "exp": 9
- },
- {
   "id": "6768",
   "espn_id": 4241479,
   "name": "Tua Tagovailoa",
   "team": "ATL",
   "number": 1,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 6
+ },
+ {
+  "id": "4574",
+  "espn_id": 2972515,
+  "name": "Cooper Rush",
+  "team": "ATL",
+  "number": 13,
+  "depth": 3,
+  "injury": "Out",
+  "exp": 9
  },
  {
   "id": "13602",
@@ -70,24 +70,24 @@
   "exp": 0
  },
  {
-  "id": "7083",
-  "espn_id": 4035671,
-  "name": "Tyler Huntley",
-  "team": "BAL",
-  "number": 5,
-  "depth": 1,
-  "injury": null,
-  "exp": 6
- },
- {
   "id": "4881",
   "espn_id": 3916387,
   "name": "Lamar Jackson",
   "team": "BAL",
   "number": 8,
-  "depth": 2,
+  "depth": 1,
   "injury": "Out",
   "exp": 8
+ },
+ {
+  "id": "7083",
+  "espn_id": 4035671,
+  "name": "Tyler Huntley",
+  "team": "BAL",
+  "number": 5,
+  "depth": 2,
+  "injury": null,
+  "exp": 6
  },
  {
   "id": "8206",
@@ -190,12 +190,22 @@
   "exp": 0
  },
  {
+  "id": "11560",
+  "espn_id": null,
+  "name": "Caleb Williams",
+  "team": "CHI",
+  "number": 18,
+  "depth": 1,
+  "injury": "Out",
+  "exp": 2
+ },
+ {
   "id": "11256",
   "espn_id": null,
   "name": "Tyson Bagent",
   "team": "CHI",
   "number": 17,
-  "depth": 1,
+  "depth": 2,
   "injury": null,
   "exp": 3
  },
@@ -205,19 +215,9 @@
   "name": "Case Keenum",
   "team": "CHI",
   "number": 11,
-  "depth": 2,
+  "depth": 3,
   "injury": null,
   "exp": 14
- },
- {
-  "id": "11560",
-  "espn_id": null,
-  "name": "Caleb Williams",
-  "team": "CHI",
-  "number": 18,
-  "depth": 3,
-  "injury": "Out",
-  "exp": 2
  },
  {
   "id": "13310",
@@ -636,7 +636,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -696,6 +696,16 @@
   "team": "MIA",
   "number": 14,
   "depth": 2,
+  "injury": null,
+  "exp": 1
+ },
+ {
+  "id": "12538",
+  "espn_id": null,
+  "name": "Brady Cook",
+  "team": "MIA",
+  "number": 15,
+  "depth": 99,
   "injury": null,
   "exp": 1
  },
@@ -986,7 +996,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 2,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 7
  },
  {
