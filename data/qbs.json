@@ -36,7 +36,7 @@
   "team": "ATL",
   "number": 9,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 2
  },
  {
@@ -590,16 +590,6 @@
   "exp": 6
  },
  {
-  "id": "6111",
-  "espn_id": 3886812,
-  "name": "Jake Browning",
-  "team": "LAC",
-  "number": 5,
-  "depth": 2,
-  "injury": null,
-  "exp": 7
- },
- {
   "id": "7610",
   "espn_id": null,
   "name": "Trey Lance",
@@ -618,6 +608,16 @@
   "depth": 4,
   "injury": null,
   "exp": 1
+ },
+ {
+  "id": "6111",
+  "espn_id": 3886812,
+  "name": "Jake Browning",
+  "team": "LAC",
+  "number": 6,
+  "depth": 99,
+  "injury": null,
+  "exp": 7
  },
  {
   "id": "421",
@@ -1006,7 +1006,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 7
  },
  {
