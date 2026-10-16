@@ -366,7 +366,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -900,24 +900,24 @@
   "exp": 3
  },
  {
-  "id": "6904",
-  "espn_id": 4040715,
-  "name": "Jalen Hurts",
-  "team": "PHI",
-  "number": 1,
-  "depth": 1,
-  "injury": null,
-  "exp": 6
- },
- {
   "id": "9230",
   "espn_id": null,
   "name": "Tanner McKee",
   "team": "PHI",
   "number": 16,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 3
+ },
+ {
+  "id": "6904",
+  "espn_id": 4040715,
+  "name": "Jalen Hurts",
+  "team": "PHI",
+  "number": 1,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 6
  },
  {
   "id": "13335",
@@ -1016,7 +1016,7 @@
   "team": "SEA",
   "number": 6,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
