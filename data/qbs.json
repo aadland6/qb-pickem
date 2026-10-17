@@ -70,24 +70,24 @@
   "exp": 0
  },
  {
-  "id": "4881",
-  "espn_id": 3916387,
-  "name": "Lamar Jackson",
-  "team": "BAL",
-  "number": 8,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 8
- },
- {
   "id": "7083",
   "espn_id": 4035671,
   "name": "Tyler Huntley",
   "team": "BAL",
   "number": 5,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 6
+ },
+ {
+  "id": "4881",
+  "espn_id": 3916387,
+  "name": "Lamar Jackson",
+  "team": "BAL",
+  "number": 8,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 8
  },
  {
   "id": "8206",
@@ -328,16 +328,6 @@
   "depth": 2,
   "injury": null,
   "exp": 4
- },
- {
-  "id": "11557",
-  "espn_id": null,
-  "name": "Joe Milton",
-  "team": "DAL",
-  "number": 10,
-  "depth": 99,
-  "injury": null,
-  "exp": 2
  },
  {
   "id": "11563",
@@ -930,6 +920,16 @@
   "exp": 0
  },
  {
+  "id": "11557",
+  "espn_id": null,
+  "name": "Joe Milton",
+  "team": "PHI",
+  "number": 10,
+  "depth": 3,
+  "injury": null,
+  "exp": 2
+ },
+ {
   "id": "96",
   "espn_id": 8439,
   "name": "Aaron Rodgers",
@@ -1076,7 +1076,7 @@
   "team": "TB",
   "number": 6,
   "depth": 2,
-  "injury": "Doubtful",
+  "injury": "Out",
   "exp": 8
  },
  {
