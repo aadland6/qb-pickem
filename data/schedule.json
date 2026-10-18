@@ -589,18 +589,11 @@
    "phase": "regular",
    "games": [
     {
-     "home": "DEN",
-     "away": "SEA",
-     "kickoff": "2026-10-16T00:15Z",
-     "espn_game_id": "401872995",
-     "status": "STATUS_FINAL"
-    },
-    {
      "home": "JAX",
      "away": "HOU",
      "kickoff": "2026-10-18T13:30Z",
      "espn_game_id": "401872996",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_IN_PROGRESS"
     },
     {
      "home": "ATL",
@@ -678,6 +671,13 @@
      "kickoff": "2026-10-19T00:20Z",
      "espn_game_id": "401873007",
      "status": "STATUS_SCHEDULED"
+    },
+    {
+     "home": "DEN",
+     "away": "SEA",
+     "kickoff": "2026-10-16T00:15Z",
+     "espn_game_id": "401872995",
+     "status": "STATUS_FINAL"
     },
     {
      "home": "SF",

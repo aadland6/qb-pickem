@@ -906,18 +906,8 @@
   "team": "PHI",
   "number": 1,
   "depth": 2,
-  "injury": "Out",
+  "injury": "IR",
   "exp": 6
- },
- {
-  "id": "13335",
-  "espn_id": null,
-  "name": "Cole Payton",
-  "team": "PHI",
-  "number": 18,
-  "depth": 3,
-  "injury": null,
-  "exp": 0
  },
  {
   "id": "11557",
@@ -928,6 +918,16 @@
   "depth": 3,
   "injury": null,
   "exp": 2
+ },
+ {
+  "id": "13335",
+  "espn_id": null,
+  "name": "Cole Payton",
+  "team": "PHI",
+  "number": 18,
+  "depth": 4,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "96",
@@ -1080,21 +1080,21 @@
   "exp": 8
  },
  {
-  "id": "6037",
-  "espn_id": 3722362,
-  "name": "Brett Rypien",
-  "team": "TB",
-  "number": 8,
-  "depth": 99,
-  "injury": null,
-  "exp": 7
- },
- {
   "id": "6185",
   "espn_id": 3120590,
   "name": "Easton Stick",
   "team": "TB",
   "number": 16,
+  "depth": 4,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "6037",
+  "espn_id": 3722362,
+  "name": "Brett Rypien",
+  "team": "TB",
+  "number": 8,
   "depth": 99,
   "injury": null,
   "exp": 7
@@ -1156,7 +1156,7 @@
   "team": "WAS",
   "number": 8,
   "depth": 2,
-  "injury": "Doubtful",
+  "injury": "Out",
   "exp": 11
  },
  {
