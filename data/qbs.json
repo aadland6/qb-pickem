@@ -26,7 +26,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -36,7 +36,7 @@
   "team": "ATL",
   "number": 9,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 2
  },
  {
@@ -46,7 +46,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 9
  },
  {
@@ -66,7 +66,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -186,7 +186,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -196,7 +196,7 @@
   "team": "CHI",
   "number": 18,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 2
  },
  {
@@ -206,7 +206,7 @@
   "team": "CHI",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 14
  },
  {
@@ -306,7 +306,7 @@
   "team": "CLE",
   "number": 15,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -486,7 +486,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -566,7 +566,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -636,7 +636,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -666,7 +666,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 3
  },
  {
@@ -766,7 +766,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -786,7 +786,7 @@
   "team": "NO",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -826,7 +826,7 @@
   "team": "NYG",
   "number": 13,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 3
  },
  {
@@ -916,7 +916,7 @@
   "team": "PHI",
   "number": 10,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 2
  },
  {
@@ -956,7 +956,7 @@
   "team": "PIT",
   "number": 18,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -966,7 +966,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
