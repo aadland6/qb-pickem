@@ -40,6 +40,16 @@
   "exp": 2
  },
  {
+  "id": "829",
+  "espn_id": 14012,
+  "name": "Andy Dalton",
+  "team": "ATL",
+  "number": 13,
+  "depth": 2,
+  "injury": null,
+  "exp": 15
+ },
+ {
   "id": "6768",
   "espn_id": 4241479,
   "name": "Tua Tagovailoa",
@@ -58,16 +68,6 @@
   "depth": 4,
   "injury": "Out",
   "exp": 0
- },
- {
-  "id": "829",
-  "espn_id": 14012,
-  "name": "Andy Dalton",
-  "team": "ATL",
-  "number": 14,
-  "depth": 99,
-  "injury": null,
-  "exp": 15
  },
  {
   "id": "7083",
@@ -1056,7 +1056,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1080,21 +1080,21 @@
   "exp": 8
  },
  {
-  "id": "6185",
-  "espn_id": 3120590,
-  "name": "Easton Stick",
-  "team": "TB",
-  "number": 16,
-  "depth": 4,
-  "injury": null,
-  "exp": 7
- },
- {
   "id": "6037",
   "espn_id": 3722362,
   "name": "Brett Rypien",
   "team": "TB",
   "number": 8,
+  "depth": 99,
+  "injury": null,
+  "exp": 7
+ },
+ {
+  "id": "6185",
+  "espn_id": 3120590,
+  "name": "Easton Stick",
+  "team": "TB",
+  "number": 16,
   "depth": 99,
   "injury": null,
   "exp": 7
