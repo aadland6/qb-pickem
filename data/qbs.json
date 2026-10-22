@@ -12,7 +12,7 @@
  {
   "id": "6011",
   "espn_id": 4038524,
-  "name": "Gardner Minshew",
+  "name": "Gardner Minshew II",
   "team": "ARI",
   "number": 15,
   "depth": 2,
@@ -26,13 +26,13 @@
   "team": "ARI",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 0
  },
  {
   "id": "11559",
   "espn_id": null,
-  "name": "Michael Penix",
+  "name": "Michael Penix Jr.",
   "team": "ATL",
   "number": 9,
   "depth": 1,
@@ -406,7 +406,7 @@
   "team": "GB",
   "number": 10,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 6
  },
  {
@@ -460,16 +460,6 @@
   "exp": 1
  },
  {
-  "id": "13816",
-  "espn_id": null,
-  "name": "Mark Gronowski",
-  "team": "HOU",
-  "number": 16,
-  "depth": 99,
-  "injury": null,
-  "exp": 0
- },
- {
   "id": "5870",
   "espn_id": 3917792,
   "name": "Daniel Jones",
@@ -482,7 +472,7 @@
  {
   "id": "9229",
   "espn_id": null,
-  "name": "Anthony Richardson",
+  "name": "Anthony Richardson Sr.",
   "team": "IND",
   "number": 5,
   "depth": 2,
@@ -632,7 +622,7 @@
  {
   "id": "10857",
   "espn_id": null,
-  "name": "Stetson Bennett",
+  "name": "Stetson Bennett IV",
   "team": "LAR",
   "number": 13,
   "depth": 2,
@@ -1016,7 +1006,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 2,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 7
  },
  {
