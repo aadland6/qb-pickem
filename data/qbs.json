@@ -70,24 +70,24 @@
   "exp": 0
  },
  {
-  "id": "7083",
-  "espn_id": 4035671,
-  "name": "Tyler Huntley",
-  "team": "BAL",
-  "number": 5,
-  "depth": 1,
-  "injury": null,
-  "exp": 6
- },
- {
   "id": "4881",
   "espn_id": 3916387,
   "name": "Lamar Jackson",
   "team": "BAL",
   "number": 8,
-  "depth": 2,
+  "depth": 1,
   "injury": "Questionable",
   "exp": 8
+ },
+ {
+  "id": "7083",
+  "espn_id": 4035671,
+  "name": "Tyler Huntley",
+  "team": "BAL",
+  "number": 5,
+  "depth": 2,
+  "injury": null,
+  "exp": 6
  },
  {
   "id": "8206",
@@ -810,12 +810,22 @@
   "exp": 8
  },
  {
+  "id": "11565",
+  "espn_id": null,
+  "name": "J.J. McCarthy",
+  "team": "NYG",
+  "number": 18,
+  "depth": 1,
+  "injury": null,
+  "exp": 2
+ },
+ {
   "id": "2306",
   "espn_id": 2969939,
   "name": "Jameis Winston",
   "team": "NYG",
   "number": 19,
-  "depth": 1,
+  "depth": 2,
   "injury": null,
   "exp": 11
  },
@@ -825,19 +835,9 @@
   "name": "Jake Haener",
   "team": "NYG",
   "number": 13,
-  "depth": 2,
-  "injury": null,
-  "exp": 3
- },
- {
-  "id": "11565",
-  "espn_id": null,
-  "name": "J.J. McCarthy",
-  "team": "NYG",
-  "number": 18,
   "depth": 3,
   "injury": null,
-  "exp": 2
+  "exp": 3
  },
  {
   "id": "12508",
@@ -1060,24 +1060,24 @@
   "exp": 1
  },
  {
-  "id": "13425",
-  "espn_id": null,
-  "name": "Jalon Daniels",
-  "team": "TB",
-  "number": 10,
-  "depth": 1,
-  "injury": null,
-  "exp": 0
- },
- {
   "id": "4892",
   "espn_id": 3052587,
   "name": "Baker Mayfield",
   "team": "TB",
   "number": 6,
-  "depth": 2,
+  "depth": 1,
   "injury": "Questionable",
   "exp": 8
+ },
+ {
+  "id": "13425",
+  "espn_id": null,
+  "name": "Jalon Daniels",
+  "team": "TB",
+  "number": 10,
+  "depth": 4,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "6037",
