@@ -693,18 +693,11 @@
    "phase": "regular",
    "games": [
     {
-     "home": "CHI",
-     "away": "NE",
-     "kickoff": "2026-10-23T00:15Z",
-     "espn_game_id": "401873010",
-     "status": "STATUS_FINAL"
-    },
-    {
      "home": "NO",
      "away": "PIT",
      "kickoff": "2026-10-25T13:30Z",
      "espn_game_id": "401873011",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_IN_PROGRESS"
     },
     {
      "home": "ATL",
@@ -782,6 +775,13 @@
      "kickoff": "2026-10-26T00:20Z",
      "espn_game_id": "401873022",
      "status": "STATUS_SCHEDULED"
+    },
+    {
+     "home": "CHI",
+     "away": "NE",
+     "kickoff": "2026-10-23T00:15Z",
+     "espn_game_id": "401873010",
+     "status": "STATUS_FINAL"
     },
     {
      "home": "PHI",

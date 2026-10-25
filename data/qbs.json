@@ -70,24 +70,24 @@
   "exp": 0
  },
  {
-  "id": "4881",
-  "espn_id": 3916387,
-  "name": "Lamar Jackson",
-  "team": "BAL",
-  "number": 8,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 8
- },
- {
   "id": "7083",
   "espn_id": 4035671,
   "name": "Tyler Huntley",
   "team": "BAL",
   "number": 5,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 6
+ },
+ {
+  "id": "4881",
+  "espn_id": 3916387,
+  "name": "Lamar Jackson",
+  "team": "BAL",
+  "number": 8,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 8
  },
  {
   "id": "8206",
@@ -786,7 +786,7 @@
   "team": "NO",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -956,7 +956,7 @@
   "team": "PIT",
   "number": 18,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -966,7 +966,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
