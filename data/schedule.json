@@ -693,13 +693,6 @@
    "phase": "regular",
    "games": [
     {
-     "home": "PHI",
-     "away": "DAL",
-     "kickoff": "2026-10-27T00:15Z",
-     "espn_game_id": "401873009",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
      "home": "CHI",
      "away": "NE",
      "kickoff": "2026-10-23T00:15Z",
@@ -788,6 +781,13 @@
      "away": "KC",
      "kickoff": "2026-10-26T00:20Z",
      "espn_game_id": "401873022",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "PHI",
+     "away": "DAL",
+     "kickoff": "2026-10-27T00:15Z",
+     "espn_game_id": "401873009",
      "status": "STATUS_FINAL"
     }
    ]
@@ -971,17 +971,17 @@
      "status": "STATUS_SCHEDULED"
     },
     {
-     "home": "SF",
-     "away": "LV",
-     "kickoff": "2026-11-08T21:05Z",
-     "espn_game_id": "401873047",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
      "home": "NE",
      "away": "GB",
      "kickoff": "2026-11-08T21:25Z",
      "espn_game_id": "401873049",
+     "status": "STATUS_SCHEDULED"
+    },
+    {
+     "home": "SF",
+     "away": "LV",
+     "kickoff": "2026-11-08T21:25Z",
+     "espn_game_id": "401873047",
      "status": "STATUS_SCHEDULED"
     },
     {
