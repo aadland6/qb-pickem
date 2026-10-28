@@ -26,7 +26,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 3,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 0
  },
  {
@@ -46,7 +46,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 15
  },
  {
@@ -66,7 +66,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -76,7 +76,7 @@
   "team": "BAL",
   "number": 8,
   "depth": 1,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 8
  },
  {
@@ -186,7 +186,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -206,7 +206,7 @@
   "team": "CHI",
   "number": 11,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 14
  },
  {
@@ -286,7 +286,7 @@
   "team": "CLE",
   "number": 6,
   "depth": 2,
-  "injury": "IR",
+  "injury": null,
   "exp": 1
  },
  {
@@ -306,7 +306,7 @@
   "team": "CLE",
   "number": 15,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -366,7 +366,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -486,7 +486,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -566,7 +566,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -636,7 +636,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -666,7 +666,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 3
  },
  {
@@ -736,7 +736,7 @@
   "team": "MIN",
   "number": 12,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -766,7 +766,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -926,7 +926,7 @@
   "team": "PHI",
   "number": 18,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -956,7 +956,7 @@
   "team": "PIT",
   "number": 18,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -966,7 +966,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -1006,7 +1006,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 2,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 7
  },
  {
@@ -1075,19 +1075,9 @@
   "name": "Jalon Daniels",
   "team": "TB",
   "number": 10,
-  "depth": 4,
+  "depth": 3,
   "injury": null,
   "exp": 0
- },
- {
-  "id": "6037",
-  "espn_id": 3722362,
-  "name": "Brett Rypien",
-  "team": "TB",
-  "number": 8,
-  "depth": 99,
-  "injury": null,
-  "exp": 7
  },
  {
   "id": "6185",
@@ -1156,7 +1146,7 @@
   "team": "WAS",
   "number": 8,
   "depth": 2,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 11
  },
  {
