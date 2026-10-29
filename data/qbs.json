@@ -1146,7 +1146,7 @@
   "team": "WAS",
   "number": 8,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 11
  },
  {
