@@ -76,7 +76,7 @@
   "team": "BAL",
   "number": 8,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 8
  },
  {
