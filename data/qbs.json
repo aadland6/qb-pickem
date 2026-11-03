@@ -110,6 +110,16 @@
   "exp": 1
  },
  {
+  "id": "11648",
+  "espn_id": null,
+  "name": "Kedon Slovis",
+  "team": "BAL",
+  "number": 17,
+  "depth": 4,
+  "injury": null,
+  "exp": 2
+ },
+ {
   "id": "8206",
   "espn_id": null,
   "name": "Skylar Thompson",
@@ -438,16 +448,6 @@
   "depth": 99,
   "injury": null,
   "exp": 1
- },
- {
-  "id": "11648",
-  "espn_id": null,
-  "name": "Kedon Slovis",
-  "team": "GB",
-  "number": 17,
-  "depth": 99,
-  "injury": null,
-  "exp": 2
  },
  {
   "id": "9758",
