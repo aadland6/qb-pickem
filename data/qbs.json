@@ -70,12 +70,22 @@
   "exp": 0
  },
  {
+  "id": "13350",
+  "espn_id": null,
+  "name": "Joe Fagnano",
+  "team": "BAL",
+  "number": 12,
+  "depth": 1,
+  "injury": "Out",
+  "exp": 0
+ },
+ {
   "id": "4881",
   "espn_id": 3916387,
   "name": "Lamar Jackson",
   "team": "BAL",
   "number": 8,
-  "depth": 1,
+  "depth": 2,
   "injury": "Out",
   "exp": 8
  },
@@ -85,19 +95,9 @@
   "name": "Tyler Huntley",
   "team": "BAL",
   "number": 5,
-  "depth": 2,
+  "depth": 3,
   "injury": "Out",
   "exp": 6
- },
- {
-  "id": "8206",
-  "espn_id": null,
-  "name": "Skylar Thompson",
-  "team": "BAL",
-  "number": 11,
-  "depth": 3,
-  "injury": "IR",
-  "exp": 4
  },
  {
   "id": "4683",
@@ -110,14 +110,24 @@
   "exp": 1
  },
  {
-  "id": "13350",
+  "id": "8206",
   "espn_id": null,
-  "name": "Joe Fagnano",
+  "name": "Skylar Thompson",
   "team": "BAL",
-  "number": 12,
+  "number": 11,
   "depth": 4,
-  "injury": "Out",
-  "exp": 0
+  "injury": "IR",
+  "exp": 4
+ },
+ {
+  "id": "11931",
+  "espn_id": null,
+  "name": "Austin Reed",
+  "team": "BAL",
+  "number": 15,
+  "depth": 99,
+  "injury": null,
+  "exp": 2
  },
  {
   "id": "4924",
@@ -206,7 +216,7 @@
   "team": "CHI",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 14
  },
  {
@@ -420,6 +430,16 @@
   "exp": 15
  },
  {
+  "id": "12688",
+  "espn_id": null,
+  "name": "Cam Miller",
+  "team": "GB",
+  "number": 15,
+  "depth": 99,
+  "injury": null,
+  "exp": 1
+ },
+ {
   "id": "11648",
   "espn_id": null,
   "name": "Kedon Slovis",
@@ -616,7 +636,7 @@
   "team": "LAR",
   "number": 9,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 17
  },
  {
@@ -1006,7 +1026,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 7
  },
  {
