@@ -1,23 +1,23 @@
 [
  {
-  "id": "3257",
-  "espn_id": 2578570,
-  "name": "Jacoby Brissett",
-  "team": "ARI",
-  "number": 7,
-  "depth": 1,
-  "injury": null,
-  "exp": 10
- },
- {
   "id": "6011",
   "espn_id": 4038524,
   "name": "Gardner Minshew II",
   "team": "ARI",
   "number": 15,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 7
+ },
+ {
+  "id": "3257",
+  "espn_id": 2578570,
+  "name": "Jacoby Brissett",
+  "team": "ARI",
+  "number": 7,
+  "depth": 2,
+  "injury": null,
+  "exp": 10
  },
  {
   "id": "13272",
@@ -26,7 +26,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -46,7 +46,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 15
  },
  {
@@ -66,7 +66,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -76,7 +76,7 @@
   "team": "BAL",
   "number": 12,
   "depth": 1,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -114,7 +114,7 @@
   "espn_id": null,
   "name": "Kedon Slovis",
   "team": "BAL",
-  "number": 17,
+  "number": 18,
   "depth": 4,
   "injury": null,
   "exp": 2
@@ -125,7 +125,7 @@
   "name": "Skylar Thompson",
   "team": "BAL",
   "number": 11,
-  "depth": 4,
+  "depth": 5,
   "injury": "IR",
   "exp": 4
  },
@@ -134,7 +134,7 @@
   "espn_id": null,
   "name": "Austin Reed",
   "team": "BAL",
-  "number": 15,
+  "number": 16,
   "depth": 99,
   "injury": null,
   "exp": 2
@@ -206,7 +206,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -226,7 +226,7 @@
   "team": "CHI",
   "number": 11,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 14
  },
  {
@@ -296,7 +296,7 @@
   "team": "CLE",
   "number": 4,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 9
  },
  {
@@ -306,7 +306,7 @@
   "team": "CLE",
   "number": 6,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -326,7 +326,7 @@
   "team": "CLE",
   "number": 15,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -386,7 +386,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -444,7 +444,7 @@
   "espn_id": null,
   "name": "Cam Miller",
   "team": "GB",
-  "number": 15,
+  "number": 17,
   "depth": 99,
   "injury": null,
   "exp": 1
@@ -506,7 +506,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -586,7 +586,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -656,7 +656,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -686,7 +686,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 3
  },
  {
@@ -756,7 +756,7 @@
   "team": "MIN",
   "number": 12,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -786,7 +786,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -806,7 +806,7 @@
   "team": "NO",
   "number": 11,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -856,7 +856,7 @@
   "team": "NYG",
   "number": 13,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 3
  },
  {
@@ -1026,7 +1026,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 2,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 7
  },
  {
@@ -1076,7 +1076,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -1176,7 +1176,7 @@
   "team": "WAS",
   "number": 16,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
