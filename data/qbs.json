@@ -290,12 +290,22 @@
   "exp": 3
  },
  {
+  "id": "12524",
+  "espn_id": null,
+  "name": "Shedeur Sanders",
+  "team": "CLE",
+  "number": 2,
+  "depth": 1,
+  "injury": null,
+  "exp": 1
+ },
+ {
   "id": "4017",
   "espn_id": 3122840,
   "name": "Deshaun Watson",
   "team": "CLE",
   "number": 4,
-  "depth": 1,
+  "depth": 2,
   "injury": "Questionable",
   "exp": 9
  },
@@ -305,16 +315,6 @@
   "name": "Dillon Gabriel",
   "team": "CLE",
   "number": 6,
-  "depth": 2,
-  "injury": null,
-  "exp": 1
- },
- {
-  "id": "12524",
-  "espn_id": null,
-  "name": "Shedeur Sanders",
-  "team": "CLE",
-  "number": 2,
   "depth": 3,
   "injury": null,
   "exp": 1
@@ -636,7 +636,7 @@
   "team": "LAR",
   "number": 9,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 17
  },
  {
@@ -910,12 +910,22 @@
   "exp": 3
  },
  {
+  "id": "11557",
+  "espn_id": null,
+  "name": "Joe Milton",
+  "team": "PHI",
+  "number": 14,
+  "depth": 1,
+  "injury": null,
+  "exp": 2
+ },
+ {
   "id": "9230",
   "espn_id": null,
   "name": "Tanner McKee",
   "team": "PHI",
   "number": 16,
-  "depth": 1,
+  "depth": 2,
   "injury": null,
   "exp": 3
  },
@@ -925,19 +935,9 @@
   "name": "Jalen Hurts",
   "team": "PHI",
   "number": 1,
-  "depth": 2,
+  "depth": 3,
   "injury": "IR",
   "exp": 6
- },
- {
-  "id": "11557",
-  "espn_id": null,
-  "name": "Joe Milton",
-  "team": "PHI",
-  "number": 14,
-  "depth": 3,
-  "injury": null,
-  "exp": 2
  },
  {
   "id": "13335",
@@ -1010,24 +1010,24 @@
   "exp": 1
  },
  {
-  "id": "4943",
-  "espn_id": 3912547,
-  "name": "Sam Darnold",
-  "team": "SEA",
-  "number": 14,
-  "depth": 1,
-  "injury": null,
-  "exp": 8
- },
- {
   "id": "5854",
   "espn_id": 3924327,
   "name": "Drew Lock",
   "team": "SEA",
   "number": 2,
-  "depth": 2,
+  "depth": 1,
   "injury": "Questionable",
   "exp": 7
+ },
+ {
+  "id": "4943",
+  "espn_id": 3912547,
+  "name": "Sam Darnold",
+  "team": "SEA",
+  "number": 14,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 8
  },
  {
   "id": "12510",
@@ -1035,9 +1035,19 @@
   "name": "Jalen Milroe",
   "team": "SEA",
   "number": 6,
-  "depth": 3,
+  "depth": 4,
   "injury": null,
   "exp": 1
+ },
+ {
+  "id": "11065",
+  "espn_id": null,
+  "name": "Adrian Martinez",
+  "team": "SEA",
+  "number": 4,
+  "depth": 99,
+  "injury": null,
+  "exp": 3
  },
  {
   "id": "4936",
