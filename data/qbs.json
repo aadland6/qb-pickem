@@ -36,7 +36,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 15
  },
  {
@@ -56,7 +56,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -64,7 +64,7 @@
   "espn_id": 2578570,
   "name": "Jacoby Brissett",
   "team": "BAL",
-  "number": 7,
+  "number": 11,
   "depth": 1,
   "injury": null,
   "exp": 10
@@ -128,16 +128,6 @@
   "depth": 6,
   "injury": "IR",
   "exp": 4
- },
- {
-  "id": "11931",
-  "espn_id": null,
-  "name": "Austin Reed",
-  "team": "BAL",
-  "number": 16,
-  "depth": 99,
-  "injury": null,
-  "exp": 2
  },
  {
   "id": "4924",
@@ -746,7 +736,7 @@
   "team": "MIN",
   "number": 1,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 7
  },
  {
@@ -855,7 +845,7 @@
   "name": "Jaxson Dart",
   "team": "NYG",
   "number": 6,
-  "depth": 3,
+  "depth": 4,
   "injury": "IR",
   "exp": 1
  },
@@ -865,6 +855,16 @@
   "name": "Clayton Thorson",
   "team": "NYG",
   "number": 0,
+  "depth": 99,
+  "injury": null,
+  "exp": 3
+ },
+ {
+  "id": "10215",
+  "espn_id": null,
+  "name": "Jake Haener",
+  "team": "NYG",
+  "number": 13,
   "depth": 99,
   "injury": null,
   "exp": 3
