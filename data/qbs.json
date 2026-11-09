@@ -196,7 +196,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -216,7 +216,7 @@
   "team": "CHI",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 14
  },
  {
@@ -296,7 +296,7 @@
   "team": "CLE",
   "number": 4,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 9
  },
  {
@@ -316,7 +316,7 @@
   "team": "CLE",
   "number": 15,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -376,7 +376,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -496,7 +496,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -556,7 +556,7 @@
   "team": "KC",
   "number": 15,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 9
  },
  {
@@ -576,7 +576,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -586,7 +586,7 @@
   "team": "LAC",
   "number": 10,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 6
  },
  {
@@ -646,7 +646,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -676,7 +676,7 @@
   "team": "LV",
   "number": 12,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 3
  },
  {
@@ -696,7 +696,7 @@
   "team": "MIA",
   "number": 2,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 4
  },
  {
@@ -776,7 +776,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -796,7 +796,7 @@
   "team": "NO",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -826,7 +826,7 @@
   "team": "NYG",
   "number": 18,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 2
  },
  {
@@ -926,7 +926,7 @@
   "team": "PHI",
   "number": 16,
   "depth": 3,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 3
  },
  {
@@ -1006,7 +1006,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 7
  },
  {
@@ -1076,7 +1076,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1176,7 +1176,7 @@
   "team": "WAS",
   "number": 16,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
