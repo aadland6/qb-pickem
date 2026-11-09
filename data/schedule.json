@@ -1158,10 +1158,10 @@
      "status": "STATUS_SCHEDULED"
     },
     {
-     "home": "NYG",
-     "away": "JAX",
+     "home": "PHI",
+     "away": "PIT",
      "kickoff": "2026-11-22T18:00Z",
-     "espn_game_id": "401873069",
+     "espn_game_id": "401873076",
      "status": "STATUS_SCHEDULED"
     },
     {
@@ -1186,10 +1186,10 @@
      "status": "STATUS_SCHEDULED"
     },
     {
-     "home": "PHI",
-     "away": "PIT",
+     "home": "NYG",
+     "away": "JAX",
      "kickoff": "2026-11-22T21:25Z",
-     "espn_game_id": "401873076",
+     "espn_game_id": "401873069",
      "status": "STATUS_SCHEDULED"
     },
     {
