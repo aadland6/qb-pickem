@@ -10,16 +10,6 @@
   "exp": 7
  },
  {
-  "id": "13272",
-  "espn_id": null,
-  "name": "Carson Beck",
-  "team": "ARI",
-  "number": 19,
-  "depth": 2,
-  "injury": null,
-  "exp": 0
- },
- {
   "id": "260",
   "espn_id": 11394,
   "name": "Josh Johnson",
@@ -28,6 +18,26 @@
   "depth": 2,
   "injury": null,
   "exp": 18
+ },
+ {
+  "id": "13272",
+  "espn_id": null,
+  "name": "Carson Beck",
+  "team": "ARI",
+  "number": 19,
+  "depth": 3,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "13428",
+  "espn_id": null,
+  "name": "Joey Aguilar",
+  "team": "ARI",
+  "number": 17,
+  "depth": 99,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "11559",
@@ -528,16 +538,6 @@
   "depth": 3,
   "injury": null,
   "exp": 1
- },
- {
-  "id": "13428",
-  "espn_id": null,
-  "name": "Joey Aguilar",
-  "team": "JAX",
-  "number": 17,
-  "depth": 99,
-  "injury": null,
-  "exp": 0
  },
  {
   "id": "4464",
