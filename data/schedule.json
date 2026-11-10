@@ -901,13 +901,6 @@
    "phase": "regular",
    "games": [
     {
-     "home": "MIN",
-     "away": "BUF",
-     "kickoff": "2026-11-10T01:15Z",
-     "espn_game_id": "401873051",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
      "home": "BAL",
      "away": "JAX",
      "kickoff": "2026-11-06T01:15Z",
@@ -1003,6 +996,13 @@
      "away": "TB",
      "kickoff": "2026-11-09T01:20Z",
      "espn_game_id": "401873050",
+     "status": "STATUS_FINAL"
+    },
+    {
+     "home": "MIN",
+     "away": "BUF",
+     "kickoff": "2026-11-10T01:15Z",
+     "espn_game_id": "401873051",
      "status": "STATUS_FINAL"
     }
    ]

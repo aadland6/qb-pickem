@@ -6,7 +6,7 @@
   "team": "ARI",
   "number": 15,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 7
  },
  {
@@ -18,6 +18,16 @@
   "depth": 2,
   "injury": null,
   "exp": 0
+ },
+ {
+  "id": "260",
+  "espn_id": 11394,
+  "name": "Josh Johnson",
+  "team": "ARI",
+  "number": 11,
+  "depth": 2,
+  "injury": null,
+  "exp": 18
  },
  {
   "id": "11559",
@@ -256,16 +266,6 @@
   "team": "CIN",
   "number": 16,
   "depth": 2,
-  "injury": null,
-  "exp": 18
- },
- {
-  "id": "260",
-  "espn_id": 11394,
-  "name": "Josh Johnson",
-  "team": "CIN",
-  "number": 11,
-  "depth": 99,
   "injury": null,
   "exp": 18
  },
