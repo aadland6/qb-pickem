@@ -345,7 +345,7 @@
   "name": "Sam Howell",
   "team": "DAL",
   "number": 16,
-  "depth": 2,
+  "depth": 3,
   "injury": null,
   "exp": 4
  },
@@ -396,7 +396,7 @@
   "team": "DET",
   "number": 16,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 10
  },
  {
@@ -586,7 +586,7 @@
   "team": "LAC",
   "number": 10,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 6
  },
  {
@@ -1176,7 +1176,7 @@
   "team": "WAS",
   "number": 16,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
