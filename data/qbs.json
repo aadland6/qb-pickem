@@ -726,7 +726,7 @@
   "team": "MIN",
   "number": 11,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 10
  },
  {
@@ -736,7 +736,7 @@
   "team": "MIN",
   "number": 1,
   "depth": 3,
-  "injury": "Doubtful",
+  "injury": "Out",
   "exp": 7
  },
  {
@@ -1006,7 +1006,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 7
  },
  {
