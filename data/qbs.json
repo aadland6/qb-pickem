@@ -56,7 +56,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 15
  },
  {
@@ -76,7 +76,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -185,8 +185,8 @@
   "name": "Shane Buechele",
   "team": "BUF",
   "number": 6,
-  "depth": 99,
-  "injury": null,
+  "depth": 3,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -316,7 +316,7 @@
   "team": "CLE",
   "number": 6,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -326,7 +326,7 @@
   "team": "CLE",
   "number": 15,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -506,7 +506,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -705,7 +705,7 @@
   "name": "Brady Cook",
   "team": "MIA",
   "number": 15,
-  "depth": 99,
+  "depth": 3,
   "injury": null,
   "exp": 1
  },
@@ -746,7 +746,7 @@
   "team": "MIN",
   "number": 12,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -756,7 +756,7 @@
   "team": "NE",
   "number": 10,
   "depth": 1,
-  "injury": null,
+  "injury": "Out",
   "exp": 2
  },
  {
@@ -776,7 +776,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -796,7 +796,7 @@
   "team": "NO",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -1086,7 +1086,7 @@
   "team": "TB",
   "number": 6,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 8
  },
  {

@@ -1012,18 +1012,11 @@
    "phase": "regular",
    "games": [
     {
-     "home": "NYG",
-     "away": "WAS",
-     "kickoff": "2026-11-13T01:15Z",
-     "espn_game_id": "401873052",
-     "status": "STATUS_FINAL"
-    },
-    {
      "home": "DET",
      "away": "NE",
      "kickoff": "2026-11-15T14:30Z",
      "espn_game_id": "401873053",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_IN_PROGRESS"
     },
     {
      "home": "ATL",
@@ -1101,6 +1094,13 @@
      "kickoff": "2026-11-16T01:20Z",
      "espn_game_id": "401873064",
      "status": "STATUS_SCHEDULED"
+    },
+    {
+     "home": "NYG",
+     "away": "WAS",
+     "kickoff": "2026-11-13T01:15Z",
+     "espn_game_id": "401873052",
+     "status": "STATUS_FINAL"
     },
     {
      "home": "BAL",
