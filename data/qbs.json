@@ -126,7 +126,7 @@
   "team": "BAL",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 2
  },
  {
@@ -185,7 +185,7 @@
   "name": "Shane Buechele",
   "team": "BUF",
   "number": 6,
-  "depth": 3,
+  "depth": 99,
   "injury": "Out",
   "exp": 5
  },
@@ -300,23 +300,23 @@
   "exp": 9
  },
  {
-  "id": "12524",
-  "espn_id": null,
-  "name": "Shedeur Sanders",
-  "team": "CLE",
-  "number": 2,
-  "depth": 2,
-  "injury": null,
-  "exp": 1
- },
- {
   "id": "12486",
   "espn_id": null,
   "name": "Dillon Gabriel",
   "team": "CLE",
   "number": 6,
-  "depth": 3,
+  "depth": 2,
   "injury": "Out",
+  "exp": 1
+ },
+ {
+  "id": "12524",
+  "espn_id": null,
+  "name": "Shedeur Sanders",
+  "team": "CLE",
+  "number": 2,
+  "depth": 3,
+  "injury": null,
   "exp": 1
  },
  {
@@ -680,6 +680,16 @@
   "exp": 3
  },
  {
+  "id": "6037",
+  "espn_id": 3722362,
+  "name": "Brett Rypien",
+  "team": "LV",
+  "number": 8,
+  "depth": 99,
+  "injury": null,
+  "exp": 7
+ },
+ {
   "id": "12494",
   "espn_id": null,
   "name": "Kyle McCord",
@@ -705,7 +715,7 @@
   "name": "Brady Cook",
   "team": "MIA",
   "number": 15,
-  "depth": 3,
+  "depth": 99,
   "injury": null,
   "exp": 1
  },
@@ -790,24 +800,24 @@
   "exp": 1
  },
  {
-  "id": "7538",
-  "espn_id": null,
-  "name": "Zach Wilson",
-  "team": "NO",
-  "number": 11,
-  "depth": 2,
-  "injury": "Out",
-  "exp": 5
- },
- {
   "id": "11562",
   "espn_id": null,
   "name": "Spencer Rattler",
   "team": "NO",
   "number": 2,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 2
+ },
+ {
+  "id": "7538",
+  "espn_id": null,
+  "name": "Zach Wilson",
+  "team": "NO",
+  "number": 11,
+  "depth": 3,
+  "injury": "Out",
+  "exp": 5
  },
  {
   "id": "1979",
@@ -1090,24 +1100,34 @@
   "exp": 8
  },
  {
-  "id": "13425",
-  "espn_id": null,
-  "name": "Jalon Daniels",
-  "team": "TB",
-  "number": 10,
-  "depth": 3,
-  "injury": null,
-  "exp": 0
- },
- {
   "id": "6185",
   "espn_id": 3120590,
   "name": "Easton Stick",
   "team": "TB",
   "number": 16,
-  "depth": 99,
+  "depth": 3,
   "injury": null,
   "exp": 7
+ },
+ {
+  "id": "13425",
+  "espn_id": null,
+  "name": "Jalon Daniels",
+  "team": "TB",
+  "number": 10,
+  "depth": 4,
+  "injury": null,
+  "exp": 0
+ },
+ {
+  "id": "4574",
+  "espn_id": 2972515,
+  "name": "Cooper Rush",
+  "team": "TB",
+  "number": 13,
+  "depth": 99,
+  "injury": null,
+  "exp": 9
  },
  {
   "id": "12792",
