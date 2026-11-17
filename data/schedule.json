@@ -1255,13 +1255,6 @@
      "status": "STATUS_SCHEDULED"
     },
     {
-     "home": "CLE",
-     "away": "LV",
-     "kickoff": "2026-11-29T18:00Z",
-     "espn_game_id": "401873086",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
      "home": "IND",
      "away": "NYG",
      "kickoff": "2026-11-29T18:00Z",
@@ -1283,6 +1276,13 @@
      "status": "STATUS_SCHEDULED"
     },
     {
+     "home": "JAX",
+     "away": "TEN",
+     "kickoff": "2026-11-29T18:00Z",
+     "espn_game_id": "401873090",
+     "status": "STATUS_SCHEDULED"
+    },
+    {
      "home": "HOU",
      "away": "BAL",
      "kickoff": "2026-11-29T18:00Z",
@@ -1290,10 +1290,10 @@
      "status": "STATUS_SCHEDULED"
     },
     {
-     "home": "JAX",
-     "away": "TEN",
+     "home": "LAC",
+     "away": "NE",
      "kickoff": "2026-11-29T21:05Z",
-     "espn_game_id": "401873090",
+     "espn_game_id": "401873093",
      "status": "STATUS_SCHEDULED"
     },
     {
@@ -1311,10 +1311,10 @@
      "status": "STATUS_SCHEDULED"
     },
     {
-     "home": "LAC",
-     "away": "NE",
+     "home": "CLE",
+     "away": "LV",
      "kickoff": "2026-11-30T01:20Z",
-     "espn_game_id": "401873093",
+     "espn_game_id": "401873086",
      "status": "STATUS_SCHEDULED"
     },
     {
