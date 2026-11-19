@@ -920,24 +920,24 @@
   "exp": 2
  },
  {
-  "id": "9230",
-  "espn_id": null,
-  "name": "Tanner McKee",
-  "team": "PHI",
-  "number": 16,
-  "depth": 2,
-  "injury": null,
-  "exp": 3
- },
- {
   "id": "6904",
   "espn_id": 4040715,
   "name": "Jalen Hurts",
   "team": "PHI",
   "number": 1,
-  "depth": 3,
+  "depth": 2,
   "injury": "IR",
   "exp": 6
+ },
+ {
+  "id": "9230",
+  "espn_id": null,
+  "name": "Tanner McKee",
+  "team": "PHI",
+  "number": 16,
+  "depth": 3,
+  "injury": null,
+  "exp": 3
  },
  {
   "id": "13335",
@@ -1066,7 +1066,7 @@
   "team": "SF",
   "number": 10,
   "depth": 2,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 5
  },
  {
@@ -1080,24 +1080,24 @@
   "exp": 1
  },
  {
-  "id": "4892",
-  "espn_id": 3052587,
-  "name": "Baker Mayfield",
-  "team": "TB",
-  "number": 6,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 8
- },
- {
   "id": "13425",
   "espn_id": null,
   "name": "Jalon Daniels",
   "team": "TB",
   "number": 10,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 0
+ },
+ {
+  "id": "4892",
+  "espn_id": 3052587,
+  "name": "Baker Mayfield",
+  "team": "TB",
+  "number": 6,
+  "depth": 2,
+  "injury": "Questionable",
+  "exp": 8
  },
  {
   "id": "6185",
