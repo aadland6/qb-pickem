@@ -6,7 +6,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 0
  },
  {
@@ -506,7 +506,7 @@
   "team": "IND",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1080,24 +1080,24 @@
   "exp": 1
  },
  {
-  "id": "13425",
-  "espn_id": null,
-  "name": "Jalon Daniels",
-  "team": "TB",
-  "number": 10,
-  "depth": 1,
-  "injury": null,
-  "exp": 0
- },
- {
   "id": "4892",
   "espn_id": 3052587,
   "name": "Baker Mayfield",
   "team": "TB",
   "number": 6,
-  "depth": 2,
+  "depth": 1,
   "injury": "Questionable",
   "exp": 8
+ },
+ {
+  "id": "13425",
+  "espn_id": null,
+  "name": "Jalon Daniels",
+  "team": "TB",
+  "number": 10,
+  "depth": 2,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "6185",

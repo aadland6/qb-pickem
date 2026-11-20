@@ -1,13 +1,31 @@
 {
  "season": 2026,
  "week": "11",
- "updated": "2026-11-19T18:50:05+00:00",
+ "updated": "2026-11-20T18:16:15+00:00",
  "players": {
+  "96": {
+   "sources": {
+    "rotowire": 16.65
+   },
+   "avg": 16.65
+  },
+  "11565": {
+   "sources": {
+    "rotowire": 13.46
+   },
+   "avg": 13.46
+  },
   "11560": {
    "sources": {
-    "rotowire": 19.98
+    "rotowire": 20.06
    },
-   "avg": 19.98
+   "avg": 20.06
+  },
+  "5870": {
+   "sources": {
+    "rotowire": 9.97
+   },
+   "avg": 9.97
   },
   "6797": {
    "sources": {
@@ -15,71 +33,17 @@
    },
    "avg": 15.87
   },
-  "3163": {
+  "8183": {
    "sources": {
-    "rotowire": 15.83
+    "rotowire": 16.73
    },
-   "avg": 15.83
-  },
-  "11563": {
-   "sources": {
-    "rotowire": 17.35
-   },
-   "avg": 17.35
-  },
-  "6770": {
-   "sources": {
-    "rotowire": 25.72
-   },
-   "avg": 25.72
-  },
-  "4984": {
-   "sources": {
-    "rotowire": 23.69
-   },
-   "avg": 23.69
-  },
-  "4892": {
-   "sources": {
-    "rotowire": 13.56
-   },
-   "avg": 13.56
-  },
-  "1166": {
-   "sources": {
-    "rotowire": 16.61
-   },
-   "avg": 16.61
-  },
-  "96": {
-   "sources": {
-    "rotowire": 16.68
-   },
-   "avg": 16.68
-  },
-  "13269": {
-   "sources": {
-    "rotowire": 11.56
-   },
-   "avg": 11.56
+   "avg": 16.73
   },
   "12545": {
    "sources": {
-    "rotowire": 15.25
+    "rotowire": 15.3
    },
-   "avg": 15.25
-  },
-  "9758": {
-   "sources": {
-    "rotowire": 20.31
-   },
-   "avg": 20.31
-  },
-  "12522": {
-   "sources": {
-    "rotowire": 16.37
-   },
-   "avg": 16.37
+   "avg": 15.3
   },
   "3294": {
    "sources": {
@@ -87,77 +51,113 @@
    },
    "avg": 20.82
   },
-  "8183": {
+  "4892": {
    "sources": {
-    "rotowire": 16.7
+    "rotowire": 13.73
    },
-   "avg": 16.7
-  },
-  "9228": {
-   "sources": {
-    "rotowire": 17.81
-   },
-   "avg": 17.81
-  },
-  "5870": {
-   "sources": {
-    "rotowire": 9.83
-   },
-   "avg": 9.83
-  },
-  "12494": {
-   "sources": {
-    "rotowire": 9.77
-   },
-   "avg": 9.77
-  },
-  "4046": {
-   "sources": {
-    "rotowire": 21.81
-   },
-   "avg": 21.81
+   "avg": 13.73
   },
   "7523": {
    "sources": {
-    "rotowire": 19.74
+    "rotowire": 19.68
    },
-   "avg": 19.74
-  },
-  "1373": {
-   "sources": {
-    "rotowire": 15.23
-   },
-   "avg": 15.23
-  },
-  "11566": {
-   "sources": {
-    "rotowire": 21.16
-   },
-   "avg": 21.16
-  },
-  "11565": {
-   "sources": {
-    "rotowire": 13.47
-   },
-   "avg": 13.47
+   "avg": 19.68
   },
   "11557": {
    "sources": {
-    "rotowire": 11.19
+    "rotowire": 11.23
    },
-   "avg": 11.19
+   "avg": 11.23
   },
-  "3257": {
+  "9758": {
    "sources": {
-    "rotowire": 11.4
+    "rotowire": 20.43
    },
-   "avg": 11.4
+   "avg": 20.43
+  },
+  "12494": {
+   "sources": {
+    "rotowire": 9.81
+   },
+   "avg": 9.81
+  },
+  "11563": {
+   "sources": {
+    "rotowire": 17.45
+   },
+   "avg": 17.45
+  },
+  "9228": {
+   "sources": {
+    "rotowire": 17.9
+   },
+   "avg": 17.9
+  },
+  "1166": {
+   "sources": {
+    "rotowire": 16.48
+   },
+   "avg": 16.48
+  },
+  "1373": {
+   "sources": {
+    "rotowire": 15.47
+   },
+   "avg": 15.47
+  },
+  "3163": {
+   "sources": {
+    "rotowire": 15.67
+   },
+   "avg": 15.67
+  },
+  "4984": {
+   "sources": {
+    "rotowire": 23.67
+   },
+   "avg": 23.67
+  },
+  "12522": {
+   "sources": {
+    "rotowire": 16.37
+   },
+   "avg": 16.37
+  },
+  "13269": {
+   "sources": {
+    "rotowire": 11.43
+   },
+   "avg": 11.43
+  },
+  "4046": {
+   "sources": {
+    "rotowire": 22.14
+   },
+   "avg": 22.14
   },
   "13272": {
    "sources": {
-    "rotowire": 7.62
+    "rotowire": 7.74
    },
-   "avg": 7.62
+   "avg": 7.74
+  },
+  "11566": {
+   "sources": {
+    "rotowire": 21.22
+   },
+   "avg": 21.22
+  },
+  "6770": {
+   "sources": {
+    "rotowire": 25.44
+   },
+   "avg": 25.44
+  },
+  "3257": {
+   "sources": {
+    "rotowire": 11.31
+   },
+   "avg": 11.31
   }
  }
 }
