@@ -480,14 +480,14 @@
   "exp": 1
  },
  {
-  "id": "5870",
-  "espn_id": 3917792,
-  "name": "Daniel Jones",
+  "id": "12470",
+  "espn_id": null,
+  "name": "Riley Leonard",
   "team": "IND",
-  "number": 17,
+  "number": 15,
   "depth": 1,
-  "injury": null,
-  "exp": 7
+  "injury": "Out",
+  "exp": 1
  },
  {
   "id": "9229",
@@ -500,14 +500,14 @@
   "exp": 3
  },
  {
-  "id": "12470",
-  "espn_id": null,
-  "name": "Riley Leonard",
+  "id": "5870",
+  "espn_id": 3917792,
+  "name": "Daniel Jones",
   "team": "IND",
-  "number": 15,
-  "depth": 3,
-  "injury": "Out",
-  "exp": 1
+  "number": 17,
+  "depth": 99,
+  "injury": null,
+  "exp": 7
  },
  {
   "id": "7262",
@@ -886,7 +886,7 @@
   "team": "NYJ",
   "number": 7,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 13
  },
  {
@@ -1090,24 +1090,24 @@
   "exp": 8
  },
  {
-  "id": "13425",
-  "espn_id": null,
-  "name": "Jalon Daniels",
-  "team": "TB",
-  "number": 10,
-  "depth": 2,
-  "injury": null,
-  "exp": 0
- },
- {
   "id": "6185",
   "espn_id": 3120590,
   "name": "Easton Stick",
   "team": "TB",
   "number": 16,
-  "depth": 4,
+  "depth": 3,
   "injury": null,
   "exp": 7
+ },
+ {
+  "id": "13425",
+  "espn_id": null,
+  "name": "Jalon Daniels",
+  "team": "TB",
+  "number": 10,
+  "depth": 4,
+  "injury": null,
+  "exp": 0
  },
  {
   "id": "4574",
