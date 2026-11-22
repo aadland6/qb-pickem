@@ -1,21 +1,11 @@
 [
  {
-  "id": "13272",
-  "espn_id": null,
-  "name": "Carson Beck",
-  "team": "ARI",
-  "number": 19,
-  "depth": 1,
-  "injury": "Questionable",
-  "exp": 0
- },
- {
   "id": "260",
   "espn_id": 11394,
   "name": "Josh Johnson",
   "team": "ARI",
   "number": 9,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 18
  },
@@ -25,9 +15,19 @@
   "name": "Gardner Minshew II",
   "team": "ARI",
   "number": 15,
-  "depth": 3,
+  "depth": 2,
   "injury": "IR",
   "exp": 7
+ },
+ {
+  "id": "13272",
+  "espn_id": null,
+  "name": "Carson Beck",
+  "team": "ARI",
+  "number": 19,
+  "depth": 3,
+  "injury": "Out",
+  "exp": 0
  },
  {
   "id": "13428",
@@ -126,7 +126,7 @@
   "team": "BAL",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 2
  },
  {
@@ -216,7 +216,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -236,7 +236,7 @@
   "team": "CHI",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 14
  },
  {
@@ -500,16 +500,6 @@
   "exp": 3
  },
  {
-  "id": "5870",
-  "espn_id": 3917792,
-  "name": "Daniel Jones",
-  "team": "IND",
-  "number": 17,
-  "depth": 99,
-  "injury": null,
-  "exp": 7
- },
- {
   "id": "7262",
   "espn_id": null,
   "name": "Jalen Morton",
@@ -576,7 +566,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -684,7 +674,7 @@
   "espn_id": 3722362,
   "name": "Brett Rypien",
   "team": "LV",
-  "number": 8,
+  "number": 16,
   "depth": 99,
   "injury": null,
   "exp": 7
@@ -816,7 +806,7 @@
   "team": "NO",
   "number": 11,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -946,7 +936,7 @@
   "team": "PHI",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -976,7 +966,7 @@
   "team": "PIT",
   "number": 18,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -986,7 +976,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -1086,7 +1076,7 @@
   "team": "TB",
   "number": 6,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 8
  },
  {
@@ -1096,7 +1086,7 @@
   "team": "TB",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 7
  },
  {
