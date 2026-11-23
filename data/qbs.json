@@ -386,7 +386,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -576,7 +576,7 @@
   "team": "LAC",
   "number": 10,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 6
  },
  {
@@ -746,7 +746,7 @@
   "team": "MIN",
   "number": 12,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1056,7 +1056,7 @@
   "team": "SF",
   "number": 10,
   "depth": 2,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 5
  },
  {
@@ -1066,7 +1066,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 1
  },
  {
@@ -1104,7 +1104,7 @@
   "espn_id": 2972515,
   "name": "Cooper Rush",
   "team": "TB",
-  "number": 8,
+  "number": 16,
   "depth": 99,
   "injury": null,
   "exp": 9
