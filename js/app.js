@@ -226,6 +226,16 @@ function startLivePolling() {
   setInterval(tick, 60_000);
 }
 
+// Name for any QB ever picked, including ones no longer on a roster.
+function qbName(id) {
+  if (S.qbById[id]) return S.qbById[id].name;
+  for (const p of S.picks) {
+    if (p.qb_id === id) return p.qb_name;
+    if (p.backup_qb_id === id) return p.backup_qb_name;
+  }
+  return "?";
+}
+
 const picksFor = (name) => S.picks.filter((p) => p.player_name === name);
 const pickAt = (name, weekKey) => S.picks.find((p) => p.player_name === name && p.week_key === weekKey);
 
@@ -373,8 +383,10 @@ function resolveWeek(weekKey) {
   const losers = [];
 
   for (const claims of Object.values(byQb)) {
-    const qb = S.qbById[claims[0].qb_id];
-    const g = qb ? gameFor(qb.team, weekKey) : null;
+    // Team as of the pick, not today's roster: released or traded QBs must
+    // still resolve against the game they actually played that week.
+    const team = claims[0].qb_team || S.qbById[claims[0].qb_id]?.team;
+    const g = team ? gameFor(team, weekKey) : null;
     const contested = claims.length > 1;
     if (!g || !gameStarted(g)) {
       claims.forEach((c) => {
@@ -409,8 +421,8 @@ function resolveWeek(weekKey) {
     };
     const bId = pick.backup_qb_id;
     if (bId && !primaryClaimed.has(bId) && !backupTaken.has(bId)) {
-      const bqb = S.qbById[bId];
-      const bg = bqb ? gameFor(bqb.team, weekKey) : null;
+      const bTeam = pick.backup_qb_team || S.qbById[bId]?.team;
+      const bg = bTeam ? gameFor(bTeam, weekKey) : null;
       if (bg && kickoffDate(bg) >= kickoffDate(primaryGame)) {
         entry.qbId = bId;
         entry.source = "backup";
@@ -878,7 +890,7 @@ function renderInsights() {
       const losers = Object.entries(res)
         .filter(([, x]) => !x.pending && x.lost && x.primaryQbId === e.primaryQbId)
         .map(([n, x]) => `${n} (${pickAt(n, wk)?.bid ?? 0}${x.source === "backup" ? ` → ${pickAt(n, wk)?.backup_qb_name}` : ", no backup"})`);
-      auctionRows.push(`<tr><td>${weekLabel(wk)}</td><td>${S.qbById[e.primaryQbId]?.name || "?"}</td>
+      auctionRows.push(`<tr><td>${weekLabel(wk)}</td><td>${qbName(e.primaryQbId)}</td>
         <td><strong>${name}</strong> · bid ${e.spent}</td><td>${losers.join("; ") || "—"}</td></tr>`);
     }
   }
@@ -900,7 +912,7 @@ function renderInsights() {
       if (!rows.length) return "";
       const best = rows.reduce((a, b) => (b.pts > a.pts ? b : a));
       const worst = rows.reduce((a, b) => (b.pts < a.pts ? b : a));
-      const qb = (r) => S.qbById[r.e.qbId]?.name || "—";
+      const qb = (r) => qbName(r.e.qbId);
       return `<tr><td>${n}</td><td class="matrix-pts">${qb(best)} · ${best.pts.toFixed(2)} (${weekLabel(best.wk)})</td>
         <td class="lostline">${qb(worst)} · ${worst.pts.toFixed(2)} (${weekLabel(worst.wk)})</td></tr>`;
     }).join("");
