@@ -1,11 +1,21 @@
 [
  {
+  "id": "13272",
+  "espn_id": null,
+  "name": "Carson Beck",
+  "team": "ARI",
+  "number": 19,
+  "depth": 1,
+  "injury": "Out",
+  "exp": 0
+ },
+ {
   "id": "260",
   "espn_id": 11394,
   "name": "Josh Johnson",
   "team": "ARI",
   "number": 9,
-  "depth": 1,
+  "depth": 2,
   "injury": null,
   "exp": 18
  },
@@ -15,19 +25,9 @@
   "name": "Gardner Minshew II",
   "team": "ARI",
   "number": 15,
-  "depth": 2,
+  "depth": 3,
   "injury": "IR",
   "exp": 7
- },
- {
-  "id": "13272",
-  "espn_id": null,
-  "name": "Carson Beck",
-  "team": "ARI",
-  "number": 19,
-  "depth": 3,
-  "injury": "Out",
-  "exp": 0
  },
  {
   "id": "13428",
@@ -118,16 +118,6 @@
   "depth": 4,
   "injury": null,
   "exp": 1
- },
- {
-  "id": "11648",
-  "espn_id": null,
-  "name": "Kedon Slovis",
-  "team": "BAL",
-  "number": 18,
-  "depth": 4,
-  "injury": "Out",
-  "exp": 2
  },
  {
   "id": "8206",
@@ -248,16 +238,6 @@
   "depth": 3,
   "injury": null,
   "exp": 3
- },
- {
-  "id": "13310",
-  "espn_id": null,
-  "name": "Miller Moss",
-  "team": "CHI",
-  "number": 16,
-  "depth": 99,
-  "injury": null,
-  "exp": 0
  },
  {
   "id": "6770",
@@ -480,24 +460,24 @@
   "exp": 1
  },
  {
-  "id": "12470",
-  "espn_id": null,
-  "name": "Riley Leonard",
-  "team": "IND",
-  "number": 15,
-  "depth": 1,
-  "injury": "Out",
-  "exp": 1
- },
- {
   "id": "9229",
   "espn_id": null,
   "name": "Anthony Richardson Sr.",
   "team": "IND",
   "number": 5,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 3
+ },
+ {
+  "id": "12470",
+  "espn_id": null,
+  "name": "Riley Leonard",
+  "team": "IND",
+  "number": 15,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 1
  },
  {
   "id": "7262",
@@ -580,24 +560,24 @@
   "exp": 6
  },
  {
-  "id": "7610",
-  "espn_id": null,
-  "name": "Trey Lance",
-  "team": "LAC",
-  "number": 5,
-  "depth": 3,
-  "injury": "IR",
-  "exp": 5
- },
- {
   "id": "12773",
   "espn_id": null,
   "name": "DJ Uiagalelei",
   "team": "LAC",
   "number": 7,
-  "depth": 4,
+  "depth": 2,
   "injury": null,
   "exp": 1
+ },
+ {
+  "id": "7610",
+  "espn_id": null,
+  "name": "Trey Lance",
+  "team": "LAC",
+  "number": 5,
+  "depth": 4,
+  "injury": "IR",
+  "exp": 5
  },
  {
   "id": "6111",
@@ -665,7 +645,7 @@
   "name": "Aidan O'Connell",
   "team": "LV",
   "number": 12,
-  "depth": 2,
+  "depth": 3,
   "injury": null,
   "exp": 3
  },
@@ -750,24 +730,24 @@
   "exp": 1
  },
  {
-  "id": "11564",
-  "espn_id": null,
-  "name": "Drake Maye",
-  "team": "NE",
-  "number": 10,
-  "depth": 1,
-  "injury": "Out",
-  "exp": 2
- },
- {
   "id": "11292",
   "espn_id": null,
   "name": "Tommy DeVito",
   "team": "NE",
   "number": 16,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 3
+ },
+ {
+  "id": "11564",
+  "espn_id": null,
+  "name": "Drake Maye",
+  "team": "NE",
+  "number": 10,
+  "depth": 2,
+  "injury": "Out",
+  "exp": 2
  },
  {
   "id": "13295",
@@ -790,24 +770,24 @@
   "exp": 1
  },
  {
-  "id": "11562",
-  "espn_id": null,
-  "name": "Spencer Rattler",
-  "team": "NO",
-  "number": 2,
-  "depth": 2,
-  "injury": null,
-  "exp": 2
- },
- {
   "id": "7538",
   "espn_id": null,
   "name": "Zach Wilson",
   "team": "NO",
   "number": 11,
-  "depth": 3,
+  "depth": 2,
   "injury": "Out",
   "exp": 5
+ },
+ {
+  "id": "11562",
+  "espn_id": null,
+  "name": "Spencer Rattler",
+  "team": "NO",
+  "number": 2,
+  "depth": 3,
+  "injury": null,
+  "exp": 2
  },
  {
   "id": "1979",
@@ -926,7 +906,7 @@
   "team": "PHI",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 3
  },
  {
@@ -1000,24 +980,24 @@
   "exp": 1
  },
  {
-  "id": "5854",
-  "espn_id": 3924327,
-  "name": "Drew Lock",
-  "team": "SEA",
-  "number": 2,
-  "depth": 1,
-  "injury": null,
-  "exp": 7
- },
- {
   "id": "4943",
   "espn_id": 3912547,
   "name": "Sam Darnold",
   "team": "SEA",
   "number": 14,
-  "depth": 2,
+  "depth": 1,
   "injury": "Out",
   "exp": 8
+ },
+ {
+  "id": "5854",
+  "espn_id": 3924327,
+  "name": "Drew Lock",
+  "team": "SEA",
+  "number": 2,
+  "depth": 2,
+  "injury": null,
+  "exp": 7
  },
  {
   "id": "12510",
@@ -1025,7 +1005,7 @@
   "name": "Jalen Milroe",
   "team": "SEA",
   "number": 6,
-  "depth": 3,
+  "depth": 4,
   "injury": null,
   "exp": 1
  },
@@ -1176,7 +1156,7 @@
   "team": "WAS",
   "number": 16,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
