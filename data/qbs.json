@@ -6,7 +6,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 1,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 0
  },
  {
@@ -56,7 +56,7 @@
   "team": "ATL",
   "number": 13,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 15
  },
  {
@@ -76,7 +76,7 @@
   "team": "ATL",
   "number": 18,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -125,7 +125,7 @@
   "name": "Skylar Thompson",
   "team": "BAL",
   "number": 11,
-  "depth": 5,
+  "depth": 4,
   "injury": "IR",
   "exp": 4
  },
@@ -135,7 +135,7 @@
   "name": "Joe Fagnano",
   "team": "BAL",
   "number": 12,
-  "depth": 6,
+  "depth": 5,
   "injury": null,
   "exp": 0
  },
@@ -170,16 +170,6 @@
   "exp": 8
  },
  {
-  "id": "8002",
-  "espn_id": null,
-  "name": "Shane Buechele",
-  "team": "BUF",
-  "number": 6,
-  "depth": 99,
-  "injury": null,
-  "exp": 5
- },
- {
   "id": "9228",
   "espn_id": null,
   "name": "Bryce Young",
@@ -206,7 +196,7 @@
   "team": "CAR",
   "number": 16,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -226,7 +216,7 @@
   "team": "CHI",
   "number": 11,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 14
  },
  {
@@ -286,7 +276,7 @@
   "team": "CLE",
   "number": 6,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -306,7 +296,7 @@
   "team": "CLE",
   "number": 15,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -366,7 +356,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -470,13 +460,23 @@
   "exp": 3
  },
  {
+  "id": "8002",
+  "espn_id": null,
+  "name": "Shane Buechele",
+  "team": "IND",
+  "number": 6,
+  "depth": 2,
+  "injury": null,
+  "exp": 5
+ },
+ {
   "id": "12470",
   "espn_id": null,
   "name": "Riley Leonard",
   "team": "IND",
   "number": 15,
-  "depth": 2,
-  "injury": "Out",
+  "depth": 3,
+  "injury": null,
   "exp": 1
  },
  {
@@ -546,7 +546,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -616,7 +616,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -716,7 +716,7 @@
   "team": "MIN",
   "number": 1,
   "depth": 3,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 7
  },
  {
@@ -726,7 +726,7 @@
   "team": "MIN",
   "number": 12,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -756,7 +756,7 @@
   "team": "NE",
   "number": 15,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -776,7 +776,7 @@
   "team": "NO",
   "number": 11,
   "depth": 2,
-  "injury": "Out",
+  "injury": null,
   "exp": 5
  },
  {
@@ -906,7 +906,7 @@
   "team": "PHI",
   "number": 16,
   "depth": 3,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 3
  },
  {
@@ -916,18 +916,8 @@
   "team": "PHI",
   "number": 18,
   "depth": 4,
-  "injury": "Out",
-  "exp": 0
- },
- {
-  "id": "96",
-  "espn_id": 8439,
-  "name": "Aaron Rodgers",
-  "team": "PIT",
-  "number": 8,
-  "depth": 1,
   "injury": null,
-  "exp": 21
+  "exp": 0
  },
  {
   "id": "4972",
@@ -935,9 +925,19 @@
   "name": "Mason Rudolph",
   "team": "PIT",
   "number": 2,
-  "depth": 2,
+  "depth": 1,
   "injury": null,
   "exp": 8
+ },
+ {
+  "id": "96",
+  "espn_id": 8439,
+  "name": "Aaron Rodgers",
+  "team": "PIT",
+  "number": 8,
+  "depth": 2,
+  "injury": null,
+  "exp": 21
  },
  {
   "id": "12511",
@@ -946,7 +946,7 @@
   "team": "PIT",
   "number": 18,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -956,7 +956,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
@@ -986,7 +986,7 @@
   "team": "SEA",
   "number": 14,
   "depth": 1,
-  "injury": "Out",
+  "injury": "Questionable",
   "exp": 8
  },
  {
@@ -1008,6 +1008,16 @@
   "depth": 4,
   "injury": null,
   "exp": 1
+ },
+ {
+  "id": "11065",
+  "espn_id": null,
+  "name": "Adrian Martinez",
+  "team": "SEA",
+  "number": 9,
+  "depth": 99,
+  "injury": null,
+  "exp": 3
  },
  {
   "id": "4936",
@@ -1046,7 +1056,7 @@
   "team": "SF",
   "number": 14,
   "depth": 3,
-  "injury": "Out",
+  "injury": null,
   "exp": 1
  },
  {
@@ -1065,8 +1075,8 @@
   "name": "Easton Stick",
   "team": "TB",
   "number": 16,
-  "depth": 3,
-  "injury": "Out",
+  "depth": 2,
+  "injury": null,
   "exp": 7
  },
  {
@@ -1075,19 +1085,9 @@
   "name": "Jalon Daniels",
   "team": "TB",
   "number": 10,
-  "depth": 4,
+  "depth": 3,
   "injury": null,
   "exp": 0
- },
- {
-  "id": "4574",
-  "espn_id": 2972515,
-  "name": "Cooper Rush",
-  "team": "TB",
-  "number": 16,
-  "depth": 99,
-  "injury": null,
-  "exp": 9
  },
  {
   "id": "12792",
@@ -1156,7 +1156,7 @@
   "team": "WAS",
   "number": 16,
   "depth": 4,
-  "injury": "Out",
+  "injury": null,
   "exp": 0
  },
  {
