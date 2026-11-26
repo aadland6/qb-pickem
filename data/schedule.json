@@ -1213,18 +1213,11 @@
    "phase": "regular",
    "games": [
     {
-     "home": "LAR",
-     "away": "GB",
-     "kickoff": "2026-11-26T01:00Z",
-     "espn_game_id": "401873079",
-     "status": "STATUS_SCHEDULED"
-    },
-    {
      "home": "DET",
      "away": "CHI",
      "kickoff": "2026-11-26T18:00Z",
      "espn_game_id": "401873081",
-     "status": "STATUS_SCHEDULED"
+     "status": "STATUS_IN_PROGRESS"
     },
     {
      "home": "DAL",
@@ -1239,6 +1232,13 @@
      "kickoff": "2026-11-27T01:20Z",
      "espn_game_id": "401873082",
      "status": "STATUS_SCHEDULED"
+    },
+    {
+     "home": "LAR",
+     "away": "GB",
+     "kickoff": "2026-11-26T01:00Z",
+     "espn_game_id": "401873079",
+     "status": "STATUS_FINAL"
     },
     {
      "home": "PIT",

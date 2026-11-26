@@ -30,12 +30,22 @@
   "exp": 7
  },
  {
+  "id": "11648",
+  "espn_id": null,
+  "name": "Kedon Slovis",
+  "team": "ARI",
+  "number": 18,
+  "depth": 4,
+  "injury": null,
+  "exp": 2
+ },
+ {
   "id": "13428",
   "espn_id": null,
   "name": "Joey Aguilar",
   "team": "ARI",
   "number": 18,
-  "depth": 4,
+  "depth": 5,
   "injury": null,
   "exp": 0
  },
@@ -216,7 +226,7 @@
   "team": "CHI",
   "number": 11,
   "depth": 2,
-  "injury": null,
+  "injury": "Out",
   "exp": 14
  },
  {
@@ -616,7 +626,7 @@
   "team": "LAR",
   "number": 15,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -930,22 +940,12 @@
   "exp": 8
  },
  {
-  "id": "96",
-  "espn_id": 8439,
-  "name": "Aaron Rodgers",
-  "team": "PIT",
-  "number": 8,
-  "depth": 2,
-  "injury": null,
-  "exp": 21
- },
- {
   "id": "12511",
   "espn_id": null,
   "name": "Will Howard",
   "team": "PIT",
   "number": 18,
-  "depth": 3,
+  "depth": 2,
   "injury": null,
   "exp": 1
  },
@@ -955,7 +955,7 @@
   "name": "Drew Allar",
   "team": "PIT",
   "number": 16,
-  "depth": 4,
+  "depth": 3,
   "injury": null,
   "exp": 0
  },
@@ -986,7 +986,7 @@
   "team": "SEA",
   "number": 14,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": null,
   "exp": 8
  },
  {
@@ -996,7 +996,7 @@
   "team": "SEA",
   "number": 2,
   "depth": 2,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 7
  },
  {
@@ -1006,7 +1006,7 @@
   "team": "SEA",
   "number": 6,
   "depth": 4,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 1
  },
  {
@@ -1036,7 +1036,7 @@
   "team": "SF",
   "number": 13,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 4
  },
  {
