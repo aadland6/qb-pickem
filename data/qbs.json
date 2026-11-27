@@ -6,7 +6,7 @@
   "team": "ARI",
   "number": 19,
   "depth": 1,
-  "injury": "Questionable",
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -34,7 +34,7 @@
   "espn_id": null,
   "name": "Kedon Slovis",
   "team": "ARI",
-  "number": 18,
+  "number": 15,
   "depth": 4,
   "injury": null,
   "exp": 2
@@ -216,7 +216,7 @@
   "team": "CHI",
   "number": 18,
   "depth": 1,
-  "injury": null,
+  "injury": "Questionable",
   "exp": 2
  },
  {
@@ -366,7 +366,7 @@
   "team": "DEN",
   "number": 4,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 5
  },
  {
@@ -474,7 +474,7 @@
   "espn_id": null,
   "name": "Shane Buechele",
   "team": "IND",
-  "number": 6,
+  "number": 4,
   "depth": 2,
   "injury": null,
   "exp": 5
@@ -556,7 +556,7 @@
   "team": "KC",
   "number": 19,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -580,6 +580,16 @@
   "exp": 1
  },
  {
+  "id": "6111",
+  "espn_id": 3886812,
+  "name": "Jake Browning",
+  "team": "LAC",
+  "number": 6,
+  "depth": 3,
+  "injury": null,
+  "exp": 7
+ },
+ {
   "id": "7610",
   "espn_id": null,
   "name": "Trey Lance",
@@ -588,16 +598,6 @@
   "depth": 4,
   "injury": "IR",
   "exp": 5
- },
- {
-  "id": "6111",
-  "espn_id": 3886812,
-  "name": "Jake Browning",
-  "team": "LAC",
-  "number": 6,
-  "depth": 99,
-  "injury": null,
-  "exp": 7
  },
  {
   "id": "421",
@@ -926,7 +926,7 @@
   "team": "PHI",
   "number": 18,
   "depth": 4,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
@@ -956,7 +956,7 @@
   "team": "PIT",
   "number": 16,
   "depth": 3,
-  "injury": null,
+  "injury": "Out",
   "exp": 0
  },
  {
